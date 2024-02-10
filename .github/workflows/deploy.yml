@@ -45,7 +45,7 @@ jobs:
 
       # buildディレクトリのアーティファクトとして保存
       - name: Upload Artifact
-        uses: actions/upload-artifact@v1
+        uses: actions/upload-artifact@v4
         with:
           name: github-pages
           path: _build/html
