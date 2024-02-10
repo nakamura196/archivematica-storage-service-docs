@@ -45,7 +45,7 @@ jobs:
         with:
           name: github-pages
           # path: _build/html
-          path: docs
+          path: docs2
 
   deploy:
     environment:
