@@ -1,0 +1,187 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, Artefactual Systems Inc.
+# This file is distributed under the same license as the Archivematica
+# Storage Service package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Archivematica Storage Service 0.21\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-02-09 18:55+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: en <LL@li.org>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.14.0\n"
+
+#: ../../index.rst:10
+msgid "Archivematica Storage Service documentation"
+msgstr "Archivematicaストレージサービスのドキュメンテーション"
+
+#: ../../index.rst:12
+msgid ""
+"The Storage Service is used alongside Archivematica to manage the storage "
+"locations and packages for one or many Archivematica dashboards."
+msgstr ""
+"ストレージサービスは、一つまたは複数のArchivematicaダッシュボードのストレージロケーションとパッケージを管理するために、Archivematicaと並行して使用されます。"
+
+#: ../../index.rst:15
+msgid ""
+"For information about Archivematica, including user and administrator "
+"manuals, please see the :ref:`Archivematica documentation "
+"<archivematica:home>`."
+msgstr ""
+"Archivematicaに関する情報、ユーザーマニュアルや管理者マニュアルを含む、を参照するには：ref：`Archivematicaのドキュメンテーション<archivematica:home>`をご覧ください。"
+
+#: ../../index.rst:21
+msgid "Administering the Storage Service"
+msgstr "ストレージサービスの管理"
+
+#: ../../index.rst:23
+msgid ""
+"This section provides information for Storage Service administrators. This "
+"manual is intended for systems administrators who are responsible for "
+"installing, configuring, setting up, and maintaining Archivematica and "
+"related systems."
+msgstr ""
+"このセクションでは、ストレージサービスの管理者向けの情報を提供します。本マニュアルは、Archivematica及び関連システムのインストール、設定、セットアップ、維持管理を担当するシステム管理者を対象としています。"
+
+#: ../../index.rst:28
+msgid ":ref:`Administering the Storage Service <administrators>`"
+msgstr ":ref:`ストレージサービスの管理 <administrators>`"
+
+#: ../../index.rst:29
+msgid ":ref:`Storage Service glossary and organization <organization>`"
+msgstr ":ref:`ストレージサービス用語集と組織 <organization>`"
+
+#: ../../index.rst:30
+msgid ":ref:`Archivematica configuration <archivematica-configuration>`"
+msgstr ":ref:`Archivematicaの設定 <archivematica-configuration>`"
+
+#: ../../index.rst:31
+msgid ":ref:`Pipelines <pipelines>`"
+msgstr ":ref:`パイプライン <pipelines>`"
+
+#: ../../index.rst:32
+msgid ":ref:`Spaces <spaces>`"
+msgstr ":ref:`スペース <spaces>`"
+
+#: ../../index.rst:33
+msgid ":ref:`Locations <locations>`"
+msgstr ": ref:`場所 <locations>`"
+
+#: ../../index.rst:34
+msgid ":ref:`Packages <packages-tab>`"
+msgstr ":ref:`パッケージ <packages-tab>`"
+
+#: ../../index.rst:35
+msgid ":ref:`Administration <administration>`"
+msgstr ":ref:`管理 <administration>`"
+
+#: ../../index.rst:40
+msgid "AIP recovery"
+msgstr "AIP回復"
+
+#: ../../index.rst:42
+msgid ""
+"AIP recovery support allows a storage service administrator to replace a "
+"corrupt version of a stored AIP with a correct version (restored from a "
+"backup, for example)."
+msgstr ""
+"AIPリカバリーサポートは、ストレージサービスの管理者が、破損したバージョンの保存されたAIPを、正しいバージョン（例えばバックアップから復元したもの）に置き換えることを可能にします。"
+
+#: ../../index.rst:46
+msgid ":ref:`AIP recovery <recovery>`"
+msgstr ":ref:`AIP 復旧 <recovery>`"
+
+#: ../../index.rst:47
+msgid ":ref:`Performing an AIP recovery <how-recovery-works>`"
+msgstr ":ref:`AIPのリカバリを行う <how-recovery-works>`"
+
+#: ../../index.rst:48
+msgid ":ref:`Example recovery request <example-recovery-request>`"
+msgstr ":ref:`回復要求の例 <example-recovery-request>`"
+
+#: ../../index.rst:49
+msgid ""
+":ref:`Reporting recovery progress to external systems <reporting-recovery-"
+"progress>`"
+msgstr ":ref:`外部システムへの復旧進行状況の報告 <reporting-recovery-progress>`"
+
+#: ../../index.rst:54
+msgid "Fixity"
+msgstr "フィクシティ"
+
+#: ../../index.rst:56
+msgid ""
+"The Archivematica Storage Service exposes an `API endpoint`_ that allows "
+"users to check fixity on individual AIPs. `Fixity`_ is also an application "
+"for use with the Archivematica Storage Service. The Fixity application is "
+"run from the command-line and uses the API endpoint to perform batch "
+"checking across the entirety of the AIP storage location."
+msgstr ""
+"Archivematica Storage "
+"Serviceは、ユーザーが個々のAIPの修復性を確認することを可能にする`APIエンドポイント`_を公開しています。`Fixity`_もまた、Archivematica"
+" Storage "
+"Serviceとともに使用するアプリケーションです。Fixityアプリケーションはコマンドラインから実行され、APIエンドポイントを使用してAIPストレージロケーション全体のバッチチェックを行います。"
+
+#: ../../index.rst:62
+msgid ":ref:`Fixity <fixity-docs>`"
+msgstr ":ref:`フィクシティ<fixity-docs>`"
+
+#: ../../index.rst:63
+msgid ":ref:`Checking fixity using the API endpoint <using-fixity-endpoint>`"
+msgstr ":ref:`APIエンドポイントを使用した固着性の確認 <using-fixity-endpoint>`"
+
+#: ../../index.rst:64
+msgid ":ref:`Using the Fixity application <fixity-application>`"
+msgstr ":ref:`Fixityアプリケーションの使用方法 <fixity-application>`"
+
+#: ../../index.rst:65
+msgid ""
+":ref:`Reviewing fixity results in the Storage Service <reviewing-fixity-"
+"checks>`"
+msgstr ":ref:`ストレージサービスでの固定性結果の確認 <reviewing-fixity-checks>`"
+
+#: ../../index.rst:70
+msgid "Management commands"
+msgstr "管理コマンド"
+
+#: ../../index.rst:72
+msgid ""
+"The Archivematica Storage Service implements multiple management commands "
+"using the command interface provided by the Django web framework. These "
+"allow administrators to perform tasks such as creating new replicas of "
+"existing AIPs."
+msgstr ""
+"Archivematicaストレージサービスは、Djangoウェブフレームワークが提供するコマンドインターフェースを使用して、複数の管理コマンドを実行します。これにより、管理者は既存のAIPの新たなレプリカを作成するなどのタスクを実行することができます。"
+
+#: ../../index.rst:76
+msgid ":ref:`Management commands <management>`"
+msgstr ":ref:`管理コマンド <management>`"
+
+#: ../../index.rst:77
+msgid ":ref:`Creating new AIP replicas <creating-aip-replicas>`"
+msgstr ":ref:`新しいAIPレプリカの作成 <creating-aip-replicas>`"
+
+#: ../../index.rst:82
+msgid "Installation and setup"
+msgstr "インストールとセットアップ"
+
+#: ../../index.rst:84
+msgid ":ref:`Manually installing the Storage Service <install>`"
+msgstr ":ref:`ストレージサービスの手動インストール <install>`"
+
+#: ../../index.rst:85
+msgid ":ref:`Migrating data from SQLite to MySQL <migration-sqlite-mysql>`"
+msgstr ":ref:`SQLiteからMySQLへのデータ移行 <migration-sqlite-mysql>`"
+
+#: ../../index.rst:87
+msgid ":ref:`Back to the top <index>`"
+msgstr ":ref:`トップに戻る <index>`"

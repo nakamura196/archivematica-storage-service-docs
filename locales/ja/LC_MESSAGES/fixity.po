@@ -1,0 +1,159 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, Artefactual Systems Inc.
+# This file is distributed under the same license as the Archivematica
+# Storage Service package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Archivematica Storage Service 0.21\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-02-09 18:55+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: ja <LL@li.org>\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.14.0\n"
+
+#: ../../fixity.rst:5
+msgid "Fixity"
+msgstr "フィクシティ"
+
+#: ../../fixity.rst:7
+msgid ""
+"Checking fixity is the process of ensuring that digital files have not "
+"changed unexpectedly over time. The Archivematica Storage Service exposes an"
+" API endpoint that enables users to check the fixity of individual AIPs in "
+"storage. Users can access the API endpoint directly or by using the Fixity "
+"application developed by Artefactual."
+msgstr ""
+"フィクシティのチェックは、デジタルファイルが時間の経過とともに予期せずに変更されていないことを保証するプロセスです。Archivematicaストレージサービスは、ユーザーがストレージ内の個々のAIPのフィクシティをチェックできるAPIエンドポイントを公開しています。ユーザーは、APIエンドポイントに直接アクセスするか、Artefactualが開発したFixityアプリケーションを使用してアクセスできます。"
+
+#: ../../fixity.rst:13
+msgid ""
+"Archivematica AIPs are packaged according to the `BagIt File Packaging "
+"Format`_. The fixity API endpoint verifies the bag by validating the "
+"contents of the bag against the checksums and payload oxum listed in the bag"
+" files. This can tell users if files have been modified, deleted, or added "
+"to the AIP."
+msgstr ""
+"Archivematica AIPsは、`BagIt File Packaging Format`_ に従ってパッケージ化されます。fixity "
+"APIエンドポイントは、バッグファイルにリストされているチェックサムとペイロードoxumとを検証することでバッグを検証します。これにより、ファイルが変更されたか、削除されたか、AIPに追加されたかをユーザーに伝えることができます。"
+
+#: ../../fixity.rst:18
+msgid ""
+"For more information about fixity and checksums, see the Digital "
+"Preservation Coalition's `Digital Preservation Handbook`_."
+msgstr ""
+"fixityとチェックサムに関する詳細は、Digital Preservation Coalitionの`Digital Preservation "
+"Handbook`_を参照してください。"
+
+#: ../../fixity.rst:21
+msgid "*On this page:*"
+msgstr "*このページ上の内容:*"
+
+#: ../../fixity.rst:23
+msgid ":ref:`Checking fixity using the API endpoint <using-fixity-endpoint>`"
+msgstr ":ref:`APIエンドポイントを使用したfixityの確認方法<using-fixity-endpoint>`"
+
+#: ../../fixity.rst:24
+msgid ":ref:`Using the Fixity application <fixity-application>`"
+msgstr ":ref:`Fixityアプリケーションの使用方法<fixity-application>`"
+
+#: ../../fixity.rst:25
+msgid ""
+":ref:`Reviewing fixity results in the Storage Service <reviewing-fixity-"
+"checks>`"
+msgstr ":ref:`Storage Serviceでのfixityチェック結果の確認<reviewing-fixity-checks>`"
+
+#: ../../fixity.rst:30
+msgid "Checking fixity using the API endpoint"
+msgstr "APIエンドポイントを使用したフィクシティのチェック"
+
+#: ../../fixity.rst:32
+msgid ""
+"The fixity API endpoint can be used to scan a single AIP. It will return a "
+"success or failure, as well as any error messages. More information about "
+"the endpoint can found found in the `Storage Service API documentation`_."
+msgstr ""
+"fixity "
+"APIエンドポイントを使用して単一のAIPをスキャンすることができます。成功または失敗、エラーメッセージなどが返されます。エンドポイントに関する詳細情報は、`Storage"
+" Service API documentation`_で確認できます。"
+
+#: ../../fixity.rst:39
+msgid "Using the Fixity application"
+msgstr "Fixityアプリケーションの使用"
+
+#: ../../fixity.rst:41
+msgid ""
+"`Fixity`_ is also an application for use with the Archivematica Storage "
+"Service. Fixity is run from the command-line and uses the API endpoint "
+"documented above to perform batch checking across the entirety of the AIP "
+"store."
+msgstr ""
+"`Fixity`_は、Archivematica Storage "
+"Serviceで使用するアプリケーションでもあります。Fixityはコマンドラインから実行され、上記で文書化されたAPIエンドポイントを使用してAIPストア全体でバッチチェックを実行します。"
+
+#: ../../fixity.rst:46
+msgid ""
+"See the `Fixity`_ documentation for more information on its installation and"
+" usage."
+msgstr "インストールと使用方法についての詳細は、`Fixity`_のドキュメントを参照してください。"
+
+#: ../../fixity.rst:52
+msgid "Reviewing fixity results in the Storage Service"
+msgstr "Storage Serviceでのfixityチェック結果の確認"
+
+#: ../../fixity.rst:54
+msgid ""
+"The result of a fixity check is written back to the Storage Service and "
+"shown in the Packages tab of the user interface in the **Fixity Date** and "
+"**Fixity Status** columns."
+msgstr ""
+"fixityチェックの結果はStorage Serviceに書き戻され、ユーザーインターフェースのPackagesタブの**Fixity "
+"Date**と**Fixity Status**の列に表示されます。"
+
+#: ../../fixity.rst:-1
+msgid "The Fixity Date and Fixity Status columns are displayed in the"
+msgstr "**Fixity Date**と**Fixity Status**の列が表示されます"
+
+#: ../../fixity.rst:63
+msgid ""
+"The fixity status is displayed as either \"Success\" or \"Failed\". For more"
+" information about the check, click on the status of the AIP. The fixity "
+"check information page will show the date and time that the fixity check was"
+" run, as well as any error output resulting from the check. It will also "
+"show a full history of fixity checks run on the AIP."
+msgstr ""
+"fixityステータスは、「Success」または「Failed」のいずれかとして表示されます。チェックの詳細については、AIPのステータスをクリックしてください。fixityチェック情報ページには、fixityチェックが実行された日時、およびチェックからのエラー出力が表示されます。また、AIPで実行されたfixityチェックの完全な履歴も表示されます。"
+
+#: ../../fixity.rst:-1
+msgid ""
+"The fixity check information page showing the results of one fixity scan, "
+"which resulted in an error."
+msgstr "1回のfixityスキャンの結果を表示するfixityチェック情報ページ"
+
+#: ../../fixity.rst:74
+msgid ""
+"In the example shown in the screenshot above, the fixity scan resulted in an"
+" error."
+msgstr "上記のスクリーンショットに示されている例では、fixityスキャンの結果エラーが発生しました。"
+
+#: ../../fixity.rst:82
+msgid ""
+"In this case, an extra byte has been added to one of the files, so the "
+"payload oxum in the ``bag-info.txt`` file is no longer correct. The next "
+"step for the user would be to retrieve the AIP and investigate the files to "
+"see what has changed."
+msgstr ""
+"この場合、ファイルの1つに余分なバイトが追加されているため、「bag-"
+"info.txt」ファイルのペイロードのoxumが正しくなくなりました。ユーザーの次のステップは、AIPを取得し、ファイルを調査して変更点を確認することです。"
+
+#: ../../fixity.rst:87
+msgid ":ref:`Return to the top <fixity-docs>`"
+msgstr ":ref:`トップに戻る<fixity-docs>`"

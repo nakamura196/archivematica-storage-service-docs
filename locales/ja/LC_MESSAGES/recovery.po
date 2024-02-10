@@ -1,0 +1,217 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, Artefactual Systems Inc.
+# This file is distributed under the same license as the Archivematica
+# Storage Service package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Archivematica Storage Service 0.21\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-02-09 18:55+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: en <LL@li.org>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.14.0\n"
+
+#: ../../recovery.rst:5
+msgid "AIP recovery"
+msgstr "AIP復旧"
+
+#: ../../recovery.rst:7
+msgid ""
+"AIP recovery allows a Storage Service administrator to replace a corrupt "
+"version of a stored AIP with the correct version. This process requires that"
+" you have a non-corrupted backup copy of the AIP. By replacing the AIP using"
+" the recovery process, the recovered version of the AIP will be available to"
+" users through the Archivematica dashboard."
+msgstr ""
+"AIPリカバリーは、ストレージサービスの管理者が保存されたAIPの破損したバージョンを正しいバージョンに置き換えることを可能にします。このプロセスでは、AIPの破損していないバックアップコピーを保有していることが必要です。リカバリープロセスを使用してAIPを置き換えることで、AIPの回復バージョンはArchivematicaダッシュボードからユーザーに利用可能となります。"
+
+#: ../../recovery.rst:13
+msgid "*On this page*:"
+msgstr "*このページでは*:"
+
+#: ../../recovery.rst:15
+msgid ":ref:`Performing an AIP recovery <how-recovery-works>`"
+msgstr ":ref:`AIPの復元を実行する <how-recovery-works>`"
+
+#: ../../recovery.rst:16
+msgid ":ref:`Example recovery request <example-recovery-request>`"
+msgstr ":ref:`例：リカバリーリクエスト <example-recovery-request>`"
+
+#: ../../recovery.rst:17
+msgid ""
+":ref:`Reporting recovery progress to external systems <reporting-recovery-"
+"progress>`"
+msgstr ":ref:`外部システムへの復旧進捗の報告 <reporting-recovery-progress>`"
+
+#: ../../recovery.rst:22
+msgid "Performing an AIP recovery"
+msgstr "AIPリカバリーの実行"
+
+#: ../../recovery.rst:24
+msgid ""
+"Determine the path of the *AIP recovery* directory. You can find the path of"
+" this directory by clicking on the **Locations** tab in the Storage Service "
+"user interface, then finding the path that has the purpose \"AIP Recovery\"."
+" This is the AIP recovery location."
+msgstr ""
+"*AIPリカバリ*ディレクトリのパスを決定します。このディレクトリのパスは、ストレージサービスユーザーインターフェースの**ロケーション**タブをクリックし、その後目的が「AIPリカバリ」であるパスを探すことで見つけることができます。これがAIPリカバリロケーションです。"
+
+#: ../../recovery.rst
+msgid ""
+"The Locations tab has a table with all Storage Service locations listed. The"
+" AIP recovery location has the purpose \"AIP Recovery\" in the first column."
+msgstr ""
+"「ロケーション」タブには、全てのストレージサービスのロケーションが一覧表示されています。「AIPリカバリ」ロケーションは、最初の列に「AIPリカバリ」の目的が明記されています。"
+
+#: ../../recovery.rst:34
+msgid "Copy the recovered version of the AIP to the AIP recovery location."
+msgstr "回復されたAIPのバージョンをAIP回復場所にコピーします。"
+
+#: ../../recovery.rst:36
+msgid ""
+"Using the Storage Service REST API, make a :ref:`recovery request <example-"
+"recovery-request>`."
+msgstr ""
+"Storage Service REST APIを使用して、:ref:`リカバリーリクエスト<example-recovery-"
+"request>`を行ってください。"
+
+#: ../../recovery.rst:39
+msgid ""
+"Approve the AIP recovery request by going to the **Packages** tab in the "
+"Storage Service user interface, then clicking on **View recovery requests**."
+" Provide a reason for the recovery and click **Approve**."
+msgstr ""
+"AIP復旧リクエストを承認するには、ストレージサービスのユーザーインターフェースの**パッケージ**タブに移動し、**復旧リクエストを見る**をクリックします。復旧の理由を提供し、**承認**をクリックします。"
+
+#: ../../recovery.rst:43
+msgid ""
+"Once the recovery has been approved, the Storage Service will do the "
+"following:"
+msgstr "復旧が承認されると、ストレージサービスは以下の操作を行います："
+
+#: ../../recovery.rst:46
+msgid ""
+"Check the fixity data of the recovered AIP. Recovery will fail if this "
+"initial fixity check fails."
+msgstr "回復されたAIPの確定データを確認してください。この初期の確定性チェックが失敗すると、回復は失敗します。"
+
+#: ../../recovery.rst:48
+msgid ""
+"Copy the corrupt AIP to a backup directory within the recovery location."
+msgstr "壊れたAIPをリカバリロケーション内のバックアップディレクトリにコピーします。"
+
+#: ../../recovery.rst:49
+msgid "Copy the recovered AIP to AIP storage."
+msgstr "回復したAIPをAIPストレージにコピーします。"
+
+#: ../../recovery.rst:50
+msgid ""
+"Check the fixity data of the stored AIP. Recovery will fail if this second "
+"fixity check fails."
+msgstr "保存されたAIPの整合性データを確認してください。この二つ目の整合性チェックが失敗すると、復旧は失敗します。"
+
+#: ../../recovery.rst:53
+msgid ""
+"The AIP will now be available for download in the Packages tab of the "
+"Storage Service user interface, as well as through the Archival Storage tab "
+"of the Archivematica dashboard."
+msgstr ""
+"AIPは、ストレージサービスのユーザーインターフェースのパッケージタブで、またArchivematicaダッシュボードのアーカイブストレージタブを通じて、ダウンロード可能になります。"
+
+#: ../../recovery.rst:60
+msgid "Example recovery request"
+msgstr "例の復旧リクエスト"
+
+#: ../../recovery.rst:62
+msgid ""
+"Once the recovered AIP is in place, you must make an API request using the "
+"Storage Service REST API. Here is an example:"
+msgstr ""
+"回復されたAIPが配置されたら、Storage Service REST APIを使用してAPIリクエストを行う必要があります。以下に例を示します："
+
+#: ../../recovery.rst:69
+msgid "Replace the placeholders with the following information:"
+msgstr "テキストが提供されていません。どのような情報を記載すればよろしいでしょうか？"
+
+#: ../../recovery.rst:71
+msgid ""
+"``<description>``: a description of why the recovery request is being made."
+msgstr "``<description>``: 復元リクエストがなされる理由の説明。"
+
+#: ../../recovery.rst:72
+msgid ""
+"``<int>``: the numerical user ID. To find the user ID, go to the "
+"**Administration** tab and click on **Users** in the lefthand sidebar. Click"
+" on **Edit** for the user who is making the request. The user ID is shown in"
+" the URL of the user edit page - for example, the user ID for ``http://my-"
+"site:8000/administration/users/1/edit/`` is **1**."
+msgstr ""
+"``<int>``: ユーザーIDの数値。ユーザーIDを見つけるには、 **管理** タブに移動し、左側のサイドバーで **ユーザー** "
+"をクリックします。リクエストを行うユーザーの **編集** をクリックします。ユーザーの編集ページのURLにユーザーIDが表示されます - "
+"例えば、``http://my-site:8000/administration/users/1/edit/`` のユーザーIDは **1** です。"
+
+#: ../../recovery.rst:77
+msgid "``<email>``: the email address of the user making the request."
+msgstr "``<email>``: リクエストを行うユーザーのメールアドレス。"
+
+#: ../../recovery.rst:79
+msgid ""
+"If you use `Binder`_, Binder is capable of sending a notification to the "
+"Storage Service that a replacement AIP is ready for recovery. Check the "
+"`Binder recovery documentation`_ for more information."
+msgstr ""
+"`Binder`_を使用している場合、Binderは代替AIPがリカバリのために準備ができたという通知をストレージサービスに送信する能力があります。詳しい情報は、`Binder"
+" recovery documentation`_を確認してください。"
+
+#: ../../recovery.rst:86
+msgid "Reporting recovery progress to external systems"
+msgstr "外部システムへの回復進捗の報告"
+
+#: ../../recovery.rst:88
+msgid ""
+"AIP recovery can be optionally configured to report progress to another "
+"system via a REST POST call. The call will report whether the AIP recovery "
+"task has been approved, rejected, or has failed. The information sent "
+"includes the ID of the recovery request, whether the recovery request was "
+"processed successfully, and a text message including the recover request "
+"status (\"APPROVE\" or \"REJECT\") and the administrator's reasoning for the"
+" decision."
+msgstr ""
+"AIPの回復は、オプションでREST "
+"POSTコールを介して別のシステムに進行状況を報告するように設定することができます。このコールは、AIP回復タスクが承認されたか、却下されたか、または失敗したかを報告します。送信される情報には、回復リクエストのID、回復リクエストが成功したかどうか、回復リクエストのステータス（\"APPROVE\"または\"REJECT\"）と、管理者の決定理由を含めたテキストメッセージが含まれます。"
+
+#: ../../recovery.rst:95
+msgid "The following is an example of the JSON sent by this POST call:"
+msgstr "次は、このPOST呼び出しによって送信されるJSONの例です:"
+
+#: ../../recovery.rst:105
+msgid ""
+"To configure the Storage Service to report AIP restore progress to another "
+"system, click **Administration** in the Storage Service user interface and "
+"enter a REST endpoint URL into the **Recovery request: URL to notify** "
+"field."
+msgstr ""
+"Storage ServiceがAIP復元の進捗を別のシステムに報告するように設定するには、Storage "
+"Serviceのユーザーインターフェースで**管理**をクリックし、**Recovery request: URL to "
+"notify**フィールドにRESTエンドポイントのURLを入力します。"
+
+#: ../../recovery.rst:110
+msgid ""
+"If the endpoint requires authentication, you'll also need to enter a "
+"username and password into the two fields below it. Click **Save** when you "
+"are done."
+msgstr ""
+"エンドポイントが認証を必要とする場合、ユーザー名とパスワードを下の二つのフィールドに入力する必要があります。完了したら、**保存**をクリックしてください。"
+
+#: ../../recovery.rst:113
+msgid ":ref:`Back to the top <recovery>`"
+msgstr ":ref:`トップに戻る <recovery>`"

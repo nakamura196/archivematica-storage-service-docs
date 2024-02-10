@@ -1,0 +1,112 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, Artefactual Systems Inc.
+# This file is distributed under the same license as the Archivematica
+# Storage Service package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Archivematica Storage Service 0.21\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-02-09 18:55+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: en <LL@li.org>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.14.0\n"
+
+#: ../../management.rst:5
+msgid "Management commands"
+msgstr "管理コマンド"
+
+#: ../../management.rst:7
+msgid ""
+"Archivematica implements multiple management commands using the command "
+"interface provided by the Django web framework."
+msgstr "Archivematicaは、Djangoウェブフレームワークが提供するコマンドインターフェースを使用して複数の管理コマンドを実装します。"
+
+#: ../../management.rst:10
+msgid "A full list of commands can be retrieved as follows:"
+msgstr "次のようにして、コマンドの完全なリストを取得できます："
+
+#: ../../management.rst:23
+msgid "If you want to see the help message of a specific command, try:"
+msgstr "特定のコマンドのヘルプメッセージを表示したい場合は、以下のように試してみてください:"
+
+#: ../../management.rst:37
+msgid ""
+"We've looked up the command for :ref:`creating new AIP replicas <creating-"
+"aip-replicas>` above."
+msgstr "私たちは上で、新しいAIPレプリカを作成するためのコマンドを調べました。<creating-aip-replicas>を参照してください。"
+
+#: ../../management.rst:40
+msgid "*On this page:*"
+msgstr "*このページでは：*"
+
+#: ../../management.rst:42
+msgid ":ref:`Creating new AIP replicas <creating-aip-replicas>`"
+msgstr ":ref:`新しいAIPレプリカの作成 <creating-aip-replicas>`"
+
+#: ../../management.rst:47
+msgid "Creating new AIP replicas"
+msgstr "新しいAIPレプリカの作成"
+
+#: ../../management.rst:49
+msgid ""
+"The Archivematica Storage Service includes a management command for creating"
+" and re-creating AIP replicas."
+msgstr "Archivematicaストレージサービスには、AIPレプリカの作成と再作成のための管理コマンドが含まれています。"
+
+#: ../../management.rst:52
+msgid ""
+"By default, the script will create a new AIP replica for every AIP in the "
+"default AIP storage location in each of that AIP storage location's "
+"configured Replicator locations."
+msgstr ""
+"デフォルトでは、スクリプトは、各AIPストレージの場所の設定されたレプリケータの場所ごとに、デフォルトのAIPストレージの場所にあるすべてのAIPに対して新しいAIPレプリカを作成します。"
+
+#: ../../management.rst:66
+msgid "The command accepts the following parameters:"
+msgstr "このコマンドは以下のパラメータを受け入れます:"
+
+#: ../../management.rst:68
+msgid ""
+"``--aip-uuid`` may be passed optionally to only create replicas of the AIP "
+"that has the matching UUID."
+msgstr "「--aip-uuid」はオプションで渡すことができ、一致するUUIDを持つAIPのレプリカのみを作成します。"
+
+#: ../../management.rst:70
+msgid ""
+"``--delete`` will delete existing replicas in the AIP storage location prior"
+" to creating new ones."
+msgstr "``--delete``は、新たに作成する前にAIPストレージ場所にある既存のレプリカを削除します。"
+
+#: ../../management.rst:72
+msgid ""
+"``--aip-store-location`` may be passed optionally to specify an AIP storage "
+"location other than the default. Replicas will be created of AIPs in the AIP"
+" storage location that has the matching UUID."
+msgstr ""
+"「--aip-store-"
+"location」は、デフォルト以外のAIPストレージロケーションを指定するためにオプションで渡すことができます。一致するUUIDを持つAIPストレージロケーション内のAIPのレプリカが作成されます。"
+
+#: ../../management.rst:75
+msgid ""
+"``--replicator-location`` may be passed optionally to specify a Replicator "
+"location in which replicas should be created. Replicas will only be created "
+"in the Replicator location that has the matching UUID. This may be useful to"
+" replicate already stored AIPs into a new Replicator location without "
+"needing to reingest or touch existing replicas in other Replicator "
+"locations."
+msgstr ""
+"``--replicator-"
+"location``はオプションで指定でき、レプリカが作成されるべきレプリケータの場所を指定します。レプリカは一致するUUIDを持つレプリケータの場所にのみ作成されます。これは、すでに保存されたAIPを再取り込みすることなく、または他のレプリケータの場所の既存のレプリカに影響を与えることなく、新しいレプリケータの場所にレプリケートするのに便利かもしれません。"
+
+#: ../../management.rst:81
+msgid ":ref:`Return to the top <management>`"
+msgstr ":ref:`トップに戻る <management>`"

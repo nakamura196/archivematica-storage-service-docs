@@ -278,3 +278,9 @@ texinfo_documents = [
 
 # How to display URL addresses: 'footnote', 'no', or 'inline'.
 # texinfo_show_urls = 'footnote'
+
+# 言語設定
+locale_dirs = ['locales/']  # 翻訳ファイルを格納するディレクトリ
+gettext_compact = False  # ファイル名を短くしない
+languages = ['ja']  # サポートする言語コード
+language = "ja"
