@@ -28,10 +28,6 @@ jobs:
         with:
           python-version: "3.10" # Specify the Python version
 
-      - name: Setup Pages
-        id: pages
-        uses: actions/configure-pages@v1
-
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
