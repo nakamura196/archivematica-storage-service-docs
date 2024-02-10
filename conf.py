@@ -36,6 +36,7 @@ except ImportError:
 extensions = [
     "sphinx.ext.extlinks",
     "sphinx.ext.intersphinx",
+    "sphinx.ext.githubpages",
 ]
 
 # Obtain intersphinx_mapping
