@@ -40,7 +40,7 @@ jobs:
           TZ: UTC
 
       # buildディレクトリのアーティファクトとして保存
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v3
         with:
           path: _build/html
 
