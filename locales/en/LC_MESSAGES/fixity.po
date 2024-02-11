@@ -1,0 +1,144 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, Artefactual Systems Inc.
+# This file is distributed under the same license as the Archivematica
+# Storage Service package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Archivematica Storage Service 0.21\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-02-11 22:18+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.14.0\n"
+
+#: ../../fixity.rst:5
+msgid "Fixity"
+msgstr ""
+
+#: ../../fixity.rst:7
+msgid ""
+"Checking fixity is the process of ensuring that digital files have not "
+"changed unexpectedly over time. The Archivematica Storage Service exposes"
+" an API endpoint that enables users to check the fixity of individual "
+"AIPs in storage. Users can access the API endpoint directly or by using "
+"the Fixity application developed by Artefactual."
+msgstr ""
+
+#: ../../fixity.rst:13
+msgid ""
+"Archivematica AIPs are packaged according to the `BagIt File Packaging "
+"Format`_. The fixity API endpoint verifies the bag by validating the "
+"contents of the bag against the checksums and payload oxum listed in the "
+"bag files. This can tell users if files have been modified, deleted, or "
+"added to the AIP."
+msgstr ""
+
+#: ../../fixity.rst:18
+msgid ""
+"For more information about fixity and checksums, see the Digital "
+"Preservation Coalition's `Digital Preservation Handbook`_."
+msgstr ""
+
+#: ../../fixity.rst:21
+msgid "*On this page:*"
+msgstr ""
+
+#: ../../fixity.rst:23
+msgid ":ref:`Checking fixity using the API endpoint <using-fixity-endpoint>`"
+msgstr ""
+
+#: ../../fixity.rst:24
+msgid ":ref:`Using the Fixity application <fixity-application>`"
+msgstr ""
+
+#: ../../fixity.rst:25
+msgid ""
+":ref:`Reviewing fixity results in the Storage Service <reviewing-fixity-"
+"checks>`"
+msgstr ""
+
+#: ../../fixity.rst:30
+msgid "Checking fixity using the API endpoint"
+msgstr ""
+
+#: ../../fixity.rst:32
+msgid ""
+"The fixity API endpoint can be used to scan a single AIP. It will return "
+"a success or failure, as well as any error messages. More information "
+"about the endpoint can found found in the `Storage Service API "
+"documentation`_."
+msgstr ""
+
+#: ../../fixity.rst:39
+msgid "Using the Fixity application"
+msgstr ""
+
+#: ../../fixity.rst:41
+msgid ""
+"`Fixity`_ is also an application for use with the Archivematica Storage "
+"Service. Fixity is run from the command-line and uses the API endpoint "
+"documented above to perform batch checking across the entirety of the AIP"
+" store."
+msgstr ""
+
+#: ../../fixity.rst:46
+msgid ""
+"See the `Fixity`_ documentation for more information on its installation "
+"and usage."
+msgstr ""
+
+#: ../../fixity.rst:52
+msgid "Reviewing fixity results in the Storage Service"
+msgstr ""
+
+#: ../../fixity.rst:54
+msgid ""
+"The result of a fixity check is written back to the Storage Service and "
+"shown in the Packages tab of the user interface in the **Fixity Date** "
+"and **Fixity Status** columns."
+msgstr ""
+
+#: ../../fixity.rst:-1
+msgid "**Fixity Date**と**Fixity Status**の列が表示されます"
+msgstr ""
+
+#: ../../fixity.rst:63
+msgid ""
+"The fixity status is displayed as either \"Success\" or \"Failed\". For "
+"more information about the check, click on the status of the AIP. The "
+"fixity check information page will show the date and time that the fixity"
+" check was run, as well as any error output resulting from the check. It "
+"will also show a full history of fixity checks run on the AIP."
+msgstr ""
+
+#: ../../fixity.rst:-1
+msgid "1回のfixityスキャンの結果を表示するfixityチェック情報ページ"
+msgstr ""
+
+#: ../../fixity.rst:74
+msgid ""
+"In the example shown in the screenshot above, the fixity scan resulted in"
+" an error."
+msgstr ""
+
+#: ../../fixity.rst:82
+msgid ""
+"In this case, an extra byte has been added to one of the files, so the "
+"payload oxum in the ``bag-info.txt`` file is no longer correct. The next "
+"step for the user would be to retrieve the AIP and investigate the files "
+"to see what has changed."
+msgstr ""
+
+#: ../../fixity.rst:87
+msgid ":ref:`Return to the top <fixity-docs>`"
+msgstr ""
+

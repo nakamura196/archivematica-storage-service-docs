@@ -9,11 +9,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Archivematica Storage Service 0.21\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-09 18:55+0900\n"
+"POT-Creation-Date: 2024-02-11 22:18+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: en <LL@li.org>\n"
-"Language: en\n"
+"Language-Team: ja <LL@li.org>\n"
+"Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -22,7 +22,7 @@ msgstr ""
 
 #: ../../recovery.rst:5
 msgid "AIP recovery"
-msgstr "AIP復旧"
+msgstr "AIP復元"
 
 #: ../../recovery.rst:7
 msgid ""
@@ -32,29 +32,29 @@ msgid ""
 " the recovery process, the recovered version of the AIP will be available to"
 " users through the Archivematica dashboard."
 msgstr ""
-"AIPリカバリーは、ストレージサービスの管理者が保存されたAIPの破損したバージョンを正しいバージョンに置き換えることを可能にします。このプロセスでは、AIPの破損していないバックアップコピーを保有していることが必要です。リカバリープロセスを使用してAIPを置き換えることで、AIPの回復バージョンはArchivematicaダッシュボードからユーザーに利用可能となります。"
+"AIP復元は、ストレージサービス管理者が破損したAIPの保存されたバージョンを正しいバージョンと置き換えることを可能にします。このプロセスでは、AIPの破損していないバックアップコピーを持っている必要があります。回復プロセスを利用してAIPを置き換えることで、回復されたAIPのバージョンがArchivematicaダッシュボードを通じてユーザーに利用可能になります。"
 
 #: ../../recovery.rst:13
 msgid "*On this page*:"
-msgstr "*このページでは*:"
+msgstr "*このページについて：*"
 
 #: ../../recovery.rst:15
 msgid ":ref:`Performing an AIP recovery <how-recovery-works>`"
-msgstr ":ref:`AIPの復元を実行する <how-recovery-works>`"
+msgstr ":ref:`AIP復元の実行 <how-recovery-works>`"
 
 #: ../../recovery.rst:16
 msgid ":ref:`Example recovery request <example-recovery-request>`"
-msgstr ":ref:`例：リカバリーリクエスト <example-recovery-request>`"
+msgstr ":ref:`復元リクエストの例 <example-recovery-request>`"
 
 #: ../../recovery.rst:17
 msgid ""
 ":ref:`Reporting recovery progress to external systems <reporting-recovery-"
 "progress>`"
-msgstr ":ref:`外部システムへの復旧進捗の報告 <reporting-recovery-progress>`"
+msgstr ":ref:`復元進捗状況を外部システムに報告する <reporting-recovery-progress>`"
 
 #: ../../recovery.rst:22
 msgid "Performing an AIP recovery"
-msgstr "AIPリカバリーの実行"
+msgstr "AIP復元の実行"
 
 #: ../../recovery.rst:24
 msgid ""
@@ -63,26 +63,24 @@ msgid ""
 "user interface, then finding the path that has the purpose \"AIP Recovery\"."
 " This is the AIP recovery location."
 msgstr ""
-"*AIPリカバリ*ディレクトリのパスを決定します。このディレクトリのパスは、ストレージサービスユーザーインターフェースの**ロケーション**タブをクリックし、その後目的が「AIPリカバリ」であるパスを探すことで見つけることができます。これがAIPリカバリロケーションです。"
+"*AIP復元*ディレクトリのパスを決定します。ストレージサービスのユーザーインターフェースの**ロケーション**タブをクリックすることで、このディレクトリのパスを見つけることができます。そこで、「AIP復元」を目的とするパスを見つけます。これがAIP復元のロケーションです。"
 
 #: ../../recovery.rst
 msgid ""
-"The Locations tab has a table with all Storage Service locations listed. The"
-" AIP recovery location has the purpose \"AIP Recovery\" in the first column."
-msgstr ""
 "「ロケーション」タブには、全てのストレージサービスのロケーションが一覧表示されています。「AIPリカバリ」ロケーションは、最初の列に「AIPリカバリ」の目的が明記されています。"
+msgstr ""
+"「ロケーション」タブには、すべてのストレージサービスのロケーションが一覧表示されています。「AIPリカバリ」ロケーションは、最初の列に「AIPリカバリ」の目的が記されています。"
 
 #: ../../recovery.rst:34
 msgid "Copy the recovered version of the AIP to the AIP recovery location."
-msgstr "回復されたAIPのバージョンをAIP回復場所にコピーします。"
+msgstr "復元されたAIPのバージョンをAIP復元場所にコピーします。"
 
 #: ../../recovery.rst:36
 msgid ""
 "Using the Storage Service REST API, make a :ref:`recovery request <example-"
 "recovery-request>`."
 msgstr ""
-"Storage Service REST APIを使用して、:ref:`リカバリーリクエスト<example-recovery-"
-"request>`を行ってください。"
+"ストレージサービスのREST APIを利用して、 :ref:`リカバリーリクエスト<example-recovery-request>` を行います。"
 
 #: ../../recovery.rst:39
 msgid ""
@@ -90,34 +88,34 @@ msgid ""
 "Storage Service user interface, then clicking on **View recovery requests**."
 " Provide a reason for the recovery and click **Approve**."
 msgstr ""
-"AIP復旧リクエストを承認するには、ストレージサービスのユーザーインターフェースの**パッケージ**タブに移動し、**復旧リクエストを見る**をクリックします。復旧の理由を提供し、**承認**をクリックします。"
+"ストレージサービスのユーザーインターフェースで**パッケージ**タブに移動し、**復元リクエストを表示**をクリックしてAIPの復元リクエストを承認します。復元の理由を記入して**承認**をクリックします。"
 
 #: ../../recovery.rst:43
 msgid ""
 "Once the recovery has been approved, the Storage Service will do the "
 "following:"
-msgstr "復旧が承認されると、ストレージサービスは以下の操作を行います："
+msgstr "復元が承認されたら、ストレージサービスは次の操作を行います："
 
 #: ../../recovery.rst:46
 msgid ""
 "Check the fixity data of the recovered AIP. Recovery will fail if this "
 "initial fixity check fails."
-msgstr "回復されたAIPの確定データを確認してください。この初期の確定性チェックが失敗すると、回復は失敗します。"
+msgstr "復元されたAIPの固定性データを確認します。この初期の固定性チェックに失敗した場合、復元は失敗します。"
 
 #: ../../recovery.rst:48
 msgid ""
 "Copy the corrupt AIP to a backup directory within the recovery location."
-msgstr "壊れたAIPをリカバリロケーション内のバックアップディレクトリにコピーします。"
+msgstr "破損したAIPを復元場所内のバックアップディレクトリにコピーします。"
 
 #: ../../recovery.rst:49
 msgid "Copy the recovered AIP to AIP storage."
-msgstr "回復したAIPをAIPストレージにコピーします。"
+msgstr "復元されたAIPをAIPストレージにコピーします。"
 
 #: ../../recovery.rst:50
 msgid ""
 "Check the fixity data of the stored AIP. Recovery will fail if this second "
 "fixity check fails."
-msgstr "保存されたAIPの整合性データを確認してください。この二つ目の整合性チェックが失敗すると、復旧は失敗します。"
+msgstr "保存されたAIPの固定性データをチェックします。この二番目の固定性チェックに失敗した場合、復元は失敗するでしょう。"
 
 #: ../../recovery.rst:53
 msgid ""
@@ -125,27 +123,26 @@ msgid ""
 "Storage Service user interface, as well as through the Archival Storage tab "
 "of the Archivematica dashboard."
 msgstr ""
-"AIPは、ストレージサービスのユーザーインターフェースのパッケージタブで、またArchivematicaダッシュボードのアーカイブストレージタブを通じて、ダウンロード可能になります。"
+"AIPは、ストレージサービスのユーザーインターフェースのパッケージタブ、およびArchivematicaダッシュボードのアーカイブストレージタブからダウンロードできるようになります。"
 
 #: ../../recovery.rst:60
 msgid "Example recovery request"
-msgstr "例の復旧リクエスト"
+msgstr "復元リクエストの例"
 
 #: ../../recovery.rst:62
 msgid ""
 "Once the recovered AIP is in place, you must make an API request using the "
 "Storage Service REST API. Here is an example:"
-msgstr ""
-"回復されたAIPが配置されたら、Storage Service REST APIを使用してAPIリクエストを行う必要があります。以下に例を示します："
+msgstr "復元されたAIPが配置されると、ストレージサービスのREST APIを使ってAPIリクエストを行わなければなりません。例は以下の通りです："
 
 #: ../../recovery.rst:69
 msgid "Replace the placeholders with the following information:"
-msgstr "テキストが提供されていません。どのような情報を記載すればよろしいでしょうか？"
+msgstr "以下の情報でプレースホルダーを置き換えてください："
 
 #: ../../recovery.rst:71
 msgid ""
 "``<description>``: a description of why the recovery request is being made."
-msgstr "``<description>``: 復元リクエストがなされる理由の説明。"
+msgstr "``<description>`` : 回復リクエストの理由についての説明。"
 
 #: ../../recovery.rst:72
 msgid ""
@@ -155,13 +152,13 @@ msgid ""
 " the URL of the user edit page - for example, the user ID for ``http://my-"
 "site:8000/administration/users/1/edit/`` is **1**."
 msgstr ""
-"``<int>``: ユーザーIDの数値。ユーザーIDを見つけるには、 **管理** タブに移動し、左側のサイドバーで **ユーザー** "
-"をクリックします。リクエストを行うユーザーの **編集** をクリックします。ユーザーの編集ページのURLにユーザーIDが表示されます - "
-"例えば、``http://my-site:8000/administration/users/1/edit/`` のユーザーIDは **1** です。"
+"``<int>`` : "
+"数値のユーザーIDです。ユーザーIDを検索するには、**管理**タブに移動し、左側のサイドバーの**ユーザー**をクリックします。リクエストを行っているユーザーの**編集**をクリックします。ユーザーIDは、ユーザー編集ページのURLに表示されます。例えば、「"
+" ``http://my-site:8000/administration/users/1/edit/`` 」のユーザーIDは **1** です。"
 
 #: ../../recovery.rst:77
 msgid "``<email>``: the email address of the user making the request."
-msgstr "``<email>``: リクエストを行うユーザーのメールアドレス。"
+msgstr "``<email>`` : リクエストを行うユーザーのメールアドレス。"
 
 #: ../../recovery.rst:79
 msgid ""
@@ -169,12 +166,13 @@ msgid ""
 "Storage Service that a replacement AIP is ready for recovery. Check the "
 "`Binder recovery documentation`_ for more information."
 msgstr ""
-"`Binder`_を使用している場合、Binderは代替AIPがリカバリのために準備ができたという通知をストレージサービスに送信する能力があります。詳しい情報は、`Binder"
-" recovery documentation`_を確認してください。"
+"`Binder`_ "
+"を使用している場合、Binderは置き換えられるAIPが回復の準備ができていることをストレージサービスに通知する能力を持っています。詳しくは "
+"`Binder 回復ドキュメント`_ をご覧ください。"
 
 #: ../../recovery.rst:86
 msgid "Reporting recovery progress to external systems"
-msgstr "外部システムへの回復進捗の報告"
+msgstr "回復の進行状況を外部システムに報告"
 
 #: ../../recovery.rst:88
 msgid ""
@@ -186,12 +184,12 @@ msgid ""
 "status (\"APPROVE\" or \"REJECT\") and the administrator's reasoning for the"
 " decision."
 msgstr ""
-"AIPの回復は、オプションでREST "
-"POSTコールを介して別のシステムに進行状況を報告するように設定することができます。このコールは、AIP回復タスクが承認されたか、却下されたか、または失敗したかを報告します。送信される情報には、回復リクエストのID、回復リクエストが成功したかどうか、回復リクエストのステータス（\"APPROVE\"または\"REJECT\"）と、管理者の決定理由を含めたテキストメッセージが含まれます。"
+"AIP回復は、REST "
+"POSTコールを通じて別のシステムに進捗を報告するようにオプションで設定することができます。そのコールには、AIP回復タスクが承認されたか、拒否されたか、または失敗したかが報告されます。送信される情報には、回復リクエストのID、回復リクエストが正常に処理されたか、および回復リクエストの状態（「承認」または「拒否」）と決定に対する管理者の理由を含むテキストメッセージが含まれます。"
 
 #: ../../recovery.rst:95
 msgid "The following is an example of the JSON sent by this POST call:"
-msgstr "次は、このPOST呼び出しによって送信されるJSONの例です:"
+msgstr "以下は、このPOSTコールによって送信されるJSONの例です："
 
 #: ../../recovery.rst:105
 msgid ""
@@ -200,9 +198,7 @@ msgid ""
 "enter a REST endpoint URL into the **Recovery request: URL to notify** "
 "field."
 msgstr ""
-"Storage ServiceがAIP復元の進捗を別のシステムに報告するように設定するには、Storage "
-"Serviceのユーザーインターフェースで**管理**をクリックし、**Recovery request: URL to "
-"notify**フィールドにRESTエンドポイントのURLを入力します。"
+"ストレージサービスがAIPリストアの進行状況を他のシステムに報告するように設定するには、ストレージサービスのユーザーインタフェースで**管理**をクリックし、RESTエンドポイントのURLを**リカバリーリクエスト：通知するURL**フィールドに入力してください。"
 
 #: ../../recovery.rst:110
 msgid ""
@@ -210,7 +206,7 @@ msgid ""
 "username and password into the two fields below it. Click **Save** when you "
 "are done."
 msgstr ""
-"エンドポイントが認証を必要とする場合、ユーザー名とパスワードを下の二つのフィールドに入力する必要があります。完了したら、**保存**をクリックしてください。"
+"エンドポイントに認証が必要な場合は、ユーザーネームとパスワードをそれ以下の2つのフィールドに入力する必要があります。入力が完了したら**保存**をクリックしてください。"
 
 #: ../../recovery.rst:113
 msgid ":ref:`Back to the top <recovery>`"

@@ -1,0 +1,179 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, Artefactual Systems Inc.
+# This file is distributed under the same license as the Archivematica
+# Storage Service package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Archivematica Storage Service 0.21\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-02-11 22:18+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.14.0\n"
+
+#: ../../index.rst:10
+msgid "Archivematica Storage Service documentation"
+msgstr ""
+
+#: ../../index.rst:12
+msgid ""
+"The Storage Service is used alongside Archivematica to manage the storage"
+" locations and packages for one or many Archivematica dashboards."
+msgstr ""
+
+#: ../../index.rst:15
+msgid ""
+"For information about Archivematica, including user and administrator "
+"manuals, please see the :ref:`Archivematica documentation "
+"<archivematica:home>`."
+msgstr ""
+
+#: ../../index.rst:21
+msgid "Administering the Storage Service"
+msgstr ""
+
+#: ../../index.rst:23
+msgid ""
+"This section provides information for Storage Service administrators. "
+"This manual is intended for systems administrators who are responsible "
+"for installing, configuring, setting up, and maintaining Archivematica "
+"and related systems."
+msgstr ""
+
+#: ../../index.rst:28
+msgid ":ref:`Administering the Storage Service <administrators>`"
+msgstr ""
+
+#: ../../index.rst:29
+msgid ":ref:`Storage Service glossary and organization <organization>`"
+msgstr ""
+
+#: ../../index.rst:30
+msgid ":ref:`Archivematica configuration <archivematica-configuration>`"
+msgstr ""
+
+#: ../../index.rst:31
+msgid ":ref:`Pipelines <pipelines>`"
+msgstr ""
+
+#: ../../index.rst:32
+msgid ":ref:`Spaces <spaces>`"
+msgstr ""
+
+#: ../../index.rst:33
+msgid ":ref:`Locations <locations>`"
+msgstr ""
+
+#: ../../index.rst:34
+msgid ":ref:`Packages <packages-tab>`"
+msgstr ""
+
+#: ../../index.rst:35
+msgid ":ref:`Administration <administration>`"
+msgstr ""
+
+#: ../../index.rst:40
+msgid "AIP recovery"
+msgstr ""
+
+#: ../../index.rst:42
+msgid ""
+"AIP recovery support allows a storage service administrator to replace a "
+"corrupt version of a stored AIP with a correct version (restored from a "
+"backup, for example)."
+msgstr ""
+
+#: ../../index.rst:46
+msgid ":ref:`AIP recovery <recovery>`"
+msgstr ""
+
+#: ../../index.rst:47
+msgid ":ref:`Performing an AIP recovery <how-recovery-works>`"
+msgstr ""
+
+#: ../../index.rst:48
+msgid ":ref:`Example recovery request <example-recovery-request>`"
+msgstr ""
+
+#: ../../index.rst:49
+msgid ""
+":ref:`Reporting recovery progress to external systems <reporting-"
+"recovery-progress>`"
+msgstr ""
+
+#: ../../index.rst:54
+msgid "Fixity"
+msgstr ""
+
+#: ../../index.rst:56
+msgid ""
+"The Archivematica Storage Service exposes an `API endpoint`_ that allows "
+"users to check fixity on individual AIPs. `Fixity`_ is also an "
+"application for use with the Archivematica Storage Service. The Fixity "
+"application is run from the command-line and uses the API endpoint to "
+"perform batch checking across the entirety of the AIP storage location."
+msgstr ""
+
+#: ../../index.rst:62
+msgid ":ref:`Fixity <fixity-docs>`"
+msgstr ""
+
+#: ../../index.rst:63
+msgid ":ref:`Checking fixity using the API endpoint <using-fixity-endpoint>`"
+msgstr ""
+
+#: ../../index.rst:64
+msgid ":ref:`Using the Fixity application <fixity-application>`"
+msgstr ""
+
+#: ../../index.rst:65
+msgid ""
+":ref:`Reviewing fixity results in the Storage Service <reviewing-fixity-"
+"checks>`"
+msgstr ""
+
+#: ../../index.rst:70
+msgid "Management commands"
+msgstr ""
+
+#: ../../index.rst:72
+msgid ""
+"The Archivematica Storage Service implements multiple management commands"
+" using the command interface provided by the Django web framework. These "
+"allow administrators to perform tasks such as creating new replicas of "
+"existing AIPs."
+msgstr ""
+
+#: ../../index.rst:76
+msgid ":ref:`Management commands <management>`"
+msgstr ""
+
+#: ../../index.rst:77
+msgid ":ref:`Creating new AIP replicas <creating-aip-replicas>`"
+msgstr ""
+
+#: ../../index.rst:82
+msgid "Installation and setup"
+msgstr ""
+
+#: ../../index.rst:84
+msgid ":ref:`Manually installing the Storage Service <install>`"
+msgstr ""
+
+#: ../../index.rst:85
+msgid ":ref:`Migrating data from SQLite to MySQL <migration-sqlite-mysql>`"
+msgstr ""
+
+#: ../../index.rst:87
+msgid ":ref:`Back to the top <index>`"
+msgstr ""
+

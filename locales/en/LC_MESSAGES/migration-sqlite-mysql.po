@@ -1,7 +1,7 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2023, Artefactual Systems Inc.
 # This file is distributed under the same license as the Archivematica
-# package.
+# Storage Service package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
 #
 #, fuzzy
@@ -12,74 +12,70 @@ msgstr ""
 "POT-Creation-Date: 2024-02-11 22:18+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: ja <LL@li.org>\n"
-"Language: ja\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: Babel 2.14.0\n"
 
 #: ../../migration-sqlite-mysql.rst:5
 msgid "Migrating data from SQLite to MySQL"
-msgstr "SQLiteからMySQLへのデータ移行"
+msgstr ""
 
 #: ../../migration-sqlite-mysql.rst:7
 msgid ""
-"Storage Service supports both SQLite and MySQL databases. In most cases, it "
-"is preferably to use the latter since SQLite does not support concurrent "
-"writes. This is exarcerbated by the fact that Storage Service performs long "
-"write transactions."
+"Storage Service supports both SQLite and MySQL databases. In most cases, "
+"it is preferably to use the latter since SQLite does not support "
+"concurrent writes. This is exarcerbated by the fact that Storage Service "
+"performs long write transactions."
 msgstr ""
-"ストレージサービスはSQLiteおよびMySQLデータベースの両方をサポートしています。ほとんどの場合、SQLiteは同時書き込みをサポートしていないため、後者のMySQLの使用が好ましいです。これは、ストレージサービスが長い書き込みトランザクションを実行する事実によって悪化されます。"
 
 #: ../../migration-sqlite-mysql.rst:16
 msgid ""
 "Please find below an overview of the steps needed to move your data to "
-"MySQL. Make sure that you take a back up of your SQLite database before you "
-"proceed."
+"MySQL. Make sure that you take a back up of your SQLite database before "
+"you proceed."
 msgstr ""
-"以下に、データをMySQLに移動するために必要な手順の概要を示します。進む前にSQLiteデータベースのバックアップを確実に行ってください。"
 
 #: ../../migration-sqlite-mysql.rst:19
 msgid "Stop Storage Service::"
-msgstr "ストレージサービスを停止::"
+msgstr ""
 
 #: ../../migration-sqlite-mysql.rst:23
 msgid "Export your data to JSON::"
-msgstr "データをJSONにエクスポート::"
+msgstr ""
 
 #: ../../migration-sqlite-mysql.rst:35
 msgid "Create the MySQL database::"
-msgstr "MySQLデータベースの作成::"
+msgstr ""
 
 #: ../../migration-sqlite-mysql.rst:39
 msgid "Grant privileges to the user::"
-msgstr "ユーザーに権限を付与::"
+msgstr ""
 
 #: ../../migration-sqlite-mysql.rst:43
 msgid ""
 "Update the service configuration, e.g. in ``/etc/default/archivematica-"
 "storage-service``, remove ``SS_DB_NAME`` and add instead the following::"
 msgstr ""
-"サービス設定を更新してください。例えば、 ``/etc/default/archivematica-storage-service`` 内で "
-"``SS_DB_NAME`` を削除し、代わりに以下を追加します::"
 
 #: ../../migration-sqlite-mysql.rst:49
 msgid "Create the MySQL tables::"
-msgstr "MySQLテーブルの作成::"
+msgstr ""
 
 #: ../../migration-sqlite-mysql.rst:60
 msgid "Load the JSON export::"
-msgstr "JSONエクスポートの読み込み::"
+msgstr ""
 
 #: ../../migration-sqlite-mysql.rst:71
 msgid "Start Storage Service::"
-msgstr "ストレージサービスの起動::"
+msgstr ""
 
 #: ../../migration-sqlite-mysql.rst:75
 msgid ""
 "If you use Ansible, the Archivematica role can perform the migration "
 "automatically. Please follow the `instructions`_."
 msgstr ""
-"Ansibleを利用している場合、Archivematicaの役割は自動的に移行を実行できます。 `instructions`_ に従ってください。"
+

@@ -1,0 +1,2080 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, Artefactual Systems Inc.
+# This file is distributed under the same license as the Archivematica
+# Storage Service package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Archivematica Storage Service 0.21\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-02-11 22:18+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.14.0\n"
+
+#: ../../administrators.rst:5
+msgid "Administering the Storage Service"
+msgstr ""
+
+#: ../../administrators.rst:7
+msgid ""
+"The Archivematica Storage Service allows the configuration of storage "
+"spaces associated with multiple Archivematica pipelines. It allows a "
+"storage administrator to configure what storage is available to each "
+"Archivematica installation, both locally and remote."
+msgstr ""
+
+#: ../../administrators.rst:12
+msgid "*On this page*"
+msgstr ""
+
+#: ../../administrators.rst:14
+msgid ":ref:`Storage Service glossary and organization <organization>`"
+msgstr ""
+
+#: ../../administrators.rst:15
+msgid ":ref:`Archivematica configuration <archivematica-configuration>`"
+msgstr ""
+
+#: ../../administrators.rst:16
+msgid ":ref:`Pipelines <pipelines>`"
+msgstr ""
+
+#: ../../administrators.rst:17
+msgid ":ref:`Spaces <spaces>`"
+msgstr ""
+
+#: ../../administrators.rst:19
+msgid ":ref:`Access protocols <access-protocols>`"
+msgstr ""
+
+#: ../../administrators.rst:21
+msgid ":ref:`Locations <locations>`"
+msgstr ""
+
+#: ../../administrators.rst:23
+msgid ":ref:`Location purposes <location-purposes>`"
+msgstr ""
+
+#: ../../administrators.rst:25
+msgid ":ref:`Packages <packages-tab>`"
+msgstr ""
+
+#: ../../administrators.rst:26
+msgid ":ref:`Administration <administration>`"
+msgstr ""
+
+#: ../../administrators.rst:31
+msgid "Storage Service glossary and organization"
+msgstr ""
+
+#: ../../administrators.rst:34 ../../administrators.rst:119
+msgid "Pipelines"
+msgstr ""
+
+#: ../../administrators.rst:36
+msgid ""
+"A pipeline refers to a single installation of an Archivematica dashboard."
+" One Storage Service can be used to configure multiple Archivematica "
+"pipelines."
+msgstr ""
+
+#: ../../administrators.rst:40 ../../administrators.rst:155
+msgid "Spaces"
+msgstr ""
+
+#: ../../administrators.rst:42
+msgid ""
+"A space models a specific storage device. That device might be a locally-"
+" accessible disk, a network share, or a remote system accessible via a "
+"protocol like FEDORA, SWIFT, DuraCloud, or LOCKSS. The space provides the"
+" Storage Service with configuration to read and/or write data stored "
+"within itself."
+msgstr ""
+
+#: ../../administrators.rst:47
+msgid ""
+"Packages are not stored directly inside a space; instead, packages are "
+"stored within locations, which are organized subdivisions of a space."
+msgstr ""
+
+#: ../../administrators.rst:51 ../../administrators.rst:864
+msgid "Locations"
+msgstr ""
+
+#: ../../administrators.rst:53
+msgid ""
+"A location is a subdivision of a space. Each location is assigned a "
+"specific purpose, such as AIP storage, DIP storage, transfer source or "
+"transfer backlog, in order to provide an organized way to structure "
+"content within a space."
+msgstr ""
+
+#: ../../administrators.rst:58 ../../administrators.rst:1102
+msgid "Packages"
+msgstr ""
+
+#: ../../administrators.rst:60
+msgid ""
+"The Storage Service is oriented to storing packages. A \"package\" is a "
+"bundle of one or more files transferred from an external service; for "
+"example, a package may be an AIP, a backlogged transfer, or a DIP. Each "
+"package is stored in a location."
+msgstr ""
+
+#: ../../administrators.rst:68
+msgid "Archivematica configuration"
+msgstr ""
+
+#: ../../administrators.rst:70
+msgid ""
+"When installing Archivematica, options to configure it with the Storage "
+"Service will be presented."
+msgstr ""
+
+#: ../../administrators.rst:-1
+msgid "Archivematicaのインストール中にストレージサービスを設定する。"
+msgstr ""
+
+#: ../../administrators.rst:78
+msgid ""
+"If you have installed the Storage Service at a different URL, you should "
+"change that here."
+msgstr ""
+
+#: ../../administrators.rst:81
+msgid ""
+"The **Use default transfer source & AIP storage locations** option will "
+"attempt to automatically configure default Locations for Archivematica, "
+"register a new Pipeline, and generate an error if the Storage Service is "
+"not available. Use this option if you want the Storage Service to "
+"automatically set up the configured default values."
+msgstr ""
+
+#: ../../administrators.rst:87
+msgid ""
+"The **Register this pipeline & set up transfer source and AIP storage "
+"locations** option will only attempt to register a new Pipeline with the "
+"Storage Service, and will not error if not Storage Service can be found. "
+"It will also open a link to the provided Storage Service URL, so that "
+"Locations can be configured manually. Use this option if the default "
+"values not desired, or the Storage Service is not running yet. Locations "
+"will have to be configured manually before any Transfers can be "
+"processed, or AIPs stored."
+msgstr ""
+
+#: ../../administrators.rst:95
+msgid ""
+"If the Storage Service is running, the URL to it should be provided and "
+"Archivematica will attempt to register the dashboard UUID as a new "
+"Pipeline. Otherwise, the dashboard UUID is displayed and a Pipeline for "
+"the Archivematica instance can be manually created and configured. The "
+"dashboard UUID is also available in Archivematica under Administration ->"
+" General."
+msgstr ""
+
+#: ../../administrators.rst:102
+msgid "Change the port in the web server configuration"
+msgstr ""
+
+#: ../../administrators.rst:104
+msgid ""
+"The Storage Services uses nginx by default. To change the port, edit the "
+"file ``/etc/nginx/sites-enabled/storage`` and change the line that says "
+"``listen 8000;``, replacing 8000 with whatever port you use."
+msgstr ""
+
+#: ../../administrators.rst:108
+msgid ""
+"Keep in mind that in a default installation of Archivematica, the "
+"dashboard is running in Apache on port 80. It is not possible to make "
+"nginx run on port 80 on the same machine. If you install the Storage "
+"Service on its own server, you can set it to use port 80."
+msgstr ""
+
+#: ../../administrators.rst:113
+msgid ""
+"Make sure to adjust the dashboard UUID in the Archivematica dashboard "
+"under Administration -> General."
+msgstr ""
+
+#: ../../administrators.rst:121
+msgid ""
+"The pipeline in Archivematica is the Archivematica dashboard. All "
+"pipelines need to be registered with the Storage Service using the "
+"pipeline's unique universal identifier (UUID). The UUID can be found in "
+"the Archivematica dashboard under Administration -> General "
+"Configuration. When you first install Archivematica, it will attempt to "
+"register the pipeline's UUID automatically with the Storage Service with "
+"the description ``Archivematica on <hostname>``."
+msgstr ""
+
+#: ../../administrators.rst:-1
+msgid "ストレージサービスパイプライン画面。"
+msgstr ""
+
+#: ../../administrators.rst:133
+msgid ""
+"A single Storage Service can be connected to many pipelines. To connect a"
+" pipeline to an existing Storage Service, click on **Create new "
+"pipeline** on the Pipelines tab of the Storage Service."
+msgstr ""
+
+#: ../../administrators.rst:137 ../../administrators.rst:209
+#: ../../administrators.rst:232 ../../administrators.rst:297
+#: ../../administrators.rst:351 ../../administrators.rst:434
+#: ../../administrators.rst:469 ../../administrators.rst:509
+#: ../../administrators.rst:538 ../../administrators.rst:556
+#: ../../administrators.rst:586 ../../administrators.rst:623
+#: ../../administrators.rst:654 ../../administrators.rst:675
+#: ../../administrators.rst:711 ../../administrators.rst:840
+#: ../../administrators.rst:882 ../../administrators.rst:1178
+#: ../../administrators.rst:1248
+msgid "Fields:"
+msgstr ""
+
+#: ../../administrators.rst:139
+msgid "**UUID**: The unique identifier of the Archivematica pipeline."
+msgstr ""
+
+#: ../../administrators.rst:140
+msgid ""
+"**Description**: A description of the pipeline that will be displayed to "
+"the user. e.g. ``Development site``."
+msgstr ""
+
+#: ../../administrators.rst:142
+msgid ""
+"**Remote name**: the base URL of the pipeline server. This is used for "
+"making API calls."
+msgstr ""
+
+#: ../../administrators.rst:144
+msgid ""
+"**API username**: The username to use when making API calls to the "
+"pipeline."
+msgstr ""
+
+#: ../../administrators.rst:145
+msgid "**API key**: The API key to use when making API calls to the pipeline."
+msgstr ""
+
+#: ../../administrators.rst:146
+msgid ""
+"**Enabled**: If checked, this pipeline can access locations associate "
+"with it. If unchecked, all locations associated with this pipeline will "
+"be disabled."
+msgstr ""
+
+#: ../../administrators.rst:148
+msgid ""
+"**Default Location**: If checked, the default locations that have been "
+"selected in Administration -> Configuration will be created for or "
+"associated with the new pipeline."
+msgstr ""
+
+#: ../../administrators.rst:157
+msgid ""
+"Spaces contain all of the information needed to connect Archivematica to "
+"a storage location. The space is where protocol-specific information, "
+"like an NFS export path and hostname, or the username of a system "
+"accessible only via SSH, is stored."
+msgstr ""
+
+#: ../../administrators.rst:-1
+msgid "ストレージサービススペース画面。"
+msgstr ""
+
+#: ../../administrators.rst:167
+msgid ""
+"Each space has specific configuration fields depending on the access "
+"protocol that is selected. See :ref:`Access protocols <access-protocols>`"
+" below for more information."
+msgstr ""
+
+#: ../../administrators.rst:173
+msgid ""
+"A space is usually the immediate parent of the Location folders. For "
+"example, if you want to define two transfer source locations located at "
+"``/home/artefactual/archivematica-sampledata`` and "
+"``/home/artefactual/maildir_transfers``, the space's path would be "
+"``/home/artefactual/``."
+msgstr ""
+
+#: ../../administrators.rst:182
+msgid "Access protocols"
+msgstr ""
+
+#: ../../administrators.rst:187
+msgid "Arkivum"
+msgstr ""
+
+#: ../../administrators.rst:189
+msgid ""
+"Archivematica can use Arkivum's A-Stor as an access protocol in version "
+"0.7 and higher. A-Stor can expose a CIFS share to the Storage Service so "
+"that the Storage Service can copy files to an A-Stor datapool for AIP "
+"storage, for example."
+msgstr ""
+
+#: ../../administrators.rst:194
+msgid ""
+"Add an entry to ``/etc/fstab`` on the Storage Service, then mount the "
+"A-Stor CIFS share."
+msgstr ""
+
+#: ../../administrators.rst:197
+msgid "Example::"
+msgstr ""
+
+#: ../../administrators.rst:203
+msgid ""
+"In this example, ARK00092 is the name of the appliance and should be "
+"resolvable through DNS or be set as an entry in ``/etc/hosts``."
+msgstr ""
+
+#: ../../administrators.rst:206
+msgid ""
+"Then, choosing Arkivum as the access protocol, create a new space in the "
+"Storage Service."
+msgstr ""
+
+#: ../../administrators.rst:211 ../../administrators.rst:234
+#: ../../administrators.rst:353 ../../administrators.rst:438
+#: ../../administrators.rst:471 ../../administrators.rst:511
+#: ../../administrators.rst:540 ../../administrators.rst:558
+#: ../../administrators.rst:588 ../../administrators.rst:625
+#: ../../administrators.rst:677 ../../administrators.rst:713
+#: ../../administrators.rst:842
+msgid ""
+"**Size**: the maximum size allowed for this space. Set to 0 or leave "
+"blank for unlimited. This field is optional."
+msgstr ""
+
+#: ../../administrators.rst:213
+msgid ""
+"**Path**: the local path on the Storage Service machine to the CIFS "
+"share, e.g. ``/mnt/astor``"
+msgstr ""
+
+#: ../../administrators.rst:215
+msgid ""
+"**Staging Path**: the absolute path to a staging area. Must be UNIX "
+"filesystem compatible, preferably on the same filesystem as the path, "
+"e.g. ``/mnt/astor/archivematica1/tmp``"
+msgstr ""
+
+#: ../../administrators.rst:218
+msgid ""
+"**Host**: the hostname of the Arkivum web instance or IP address with "
+"port, e.g. ``arkivum.example.com:8443``"
+msgstr ""
+
+#: ../../administrators.rst:220
+msgid ""
+"**Remote user**: the username on the remote machine accessible via "
+"passwordless ssh. This field is optional."
+msgstr ""
+
+#: ../../administrators.rst:222
+msgid ""
+"**Remote name**: the name or IP of the remote machine. This field is "
+"optional."
+msgstr ""
+
+#: ../../administrators.rst:227
+msgid "Dataverse"
+msgstr ""
+
+#: ../../administrators.rst:229
+msgid ""
+"Dataverse Integration is supported with Archivematica v1.8 (and higher) "
+"and Storage Service v0.13 (and higher)."
+msgstr ""
+
+#: ../../administrators.rst:236 ../../administrators.rst:355
+#: ../../administrators.rst:440 ../../administrators.rst:473
+#: ../../administrators.rst:513 ../../administrators.rst:542
+#: ../../administrators.rst:560 ../../administrators.rst:679
+#: ../../administrators.rst:844
+msgid "**Path**: the absolute path to the Space on the local filesystem."
+msgstr ""
+
+#: ../../administrators.rst:237 ../../administrators.rst:356
+#: ../../administrators.rst:441 ../../administrators.rst:474
+#: ../../administrators.rst:514 ../../administrators.rst:543
+#: ../../administrators.rst:561 ../../administrators.rst:592
+#: ../../administrators.rst:629 ../../administrators.rst:680
+#: ../../administrators.rst:845
+msgid ""
+"**Staging path**: the absolute path to a staging area. Must be UNIX "
+"filesystem compatible and preferably will be located on the same "
+"filesystem as the path."
+msgstr ""
+
+#: ../../administrators.rst:239
+msgid ""
+"**Host**: Hostname or IP address of the Dataverse instance, e.g. "
+"``test.dataverse.org``"
+msgstr ""
+
+#: ../../administrators.rst:241
+msgid "**API key**: the key generated by Dataverse for a specific user account"
+msgstr ""
+
+#: ../../administrators.rst:242
+msgid ""
+"**Agent name**: a string that will be used in Archivematica METS file to "
+"identify this Dataverse instance as a PREMIS agent, e.g. ``My "
+"Institution's Dataverse Instance``."
+msgstr ""
+
+#: ../../administrators.rst:245
+msgid ""
+"**Agent type**: a string that will be used in Archivematica METS file to "
+"identify the type of PREMIS agent named above, e.g. ``organization``."
+msgstr ""
+
+#: ../../administrators.rst:247
+msgid ""
+"**Agent identifier**: a string that will be used as an identifier in the "
+"Archivematica METS file to uniquely identify the PREMIS agent named "
+"above."
+msgstr ""
+
+#: ../../administrators.rst:250
+msgid ""
+"Dataverse spaces support Transfer Source Locations (Locations for other "
+"purposes are not currently supported). At least one location should be "
+"created as a Transfer Source."
+msgstr ""
+
+#: ../../administrators.rst:254
+msgid ""
+"Within this location, the relative path can be used to set two of the "
+"parameters available in the Dataverse Search API. The q (or \"Query\") "
+"parameter is a general search parameter. The ’subtree’ parameter can be "
+"used to indicate a sub-dataverse. For example, the following entry in "
+"'Relative Path'::"
+msgstr ""
+
+#: ../../administrators.rst:262
+msgid ""
+"will return all datasets within the Archivematica dataverse. The other "
+"API parameters are set using the fields described above for the space, or"
+" are set with fixed values. The parameters used are::"
+msgstr ""
+
+#: ../../administrators.rst:280
+msgid ""
+"Search results are currently limited to 50 datasets. For repositories "
+"with more than 50 datasets we recommend creating multiple Locations with "
+"more specific search criteria. For further details of the API parameters,"
+" see the `Dataverse api guide`_."
+msgstr ""
+
+#: ../../administrators.rst:288
+msgid "DuraCloud"
+msgstr ""
+
+#: ../../administrators.rst:290
+msgid ""
+"Archivematica can use DuraCloud as an access protocol for the Storage "
+"Service in version 0.5 and higher. A Storage Service space has a one-to-"
+"one relationship to a space within DuraCloud."
+msgstr ""
+
+#: ../../administrators.rst:294
+msgid ""
+"To set up your Archivematica instance with DuraCloud, please see "
+":ref:`Using DuraCloud with Archivematica <archivematica:duracloud-"
+"setup>`."
+msgstr ""
+
+#: ../../administrators.rst:299
+msgid "**Access protocol**: DuraCloud"
+msgstr ""
+
+#: ../../administrators.rst:300 ../../administrators.rst:657
+msgid "**Size**: *This field is optional.*"
+msgstr ""
+
+#: ../../administrators.rst:301 ../../administrators.rst:658
+msgid "**Path**: Leave this field blank."
+msgstr ""
+
+#: ../../administrators.rst:302
+msgid ""
+"**Staging path**: A location on your local disk where Archivematica can "
+"place files for staging purposes, for example "
+"``var/archivematica/storage_service/duracloud_staging``"
+msgstr ""
+
+#: ../../administrators.rst:305
+msgid "**Host**: Hostname of the DuraCloud instance, e.g. ``site.duracloud.org``"
+msgstr ""
+
+#: ../../administrators.rst:306
+msgid ""
+"**Username**: The username for the Archivematica user that you created in"
+" DuraCloud."
+msgstr ""
+
+#: ../../administrators.rst:308
+msgid ""
+"**Password**: The password for the Archivematica user that you created in"
+" DuraCloud."
+msgstr ""
+
+#: ../../administrators.rst:310
+msgid ""
+"**Duraspace**: The name of the space in DuraCloud you are creating this "
+"Storage Service space for (e.g. transfer-source, aip-store, etc)."
+msgstr ""
+
+#: ../../administrators.rst:316
+msgid "DSpace via REST API"
+msgstr ""
+
+#: ../../administrators.rst:318
+msgid ""
+"DSpace via REST API locations are supported for both AIP and DIP Storage "
+"locations. Because DSpace is typically used as a public-facing system, "
+"the behaviour is different than when using other access protocols for AIP"
+" Storage. Upon deposit in DSpace, the AIP will be deposited as a single "
+"compressed objects file (bitstream), which contains all original and "
+"normalized objects as well as the metadata pertaining to them. The DIP "
+"will be deposited as uncompressed files with the folder structure "
+"flattened."
+msgstr ""
+
+#: ../../administrators.rst:326
+msgid ""
+"Presently, the Storage Service and Dashboard are not capable of "
+"downloading/reconstituting the AIP - this must be done manually from the "
+"DSpace interface."
+msgstr ""
+
+#: ../../administrators.rst:330
+msgid ""
+"The DSpace via REST API space offers a novel way to facilitate increased "
+"automation. It is possible to supply :ref:`metadata with the transfer "
+"<archivematica:import-metadata>` as either a CSV or a JSON file. In the "
+"entry for the root folder ``objects`` it is possible to define any number"
+" of Dublin Core Metadata Elements Set properties which will map on to the"
+" corresponding DSpace record created for the AIP/DIP. In addition there "
+"are three optional custom properties which can be defined:"
+msgstr ""
+
+#: ../../administrators.rst:338
+msgid ""
+"``dspace_dip_collection``: the UUID of the DSpace collection into which "
+"the DIP will be deposited. E.g. ``a12d749c-7727-4121-b6be-478cacde658f``"
+msgstr ""
+
+#: ../../administrators.rst:340
+msgid ""
+"``dspace_aip_collection``: the UUID of the DSpace collection into which "
+"the AIP will be deposited. E.g. ``80c3519d-7a07-4830-beae-a868c149ecbe``"
+msgstr ""
+
+#: ../../administrators.rst:342
+msgid ""
+"``archivesspace_dip_collection``: the identifier of the archival object "
+"for which a child digital object will be created which will link to the "
+"DSpace DIP record. E.g. ``135569``"
+msgstr ""
+
+#: ../../administrators.rst:348
+msgid ""
+"Note that the DSpace via REST API space only supports DSpace 6.x and not "
+"other versions of DSpace."
+msgstr ""
+
+#: ../../administrators.rst:358 ../../administrators.rst:448
+msgid ""
+"**REST URL**: URL to the \"REST\" webapp. E.g. "
+"``http://localhost:8080/rest/``; for production systems, this address "
+"will be slightly different, such as: ``https://demo.dspace.org/rest/``."
+msgstr ""
+
+#: ../../administrators.rst:361 ../../administrators.rst:446
+msgid ""
+"**User**: a username for the DSpace instance with sufficient permissions "
+"to permit authentication."
+msgstr ""
+
+#: ../../administrators.rst:363 ../../administrators.rst:451
+msgid "**Password**: the password for the username above."
+msgstr ""
+
+#: ../../administrators.rst:364
+msgid ""
+"**Default DSpace DIP collection id**: the UUID of the collection into "
+"which the DIP will be deposited barring it being designated in a transfer"
+" metadata file."
+msgstr ""
+
+#: ../../administrators.rst:367
+msgid ""
+"**Default DSpace AIP collection id**: the UUID of the collection into "
+"which the AIP will be deposited barring it being designated in a transfer"
+" metadata file."
+msgstr ""
+
+#: ../../administrators.rst:373
+msgid ""
+"The following seven fields are optional and can safely be ignored should "
+"you only require a connection to DSpace."
+msgstr ""
+
+#: ../../administrators.rst:376
+msgid ""
+"Unlike the DSpace via SWORD2 space, which uses the :ref:`Dashboard "
+"administration tab <archivematica:dashboard-admin>` to configure a single"
+" ArchivesSpace, the DSpace via REST space gives you the option to "
+"configure different ArchiveSpaces instances per space."
+msgstr ""
+
+#: ../../administrators.rst:381
+msgid ""
+"**ArchivesSpace URL**: URL to the ArchiveSpace server. E.g.: "
+"``http://sandbox.archivesspace.org/``."
+msgstr ""
+
+#: ../../administrators.rst:383
+msgid "**ArchivesSpace user**: ArchivesSpace username to authenticate as"
+msgstr ""
+
+#: ../../administrators.rst:384
+msgid "**ArchivesSpace password**: ArchivesSpace password to authenticate with"
+msgstr ""
+
+#: ../../administrators.rst:385
+msgid ""
+"**Default ArchivesSpace repository**: Identifier of the default "
+"ArchivesSpace repository"
+msgstr ""
+
+#: ../../administrators.rst:387
+msgid ""
+"**Default ArchivesSpace archival object**: Identifier of the default "
+"ArchivesSpace archival object barring it being designated in a transfer "
+"metadata file"
+msgstr ""
+
+#: ../../administrators.rst:390
+msgid ""
+"**Send AIP to Tivoli Storage Manager**: this is a feature specific to the"
+" requirements of Edinburgh University which sponsored the development of "
+"this space. Essentially it executes a bash command using a binary called "
+"``dsmc``."
+msgstr ""
+
+#: ../../administrators.rst:393
+msgid ""
+"**Verify SSL certificates**: Requests verifies SSL certificates for HTTPS"
+" requests, just like a web browser. By default, SSL verification is "
+"enabled, and Requests will throw a SSLError if it’s unable to verify the "
+"certificate:"
+msgstr ""
+
+#: ../../administrators.rst:400
+msgid "DSpace via SWORD2 API"
+msgstr ""
+
+#: ../../administrators.rst:402
+msgid ""
+"DSpace via SWORD2 locations are currently supported only for AIP Storage "
+"locations. Because DSpace is typically used as a public-facing system, "
+"the behaviour is different than when using other access protocols for AIP"
+" Storage: upon deposit in DSpace, the AIP will be split into two parts:"
+msgstr ""
+
+#: ../../administrators.rst:407
+msgid ""
+"a compressed objects file (bitstream), which contains all original and "
+"normalized objects"
+msgstr ""
+
+#: ../../administrators.rst:409
+msgid ""
+"as well as a metadata file (bitstream), which contains all of the bag "
+"artifacts, metadata and logs"
+msgstr ""
+
+#: ../../administrators.rst:412
+msgid ""
+"The metadata bitstream can optionally be restricted; :ref:`see below "
+"<restrictedmetadata>`. Presently, the Storage Service and Dashboard are "
+"not capable of downloading/reconstituting the AIP - this must be done "
+"manually from the DSpace interface."
+msgstr ""
+
+#: ../../administrators.rst:417
+msgid ""
+"If using DSpace as the AIP location in conjunction with the ArchivesSpace"
+" workflow in the :ref:`Appraisal tab <archivematica:appraisal>`, a post "
+"Store AIP hook will send the DSpace handle to the ArchivesSpace digital "
+"object record upon AIP storage. The ArchivesSpace configuration is set up"
+" in the :ref:`Dashboard administration tab <archivematica:dashboard-"
+"admin>`."
+msgstr ""
+
+#: ../../administrators.rst:425
+msgid ""
+"Note that the DSpace via SWORD2 API space makes use of the DSpace REST "
+"API to change the permissions of the metadata file. This means that you "
+"need to make sure that the REST API is configured, see the `DSpace 5 REST"
+" API documentation`_."
+msgstr ""
+
+#: ../../administrators.rst:430
+msgid ""
+"The DSpace via SWORD2 API space functionality only supports DSpace 5 and "
+"not other versions. See changes in authentication in the DSpace REST API "
+"between versions 5 and 6 in the `DSpace 6 REST API documentation`_."
+msgstr ""
+
+#: ../../administrators.rst:443
+msgid ""
+"**Service Document IRI**: URL of the service document. E.g. "
+"``http://demo.dspace.org/swordv2/servicedocument``, where servicedocument"
+" is the handle to the community or collection being used for deposit."
+msgstr ""
+
+#: ../../administrators.rst:452
+msgid ""
+"**Restricted metadata policy**: Use to restrict access to the metadata "
+"bitstream. Must be specified as a list of objects in JSON, e.g. "
+"``[{\"action\":\"READ\",\"groupId\":\"5\",\"rpType\":\"TYPE_CUSTOM\"}]``."
+" This will override existing policies."
+msgstr ""
+
+#: ../../administrators.rst:460
+msgid "Fedora via SWORD2"
+msgstr ""
+
+#: ../../administrators.rst:462
+msgid ""
+"Fedora via SWORD2 is currently supported in the Storage Service as an "
+"Access Protocol to facilitate use of the `Archidora plugin "
+"<https://wiki.duraspace.org/display/ISLANDORA/Archidora>`_, which allows "
+"ingest of material from Islandora to Archivematica. This workflow is in "
+"beta testing as of Storage Service 0.9/Archivematica 1.5/Islandora "
+"7.x-1.6."
+msgstr ""
+
+#: ../../administrators.rst:476
+msgid "**Fedora user**: Fedora user name (for SWORD functionality)."
+msgstr ""
+
+#: ../../administrators.rst:477
+msgid "**Fedora password**: Fedora password (for SWORD functionality)."
+msgstr ""
+
+#: ../../administrators.rst:478
+msgid "**Fedora name**: Name or IP of the remote Fedora machine."
+msgstr ""
+
+#: ../../administrators.rst:482
+msgid ""
+"A Location (see below) must also be created, with the purpose of FEDORA "
+"Deposits."
+msgstr ""
+
+#: ../../administrators.rst:485
+msgid ""
+"On the Archivematica dashboard, the IP of the Storage Service needs to be"
+" added to the IP whitelist for the REST API, so that transfers will be "
+"approved automatically."
+msgstr ""
+
+#: ../../administrators.rst:489
+msgid ""
+"A post-store callback can be configured, to enable Islandora to list "
+"objects that can be deleted once they have been stored by Archivematica. "
+"See the :ref:`Administration <administration>` section."
+msgstr ""
+
+#: ../../administrators.rst:497
+msgid "GPG encryption on local file system"
+msgstr ""
+
+#: ../../administrators.rst:499
+msgid ""
+"Creating a GPG encryption space will allow users to create encrypted AIPs"
+" and transfers. Only AIP storage, Transfer backlog and Replicator "
+"locations can be created in a GPG encryption space."
+msgstr ""
+
+#: ../../administrators.rst:503
+msgid ""
+"Encrypted AIPs and transfers can be downloaded unencrypted via the "
+"Storage Service and Archivematica dashboard."
+msgstr ""
+
+#: ../../administrators.rst:506
+msgid ""
+"Before creating a GPG encryption space ensure that you have created or "
+"imported a GPG key on the :ref:`Administration page <administration>`."
+msgstr ""
+
+#: ../../administrators.rst:516
+msgid "**Key**: the encryption key to be used for the space."
+msgstr ""
+
+#: ../../administrators.rst:520
+msgid ""
+"It is possible to encrypt uncompressed AIPs, which will be stored as tar "
+"files."
+msgstr ""
+
+#: ../../administrators.rst:523
+msgid ""
+"Uncompressed AIPs do not have pointer files, so if the key for the space "
+"is changed and the original key is deleted/unknown, Archivematica will "
+"have no record of the key for decryption."
+msgstr ""
+
+#: ../../administrators.rst:530
+msgid "Local Filesystem"
+msgstr ""
+
+#: ../../administrators.rst:532
+msgid ""
+"Local Filesystem spaces handle storage that is available locally on the "
+"machine running the Storage Service. Typically this is the hard drive, "
+"SSD or raid array attached to the machine, but it could also encompass "
+"remote storage that has already been mounted. For remote storage that has"
+" been locally mounted, we recommend using a more specific Space if one is"
+" available."
+msgstr ""
+
+#: ../../administrators.rst:550
+msgid "LOCKSS"
+msgstr ""
+
+#: ../../administrators.rst:552
+msgid ""
+"Archivematica can store AIPs in a `LOCKSS`_ network via LOCKSS-O-Matic, "
+"which uses SWORD to communicate between the Storage Service and a Private"
+" LOCKSS Network (PLN)."
+msgstr ""
+
+#: ../../administrators.rst:563
+msgid ""
+"**Service document IRI**: the URL of the LOCKSS-o-matic service document "
+"IRI, e.g. ``http://lockssomatic.example.org/api/sword/2.0/sd-iri``."
+msgstr ""
+
+#: ../../administrators.rst:565
+msgid ""
+"**Content Provider ID**: the On-Behalf-Of value when communicating with "
+"LOCKSS-o-matic."
+msgstr ""
+
+#: ../../administrators.rst:567
+msgid ""
+"**Externally available domain**: the base URL for this server that LOCKSS"
+" will be able to access. Generally this is the URL for the home page of "
+"the Storage Service."
+msgstr ""
+
+#: ../../administrators.rst:570
+msgid ""
+"**Keep local copy?**: check this box if you wish to store a local copy of"
+" the AIPs even after they are stored in LOCKSS."
+msgstr ""
+
+#: ../../administrators.rst:575
+msgid ""
+"When creating a Location for a LOCKSS space (see below), the Purpose of "
+"the Location must be AIP Storage."
+msgstr ""
+
+#: ../../administrators.rst:581
+msgid "NFS"
+msgstr ""
+
+#: ../../administrators.rst:583
+msgid ""
+"NFS spaces are for NFS exports mounted on the Storage Service server and "
+"the Archivematica pipeline."
+msgstr ""
+
+#: ../../administrators.rst:590 ../../administrators.rst:627
+msgid ""
+"**Path**: the absolute path to where the space is mounted on the "
+"filesystem local to the Storage Service."
+msgstr ""
+
+#: ../../administrators.rst:594
+msgid ""
+"**Remote name**: the hostname or IP address of the remote computer "
+"exporting the NFS mount."
+msgstr ""
+
+#: ../../administrators.rst:596
+msgid "**Remote path**: the export path on the NFS server"
+msgstr ""
+
+#: ../../administrators.rst:597
+msgid ""
+"**Version**:  the version of the filesystem, e.g. ``nfs`` or ``nfs4``,as "
+"would be passed to the mount command."
+msgstr ""
+
+#: ../../administrators.rst:599
+msgid ""
+"**Manually mounted**: This is a placeholder for a feature that is not yet"
+" available."
+msgstr ""
+
+#: ../../administrators.rst:605
+msgid "Pipeline Local Filesystem"
+msgstr ""
+
+#: ../../administrators.rst:607
+msgid ""
+"Pipeline Local Filesystems refer to the storage that is local to the "
+"Archivematica pipeline, but remote to the Storage Service. For this Space"
+" to work properly, passwordless SSH must be set up between the Storage "
+"Service host and the Archivematica host."
+msgstr ""
+
+#: ../../administrators.rst:612
+msgid ""
+"For example, the Storage Service is hosted on storage_service_host and "
+"Archivematica is running on archivematica1. The transfer sources for "
+"Archivematica are stored locally on archivematica1, but the Storage "
+"Service needs access to them. The Space for that transfer source would be"
+" a Pipeline Local Filesystem."
+msgstr ""
+
+#: ../../administrators.rst:620
+msgid ""
+"Passwordless SSH must be set up between the Storage Service host and the "
+"computer Archivematica is running on."
+msgstr ""
+
+#: ../../administrators.rst:631
+msgid "**Remote user**: the username on the remote host."
+msgstr ""
+
+#: ../../administrators.rst:632
+msgid ""
+"**Remote name**: the hostname or IP address of the computer running "
+"Archivematica. This should be SSH accessible from the Storage Service "
+"computer."
+msgstr ""
+
+#: ../../administrators.rst:635
+msgid ""
+"**Assume remote host serving files with rsync daemon**: if checked, the "
+"Storage Service will use rsync daemon-style commands instead of the "
+"default rsync with remote shell."
+msgstr ""
+
+#: ../../administrators.rst:638
+msgid "**Rsync password**: the password for the rsync daemon"
+msgstr ""
+
+#: ../../administrators.rst:643
+msgid "RClone"
+msgstr ""
+
+#: ../../administrators.rst:645
+msgid ""
+"`rclone`_ is a command-line program to manage files in cloud storage, and"
+" is available as an access protocol in Storage Service 0.20 and higher."
+msgstr ""
+
+#: ../../administrators.rst:648
+msgid ""
+"The RClone space allows for use of over 40 cloud providers with "
+"Archivematica as Transfer Source, AIP Store, DIP Store, and Replicator "
+"locations. Configuration of details such as access keys can be done with "
+"a configuration file or via environment variables (the recommended "
+"method). See the `rclone documentation on configuration via environment "
+"variables`_."
+msgstr ""
+
+#: ../../administrators.rst:656
+msgid "**Access protocol**: RClone"
+msgstr ""
+
+#: ../../administrators.rst:659
+msgid ""
+"**Staging path**: A location on your local disk where Archivematica can "
+"place files for staging purposes, for example "
+"``var/archivematica/storage_service/rclone_staging``."
+msgstr ""
+
+#: ../../administrators.rst:662
+msgid ""
+"**Remote name**: Remote name for the rclone configuration to use with "
+"this Space. Must match value in environment variables, case-insensitive."
+msgstr ""
+
+#: ../../administrators.rst:664
+msgid ""
+"**Container/Bucket name**: Container or bucket name to use in configured "
+"remote (optional, depending on service being used via rclone)."
+msgstr ""
+
+#: ../../administrators.rst:670
+msgid "Swift"
+msgstr ""
+
+#: ../../administrators.rst:672
+msgid ""
+"OpenStack's Swift is available as an access protocol in Storage Service "
+"0.7 and higher."
+msgstr ""
+
+#: ../../administrators.rst:682
+msgid "**Auth URL**: the URL to authenticate against."
+msgstr ""
+
+#: ../../administrators.rst:683
+msgid "**Auth version**: the OpenStack authentication version."
+msgstr ""
+
+#: ../../administrators.rst:684
+msgid "**Username**: the Swift username that will be used for authentication."
+msgstr ""
+
+#: ../../administrators.rst:685
+msgid "**Password**: the password for the above username."
+msgstr ""
+
+#: ../../administrators.rst:686
+msgid ""
+"**Container**: the name of the Swift container. To list available "
+"containers in your Swift installation, run ``swift list`` from the "
+"command line."
+msgstr ""
+
+#: ../../administrators.rst:688
+msgid ""
+"**Tenant**: the tenant/account name, required when connecting to an auth "
+"2.0 system."
+msgstr ""
+
+#: ../../administrators.rst:690
+msgid "**Region**: the region in Swift. This field is optional."
+msgstr ""
+
+#: ../../administrators.rst:694
+msgid ""
+"Swift cannot be used for transfers containing an object over 5GB (for "
+"uncompressed packages) or that are 5GB in total (for compressed "
+"packages). This applies to the Transfer Source, Backlog, AIP and DIP "
+"Locations."
+msgstr ""
+
+#: ../../administrators.rst:698
+msgid ""
+"Any object/package over 5GB must be segmented by the application "
+"interacting with Swift, a function which is not currently available for "
+"the Swift space. See the `Swift documentation for large objects`_."
+msgstr ""
+
+#: ../../administrators.rst:705
+msgid "S3 (Amazon)"
+msgstr ""
+
+#: ../../administrators.rst:707
+msgid ""
+"Amazon S3 is available as an access protocol as of Storage Service "
+"version 0.12. Locations within S3 can be used as AIP Storage, DIP "
+"Storage, Replicator and Transfer Source :ref:`locations <location-"
+"purposes>`."
+msgstr ""
+
+#: ../../administrators.rst:715
+msgid "**Path**: *Not required: see below*."
+msgstr ""
+
+#: ../../administrators.rst:716
+msgid ""
+"**Staging path**: the absolute path to a staging area on the same server "
+"as the Storage Service."
+msgstr ""
+
+#: ../../administrators.rst:718
+msgid ""
+"**S3 Endpoint URL**: the URL of the S3 endpoint, e.g. "
+"``https://s3.amazonaws.com``."
+msgstr ""
+
+#: ../../administrators.rst:720
+msgid ""
+"**Access Key ID to authenticate**: the public key generated by S3. *Not "
+"required: see below*"
+msgstr ""
+
+#: ../../administrators.rst:722
+msgid ""
+"**Secret Access Key to authenticate with**: the secret key generated by "
+"S3. *Not required: see below*"
+msgstr ""
+
+#: ../../administrators.rst:724
+msgid "**Region**: the region that the S3 instance uses, e.g. ``us-east-2``."
+msgstr ""
+
+#: ../../administrators.rst:725
+msgid ""
+"**S3 Bucket**: the name of the designated S3 Bucket. This field is "
+"optional."
+msgstr ""
+
+#: ../../administrators.rst:729
+msgid ""
+"Not all fields are required when configuring S3 storage. They can however"
+" still be used."
+msgstr ""
+
+#: ../../administrators.rst:732
+msgid ""
+"When a Path is configured for S3 as well as a Relative Path for the "
+"Location (see `locations`_) the Storage Service will attempt to create an"
+" S3 bucket to appear as follows to the user (each newline indicates a "
+"nested directory):"
+msgstr ""
+
+#: ../../administrators.rst:737
+msgid "In this example:"
+msgstr ""
+
+#: ../../administrators.rst:739
+msgid ""
+"``d6d618dd-2b7f-4177-8b59-10e242066cb7`` is the UUID of the S3 storage "
+"space that has been configured."
+msgstr ""
+
+#: ../../administrators.rst:741
+msgid ""
+"``cd20f886-0c40-4202-af80-399b6ca9f1f1`` is the UUID of the AIP that we "
+"want to store."
+msgstr ""
+
+#: ../../administrators.rst:743
+msgid ""
+"``storage-space-path`` is configured for the Storage Space Path *(no "
+"leading slash)*."
+msgstr ""
+
+#: ../../administrators.rst:745
+msgid ""
+"``storage-location-relative-path`` is configured as Location (Relative-"
+"path) *(no leading-slash)*."
+msgstr ""
+
+#: ../../administrators.rst:748
+msgid ""
+"The values for the storage space ``Path``. And Location ``Relative Path``"
+" will appear as configured::"
+msgstr ""
+
+#: ../../administrators.rst:764
+msgid ""
+"When Access Key ID and Secret Access Key are configured, the Storage "
+"Service will attempt to authenticate with those details."
+msgstr ""
+
+#: ../../administrators.rst:767
+msgid ""
+"When these values are not configured, the Storage Service will attempt to"
+" use authentication details provided by the ``AWS_ACCESS_KEY_ID`` and "
+"``AWS_SECRET_ACCESS_KEY`` environment variables."
+msgstr ""
+
+#: ../../administrators.rst:771
+msgid ""
+"When the bucket name is configured, that bucket will be used. Otherwise, "
+"the ID of the space will be used instead. In either case the bucket will "
+"be automatically created if necessary, and if the AWS user has "
+"permissions to do so."
+msgstr ""
+
+#: ../../administrators.rst:778
+msgid ""
+"For the `Path` configured in the Storage Space and `Relative Path` "
+"configured in the Location, they are best configured without a leading-"
+"slash (`/`) as this may impact the ability to delete stored packages on "
+"the S3 service. This is an impact of the third-party library used to make"
+" S3 API calls."
+msgstr ""
+
+#: ../../administrators.rst:784
+msgid ""
+"If users have stored packages on paths with leading slashes and packages "
+"are not being removed from S3, consider modifying the configuration to "
+"remove the slash. Do so with caution and be prepared to put the leading-"
+"slash back if there is any impact on storing AIPs as a result."
+msgstr ""
+
+#: ../../administrators.rst:790
+msgid "Debugging S3"
+msgstr ""
+
+#: ../../administrators.rst:792
+msgid ""
+"There are times when the S3 storage adapter may need to be debugged. For "
+"example, if a transfer isn't able to complete because it cannot reach "
+"your S3 implementation."
+msgstr ""
+
+#: ../../administrators.rst:796
+msgid ""
+"The S3 adapter written for the Storage Service relies heavily on the "
+"`Boto3`_ S3 SDK (Software Development Kit). The library is hosted on "
+"GitHub and the GitHub issues for Boto3 are a good place to start when "
+"trying to understand potential upstream issues."
+msgstr ""
+
+#: ../../administrators.rst:801
+msgid ""
+"In the Storage Service, debug logging can be increased for the Boto3 "
+"adapter. There is more information about overriding the Storage Service "
+"defaults in the `installation README.md`_."
+msgstr ""
+
+#: ../../administrators.rst:805
+msgid ""
+"In the `logging configuration`_, administrators should be able to find "
+"entries for the two primary Boto3 components::"
+msgstr ""
+
+#: ../../administrators.rst:811
+msgid ""
+"Changing the log level for these entries from INFO to DEBUG will output "
+"the entire wire-trace between the Storage Service and your S3 "
+"implementation through the lens of the Boto3 SDK. The standard Boto3 "
+"logging will provide high-level information, and botocore will be much "
+"more detailed."
+msgstr ""
+
+#: ../../administrators.rst:816
+msgid ""
+"From the documentation, the `Boto3 developers`_ are careful to note as "
+"follows:"
+msgstr ""
+
+#: ../../administrators.rst:820
+msgid ""
+"Be aware that when logging anything from 'botocore' the full wire trace "
+"will appear in your logs. If your payloads contain sensitive data this "
+"should not be used in production."
+msgstr ""
+
+#: ../../administrators.rst:826
+msgid ""
+"When updating the debug configuration, if the Boto3 entries are not "
+"present then they can be added manually. If adding these manually then "
+"keep in mind that the change must not compromise the integrity of the "
+"JSON."
+msgstr ""
+
+#: ../../administrators.rst:834
+msgid "Write-Only Replica Staging on local filesystem"
+msgstr ""
+
+#: ../../administrators.rst:836
+msgid ""
+"Write-Only Replica Staging spaces allow users to stage AIP replicas on a "
+"local filesystem for delivery to offline storage systems such as tape "
+"robots. Only Replicator locations can be created in a Write-Only Replica "
+"Staging space."
+msgstr ""
+
+#: ../../administrators.rst:850
+msgid ""
+"Write-Only Replica Staging is a write-once space. Replicas stored in a "
+"Replicator location in a Write-Only Replica Staging space cannot "
+"downloaded, deleted, or fixity checked after storage."
+msgstr ""
+
+#: ../../administrators.rst:856
+msgid ""
+"Replicas written within a Write-Only Replica Staging space are stored "
+"directly within the Replicator location's path rather than within the "
+"typical UUID quad directories. This enables efficient retrieval of "
+"packages stored in the space by offline storage systems."
+msgstr ""
+
+#: ../../administrators.rst:866
+msgid ""
+"Locations are contained within spaces and have a defined purpose in the "
+"Archivematica system. Each location is associated with at least one "
+"pipeline. A pipeline can have multiple instances of any location, and a "
+"location can be associated with any number of pipelines, with the "
+"exception of Backlog and Currently Processing locations, for which there "
+"must be exactly one per pipeline."
+msgstr ""
+
+#: ../../administrators.rst:-1
+msgid "ストレージサービスのロケーション画面。"
+msgstr ""
+
+#: ../../administrators.rst:878
+msgid ""
+"A location can have one of nine purposes: AIP Recovery, AIP Storage, "
+"Currently Processing, DIP Storage, FEDORA Deposit, Storage Service "
+"Internal Processing, Transfer Backlog, Transfer Source, or Replicator."
+msgstr ""
+
+#: ../../administrators.rst:884
+msgid ""
+"**Purpose**: the function that this location will fulfill, e.g. ``AIP "
+"storage``. See :ref:`location purposes <location-purposes>` for more "
+"information."
+msgstr ""
+
+#: ../../administrators.rst:887
+msgid ""
+"**Pipelines**: the Archivematica instance(s) that will be able to use "
+"this location."
+msgstr ""
+
+#: ../../administrators.rst:889
+msgid ""
+"**Relative Path**: the path to this location, relative to the space that "
+"contains it."
+msgstr ""
+
+#: ../../administrators.rst:891
+msgid ""
+"**Description**: a description of the location to be displayed to the "
+"user."
+msgstr ""
+
+#: ../../administrators.rst:892
+msgid ""
+"**Quota**: the maximum size allowed for this space. Set to 0 or leave "
+"blank for unlimited. This field is optional."
+msgstr ""
+
+#: ../../administrators.rst:894
+msgid ""
+"**Enabled**: if checked, this location will be accessible to pipelines "
+"associated with it. If unchecked, it will not be available to any "
+"pipeline."
+msgstr ""
+
+#: ../../administrators.rst:896
+msgid ""
+"**Set as global default location for its purpose**: if checked, this "
+"location will be the default location for its purpose unless the user "
+"specifically tells Archivematica otherwise during processing."
+msgstr ""
+
+#: ../../administrators.rst:902
+msgid ""
+"When setting up a :ref:`DSpace via SWORD2 location <dspace>` the relative"
+" path needs to be the URL of the destination collection for the "
+"transfers. E.g.: ``https://demo.dspace.org/10673/60/``."
+msgstr ""
+
+#: ../../administrators.rst:909
+msgid "Location purposes"
+msgstr ""
+
+#: ../../administrators.rst:912
+msgid "AIP Recovery"
+msgstr ""
+
+#: ../../administrators.rst:914
+msgid ""
+"AIP Recovery locations are where the :ref:`AIP recovery <recovery>` "
+"feature looks for an AIP to recover. No more than one AIP recovery "
+"location should be associated with a given pipeline. The default value is"
+" ``/var/archivematica/storage_service/recover`` in a Local Filesystem. "
+"This is only required if AIP recovery is used."
+msgstr ""
+
+#: ../../administrators.rst:921
+msgid "AIP Storage"
+msgstr ""
+
+#: ../../administrators.rst:923
+msgid ""
+"AIP Storage locations are where the completed AIPs are placed for long-"
+"term storage. For pipelines using the default locations, the default path"
+" is ```/var/archivematica/sharedDirectory/www/AIPsStore`` in a Local "
+"Filesystem. An AIP storage location is required to store and retrieve "
+"AIPs."
+msgstr ""
+
+#: ../../administrators.rst:929
+msgid "Currently Processing"
+msgstr ""
+
+#: ../../administrators.rst:931
+msgid ""
+"Archivematica uses the Currently Processing location associated with that"
+" pipeline to store materials during active processing. Exactly one "
+"currently processing location should be associated with a given pipeline."
+" For pipelines using the default locations, the default path is "
+"``/var/archivematica/sharedDirectory`` in a Local Filesystem. A currently"
+" processing location is required for Archivematica to run."
+msgstr ""
+
+#: ../../administrators.rst:939
+msgid "DIP Storage"
+msgstr ""
+
+#: ../../administrators.rst:941
+msgid ""
+"The DIP Storage location is used for storing DIPs until such a time that "
+"they can be uploaded to an access system. For pipelines using the default"
+" locations, the default path is "
+"``/var/archivematica/sharedDirectory/www/DIPsStore`` in a Local "
+"Filesystem. A DIP storage location is required to store and retrieve "
+"DIPs, but it is not required to upload DIPs to access systems."
+msgstr ""
+
+#: ../../administrators.rst:948
+msgid "FEDORA Deposit"
+msgstr ""
+
+#: ../../administrators.rst:950
+msgid ""
+"A FEDORA Deposit location is used with the Archidora plugin to ingest "
+"material from Islandora. This is only available to the FEDORA Space, and "
+"is only required for that space."
+msgstr ""
+
+#: ../../administrators.rst:955
+msgid "Storage Service Internal Processing"
+msgstr ""
+
+#: ../../administrators.rst:957
+msgid ""
+"There should only be one Storage Service Internal Processing location for"
+" a Storage Service installation. For pipelines using the default "
+"locations, the default path is ``/var/archivematica/storage_service`` in "
+"a Local Filesystem. This is required for the Storage Service to run, and "
+"must be locally available to the Storage Service. It should not be "
+"associated with any pipelines."
+msgstr ""
+
+#: ../../administrators.rst:965
+msgid "Transfer Backlog"
+msgstr ""
+
+#: ../../administrators.rst:967
+msgid ""
+"Transfer Backlog locations store transfers until the user continues "
+"processing them. For pipelines using the default locations, the default "
+"path is "
+"``/var/archivematica/sharedDirectory/www/AIPsStore/transferBacklog`` in a"
+" Local Filesystem. This is required to store and retrieve transfers in "
+"backlog."
+msgstr ""
+
+#: ../../administrators.rst:973
+msgid "Transfer Source"
+msgstr ""
+
+#: ../../administrators.rst:975
+msgid ""
+"A list of Transfer source locations are displayed in the transfer source "
+"dropdown on the Archivematica pipeline's :ref:`Transfer tab "
+"<archivematica:transfer>`. Any folder in a transfer source can be "
+"selected to become a transfer. The default value is ``/home`` in a local "
+"filesystem."
+msgstr ""
+
+#: ../../administrators.rst:981
+msgid "Replicator"
+msgstr ""
+
+#: ../../administrators.rst:983
+msgid ""
+"Replicator locations can be configured to replicate the AIPs in one or "
+"more AIP storage locations. Replicators can be configured for each of the"
+" following protocols supported by the Storage Service:"
+msgstr ""
+
+#: ../../administrators.rst:987
+msgid "Duracloud."
+msgstr ""
+
+#: ../../administrators.rst:988
+msgid "Local filesystem, including GPG encrypted and write-only replica staging."
+msgstr ""
+
+#: ../../administrators.rst:989
+msgid "S3."
+msgstr ""
+
+#: ../../administrators.rst:991
+msgid ""
+"Replicators are associated with an AIP storage location via the storage "
+"location's configuration page. As such Replicators must be configured "
+"before they can be selected for use alongside an AIP store. There is "
+"additional information about this under :ref:`configure location "
+"<configure_location>`. If you would like your replicated AIPs to be "
+"encrypted, create the location in an :ref:`encrypted space <gpg>`."
+msgstr ""
+
+#: ../../administrators.rst:1000
+msgid ""
+"If you want the same space to have multiple purposes, multiple locations "
+"with different purposes can be created."
+msgstr ""
+
+#: ../../administrators.rst:1004
+msgid "Outcomes of a Replicator"
+msgstr ""
+
+#: ../../administrators.rst:1006
+msgid "**One AIP to many Replicators:**"
+msgstr ""
+
+#: ../../administrators.rst:1008
+msgid ""
+"An AIP will be replicated *n-* times where there are *n-* configured "
+"Replicators for an AIP storage location."
+msgstr ""
+
+#: ../../administrators.rst:1011
+msgid "**On reingest, replicas are replaced and given new identifiers:**"
+msgstr ""
+
+#: ../../administrators.rst:1013
+msgid ""
+"During reingest, previous replicas will be deleted and marked as DELETED "
+"within the Storage Service Packages tab. A new replica will be created "
+"and marked as UPLOADED. The new replica will be assigned a new UUID. "
+"Pointer files will be updated with accurate references between the source"
+" and the replica and vice versa."
+msgstr ""
+
+#: ../../administrators.rst:1019
+msgid "**Reingest can be used to update or delete replicas:**"
+msgstr ""
+
+#: ../../administrators.rst:1021
+msgid ""
+"If a Replicator is disabled, reingest can be used to selectively remove "
+"replicas from that replica location. If a new Replicator is enabled, "
+"reingest can be used to replicate an existing AIP in that replica "
+"location."
+msgstr ""
+
+#: ../../administrators.rst:1025
+msgid "**Creating and updating replicas without reingest:**"
+msgstr ""
+
+#: ../../administrators.rst:1027
+msgid ""
+"Replicas can also be created and updated in bulk without the need for "
+"reingest using the :ref:`create AIP replicas <creating-aip-replicas>` "
+":ref:`management command <management>`."
+msgstr ""
+
+#: ../../administrators.rst:1031
+msgid "**Deletion of the source AIP will delete the replicas:**"
+msgstr ""
+
+#: ../../administrators.rst:1033
+msgid ""
+"When the source AIP is deleted via Archivematica or the Storage Service, "
+"the replicas will also be deleted. Conversely, when a replica is deleted,"
+" only the replica within the given location is affected."
+msgstr ""
+
+#: ../../administrators.rst:1038
+msgid "Limitations of a Replicator"
+msgstr ""
+
+#: ../../administrators.rst:1040
+msgid "**Tight-coupling with AIP storage in a Pipeline:**"
+msgstr ""
+
+#: ../../administrators.rst:1042
+msgid ""
+"Replication is coupled with AIP storage. As such, if there is a failure "
+"when storing a replica, even if the source AIP has succeeded, an "
+"Archivematica pipeline will still fail during processing. This affects "
+"indexing of the AIP in the Archival Storage tab within Archivematica. It "
+"also leaves the replica packages in staging in the Storage Service. The "
+"Storage Service user-interface will clearly mark the replica packages' "
+"status as STAGING."
+msgstr ""
+
+#: ../../administrators.rst:1049
+msgid "**New UUIDs during reingest:**"
+msgstr ""
+
+#: ../../administrators.rst:1051
+msgid ""
+"Since the AIP will be given a new UUID during reingest, external services"
+" tracking the packages in the Storage Service, especially replicas, will "
+"need to synchronize their own record accordingly."
+msgstr ""
+
+#: ../../administrators.rst:1058
+msgid "How to configure a location"
+msgstr ""
+
+#: ../../administrators.rst:1060
+msgid "To create and configure a new Location:"
+msgstr ""
+
+#: ../../administrators.rst:1062
+msgid "In the Storage Service, navigate to the Spaces tab."
+msgstr ""
+
+#: ../../administrators.rst:1063
+msgid ""
+"Under the space that you want to add the location to, click on **Create "
+"Location here**."
+msgstr ""
+
+#: ../../administrators.rst:1065
+msgid ""
+"Choose a purpose (e.g. AIP Storage) and pipeline, and enter a \"Relative "
+"Path\" (e.g. ``var/mylocation``) and human-readable description. The "
+"Relative Path is relative to the Path defined in the Space you are adding"
+" the Location to. For example, for the default Space, the Path is ``/`` "
+"so your Location path would be relative to that (in the example here, the"
+" complete path would end up being ``/var/mylocation``)."
+msgstr ""
+
+#: ../../administrators.rst:1074
+msgid ""
+"If the path you are defining in your Location doesn't exist, you must "
+"create it manually and make sure it is writable by the Archivematica "
+"user."
+msgstr ""
+
+#: ../../administrators.rst:1078
+msgid ""
+"For an AIP storage location, choose Replicator location(s) if desired. To"
+" select more than one, hold down ctrl- while clicking the UUID of the "
+"replica."
+msgstr ""
+
+#: ../../administrators.rst:1084
+msgid ""
+"One or more Replicator locations must already have been configured to be "
+"selected. If a Replicator location is configured afterwards then it can "
+"be added via this page."
+msgstr ""
+
+#: ../../administrators.rst:1088
+msgid ""
+"Replica AIPs will be created only after a location has been associated "
+"with a Replicator, but can also be created retroactively via the "
+":ref:`create AIP replicas <creating-aip-replicas>` :ref:`management "
+"command <management>`."
+msgstr ""
+
+#: ../../administrators.rst:1093
+msgid "Save the Location settings."
+msgstr ""
+
+#: ../../administrators.rst:1094
+msgid ""
+"The new Location will now be available as an option under the appropriate"
+" options in the Dashboard, for example as a Transfer location (which must"
+" be enabled under the Dashboard \"Administration\" tab) or as a "
+"destination for AIP storage."
+msgstr ""
+
+#: ../../administrators.rst:-1
+msgid "ストレージサービスパッケージ画面。"
+msgstr ""
+
+#: ../../administrators.rst:1109
+msgid ""
+"A package is a file that Archivematica has stored in the Storage Service,"
+" commonly an Archival Information Package (AIP). Dissemination "
+"Information Packages (DIPs) which have been stored and transfers which "
+"have been sent to backlog will also be listed in the Packages tab."
+msgstr ""
+
+#: ../../administrators.rst:1114
+msgid ""
+"AIPs cannot be created or deleted through the Storage Service interface, "
+"though a deletion request can be submitted through Archivematica that "
+"must be approved or rejected by the Storage Service administrator. To "
+"learn more about deleting an AIP, see :ref:`Deleting an AIP "
+"<archivematica:delete-aip>`."
+msgstr ""
+
+#: ../../administrators.rst:1119
+msgid ""
+"Stored DIPs can be deleted through the Storage Service interface by "
+"choosing the \"Delete\" option in the \"Actions\" column."
+msgstr ""
+
+#: ../../administrators.rst:1121
+msgid ""
+"Deletion requests for transfers are automatically generated when all of "
+"the objects from the transfer have successfully been stored in AIPs."
+msgstr ""
+
+#: ../../administrators.rst:1124
+msgid "For more information about Fixity Status, see :ref:`Fixity <fixity-docs>`."
+msgstr ""
+
+#: ../../administrators.rst:1129
+msgid "Administration"
+msgstr ""
+
+#: ../../administrators.rst:1131
+msgid ""
+"The Administration section manages the users and settings for the Storage"
+" Service."
+msgstr ""
+
+#: ../../administrators.rst:-1
+msgid "ストレージサービス管理画面。"
+msgstr ""
+
+#: ../../administrators.rst:1140
+msgid "Configuration"
+msgstr ""
+
+#: ../../administrators.rst:1142
+msgid ""
+"The configuration page allows you to control the behaviour of the Storage"
+" Service."
+msgstr ""
+
+#: ../../administrators.rst:1145
+msgid ""
+"**Pipelines are disabled upon creation?** allows you to decide whether a "
+"newly created Archivematica :ref:`pipeline <pipeline>` can access the "
+":ref:`Locations <locations>` that are assigned to it. By disabling newly "
+"created pipelines, you can provide some security against unwanted perusal"
+" of the files in assigned locations, or use by unauthorized Archivematica"
+" instances. This can also be configured individually when creating a "
+"pipeline manually through the Storage Service website."
+msgstr ""
+
+#: ../../administrators.rst:1153
+msgid ""
+"**Object counting in spaces is disabled?** allows you to disable "
+"automatic object counting for spaces that display count information to "
+"users, like the space containing the transfer source location. Having "
+"object counting enabled can cause delays and timeouts in the dashboard."
+msgstr ""
+
+#: ../../administrators.rst:1163
+msgid ""
+"オブジェクト数が横に記されたディレクトリ名のリスト - たとえば、「archivematica-sampledata (3810 "
+"objects)」。"
+msgstr ""
+
+#: ../../administrators.rst:1163
+msgid "The transfer browser with object counting enabled."
+msgstr ""
+
+#: ../../administrators.rst:1170
+msgid "オブジェクトカウントが隣にないディレクトリ名の一覧 - 例えば、``archivematica-sampledata``。"
+msgstr ""
+
+#: ../../administrators.rst:1170
+msgid "The transfer browser with object counting disabled."
+msgstr ""
+
+#: ../../administrators.rst:1173
+msgid "Recovery request"
+msgstr ""
+
+#: ../../administrators.rst:1175
+msgid ""
+"These fields allow you to set up notifications for events related to the "
+"AIP deletion workflow - for example, deletion approvals or rejections."
+msgstr ""
+
+#: ../../administrators.rst:1180
+msgid ""
+"**Recovery request: URL to notify:** the server that should receive the "
+"JSON-encoded event message from the Storage Service."
+msgstr ""
+
+#: ../../administrators.rst:1182
+msgid ""
+"**Recovery request notification: Username (optional):** A username for "
+"basic access authentication."
+msgstr ""
+
+#: ../../administrators.rst:1184
+msgid ""
+"**Recovery request notification: Password (optional)** A password for "
+"basic access authentication."
+msgstr ""
+
+#: ../../administrators.rst:1188
+msgid "Default locations"
+msgstr ""
+
+#: ../../administrators.rst:1190
+msgid ""
+"The default location settings allow you to define default locations for "
+"any new pipeline that is registered with the Storage Service. You can "
+"define default locations for the following:"
+msgstr ""
+
+#: ../../administrators.rst:1194
+msgid "Transfer source"
+msgstr ""
+
+#: ../../administrators.rst:1195
+msgid "AIP storage"
+msgstr ""
+
+#: ../../administrators.rst:1196
+msgid "DIP storage"
+msgstr ""
+
+#: ../../administrators.rst:1197
+msgid "Transfer backlog"
+msgstr ""
+
+#: ../../administrators.rst:1198
+msgid "AIP recovery"
+msgstr ""
+
+#: ../../administrators.rst:1200
+msgid ""
+"Multiple transfer source or AIP storage locations can be configured by "
+"holding down ``Ctrl`` when selecting them."
+msgstr ""
+
+#: ../../administrators.rst:1203
+msgid ""
+"A Currently Processing location is also created for every new pipeline, "
+"since one is required."
+msgstr ""
+
+#: ../../administrators.rst:1207
+msgid "Users"
+msgstr ""
+
+#: ../../administrators.rst:1209
+msgid ""
+"The Users section allows you to manage users for the Storage Service. "
+"Only registered users can log into the Storage Service."
+msgstr ""
+
+#: ../../administrators.rst:1212
+msgid "There are four user roles: administrator, manager, reviewer, and reader."
+msgstr ""
+
+#: ../../administrators.rst:1214
+msgid ""
+"**Readers** can see all information pipelines, spaces, locations, and "
+"packages tab, but cannot edit, manage deletion requests, or take any "
+"other action in those tabs. In the administration tab, readers can edit "
+"their own user profiles. Readers can also change the language of the "
+"Storage Service interface for themselves."
+msgstr ""
+
+#: ../../administrators.rst:1220
+msgid ""
+"**Reviewers** have all the permissions listed above, and can additionally"
+" review, approve, and reject package recovery and deletion requests."
+msgstr ""
+
+#: ../../administrators.rst:1223
+msgid ""
+"**Managers** have all the permissions listed above, and can additionally "
+"create, edit, disable, and delete pipelines, spaces, and locations. "
+"Managers can also configure the Storage Service, create callbacks, and "
+"create and delete keys."
+msgstr ""
+
+#: ../../administrators.rst:1227
+msgid ""
+"**Administrators** have all the permissions listed above, and can "
+"additionally create and manage other Storage Service users. "
+"Administrators will also receive email notifications when special events "
+"occur."
+msgstr ""
+
+#: ../../administrators.rst:1232
+msgid "Version"
+msgstr ""
+
+#: ../../administrators.rst:1234
+msgid ""
+"The version page will display the current version and specific git commit"
+" of your installation of the Storage Service."
+msgstr ""
+
+#: ../../administrators.rst:1238
+msgid "Service callbacks"
+msgstr ""
+
+#: ../../administrators.rst:1240
+msgid ""
+"Callbacks allow Archivematica Storage Service to make REST calls after "
+"performing certain types of actions, so that external services are "
+"notified when internal actions have taken place. You can create callbacks"
+" to alert external services when an AIP, DIP, or AIC has been stored."
+msgstr ""
+
+#: ../../administrators.rst:1245
+msgid ""
+"To create a new callback, click on **Create new callback**. This will "
+"bring you to a form where you can enter the callback information."
+msgstr ""
+
+#: ../../administrators.rst:1250
+msgid ""
+"**Event**: Type of event when this callback should be executed (i.e. "
+"post-store AIP, post-store DIP)"
+msgstr ""
+
+#: ../../administrators.rst:1252
+msgid "**URI**: URL to contact upon callback execution."
+msgstr ""
+
+#: ../../administrators.rst:1253
+msgid ""
+"**Method**: HTTP request method to use in connecting to the URL (i.e. "
+"GET, POST)"
+msgstr ""
+
+#: ../../administrators.rst:1255
+msgid "**Headers (key/value)**: the header(s) for the request."
+msgstr ""
+
+#: ../../administrators.rst:1256
+msgid ""
+"**Body**: Body content for each request. Set the 'Content-type' header "
+"accordingly."
+msgstr ""
+
+#: ../../administrators.rst:1258
+msgid ""
+"**Expected status**: Expected HTTP response from the server, used to "
+"validate the callback response."
+msgstr ""
+
+#: ../../administrators.rst:1260
+msgid "**Enabled**: check the box to enable the callback."
+msgstr ""
+
+#: ../../administrators.rst:1262
+msgid "Event types available include:"
+msgstr ""
+
+#: ../../administrators.rst:1264
+msgid ""
+"**Post-store AIP (source files)**: Occurs after an AIP has been stored "
+"and causes the execution of a request for each source file of the AIP."
+msgstr ""
+
+#: ../../administrators.rst:1266
+msgid ""
+"**Post-store AIP, Post-store AIC and Post-store DIP**:  Occurs after an "
+"AIP, AIC or DIP has been stored and causes the execution of a single "
+"request for the package."
+msgstr ""
+
+#: ../../administrators.rst:1270
+msgid "You can use the following placeholders in the URI and Body fields:"
+msgstr ""
+
+#: ../../administrators.rst:1272
+msgid ""
+"**Post-store AIP (source files)**: ``<source_id>`` will be replaced by "
+"the source file UUID."
+msgstr ""
+
+#: ../../administrators.rst:1274
+msgid ""
+"**Post-store AIP, Post-store AIC and Post-store DIP**: ``<package_uuid>``"
+" will be replaced by the AIP, AIC or DIP UUID. ``<package_name>`` will be"
+" replaced by the AIP, AIC or DIP name, with the trailing UUID removed."
+msgstr ""
+
+#: ../../administrators.rst:1280
+msgid ""
+"For AIPs created directly from a transfer, the value that replaces "
+"``<package_name>`` will be equal to the name of the transfer after "
+"successful completion of the \"Change transfer filenames\" Microservice."
+msgstr ""
+
+#: ../../administrators.rst:1284
+msgid ""
+"External applications can integrate with Archivematica via the "
+"`post_store` API endpoint or `stored` endpoints. See the `API "
+"documentation`_  for more information on using these endpoints."
+msgstr ""
+
+#: ../../administrators.rst:1288
+msgid ""
+"A callback can be configured for the SCOPE integration. See the `SCOPE "
+"documentation`_ for how to set up this callback."
+msgstr ""
+
+#: ../../administrators.rst:1292
+msgid "Encryption keys"
+msgstr ""
+
+#: ../../administrators.rst:1294
+msgid ""
+"GPG encryption keys can be created or imported to be used in spaces to "
+"store encrypted AIPs, transfers or replicated AIPs/transfers. Keys can "
+"either be created by the Storage Service or imported."
+msgstr ""
+
+#: ../../administrators.rst:1298
+msgid "To create a new key:"
+msgstr ""
+
+#: ../../administrators.rst:1300
+msgid "Click on **Create New Key**"
+msgstr ""
+
+#: ../../administrators.rst:1302
+msgid "Enter the name and email address you want associated with the key."
+msgstr ""
+
+#: ../../administrators.rst:1304
+msgid "To import a key:"
+msgstr ""
+
+#: ../../administrators.rst:1306
+msgid "Click on **Import Existing Key**"
+msgstr ""
+
+#: ../../administrators.rst:1308
+msgid "Paste in your key in ASCII-armored format."
+msgstr ""
+
+#: ../../administrators.rst:1311
+msgid "Language"
+msgstr ""
+
+#: ../../administrators.rst:1313
+msgid ""
+"Configure language settings for the Storage Service in this area of the "
+"Administration tab. Strings are available for translation on the "
+"localization platform (Transifex)."
+msgstr ""
+
+#: ../../administrators.rst:1317
+msgid ":ref:`Back to the top <administrators>`"
+msgstr ""
+

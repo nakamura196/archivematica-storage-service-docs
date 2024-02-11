@@ -7,18 +7,22 @@
 #, fuzzy
 msgid ""
 msgstr ""
+
+#, fuzzy
+msgid ""
+msgstr ""
 "Project-Id-Version: Archivematica Storage Service 0.21\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-09 18:55+0900\n"
+"POT-Creation-Date: 2024-02-11 22:18+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: en <LL@li.org>\n"
-"Language: en\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"Generated-By: Babel 2.14.0\n"
+"Generated-By: Babel 2.14.0"
 
 #: ../../administrators.rst:5
 msgid "Administering the Storage Service"
@@ -31,7 +35,8 @@ msgid ""
 "administrator to configure what storage is available to each Archivematica "
 "installation, both locally and remote."
 msgstr ""
-"Archivematicaストレージサービスは、複数のArchivematicaパイプラインに関連付けられたストレージスペースの設定を可能にします。これにより、ストレージ管理者は、ローカリーとリモートの両方で、各Archivematicaインストールにどのストレージが利用可能かを設定することができます。"
+"Archivematicaストレージサービスは、複数のArchivematicaパイプラインに関連するストレージスペースの構成を "
+"可能にします。これにより、ストレージ管理者は、ローカルおよびリモートの各Archivematicaインストールで利用可能な ストレージを設定できます。"
 
 #: ../../administrators.rst:12
 msgid "*On this page*"
@@ -39,7 +44,7 @@ msgstr "*このページでは*"
 
 #: ../../administrators.rst:14
 msgid ":ref:`Storage Service glossary and organization <organization>`"
-msgstr ":ref:`ストレージサービスの用語集と組織 <organization>`"
+msgstr ":ref:`ストレージサービスの用語集と構成 <organization>`"
 
 #: ../../administrators.rst:15
 msgid ":ref:`Archivematica configuration <archivematica-configuration>`"
@@ -51,7 +56,7 @@ msgstr ":ref:`パイプライン <pipelines>`"
 
 #: ../../administrators.rst:17
 msgid ":ref:`Spaces <spaces>`"
-msgstr ":ref:`スペース<spaces>`"
+msgstr ":ref:`スペース <spaces>`"
 
 #: ../../administrators.rst:19
 msgid ":ref:`Access protocols <access-protocols>`"
@@ -59,7 +64,7 @@ msgstr ":ref:`アクセスプロトコル <access-protocols>`"
 
 #: ../../administrators.rst:21
 msgid ":ref:`Locations <locations>`"
-msgstr ":ref:`場所 <locations>`"
+msgstr ":ref:`ロケーション <locations>`"
 
 #: ../../administrators.rst:23
 msgid ":ref:`Location purposes <location-purposes>`"
@@ -71,11 +76,11 @@ msgstr ":ref:`パッケージ <packages-tab>`"
 
 #: ../../administrators.rst:26
 msgid ":ref:`Administration <administration>`"
-msgstr ":ref:`管理 <管理>`"
+msgstr ":ref:`管理 <administration>`"
 
 #: ../../administrators.rst:31
 msgid "Storage Service glossary and organization"
-msgstr "ストレージサービスの用語集と組織"
+msgstr "ストレージサービスの用語集と構成"
 
 #: ../../administrators.rst:34 ../../administrators.rst:119
 msgid "Pipelines"
@@ -87,7 +92,7 @@ msgid ""
 "One Storage Service can be used to configure multiple Archivematica "
 "pipelines."
 msgstr ""
-"パイプラインとは、Archivematicaダッシュボードの単一のインストールを指します。1つのストレージサービスを使用して、複数のArchivematicaパイプラインを設定することができます。"
+"パイプラインとは、Archivematicaダッシュボードの単一インストールを指します。1つのストレージサービスを使用して、複数のArchivematicaパイプラインを設定することができます。"
 
 #: ../../administrators.rst:40 ../../administrators.rst:155
 msgid "Spaces"
@@ -95,19 +100,19 @@ msgstr "スペース"
 
 #: ../../administrators.rst:42
 msgid ""
-"A space models a specific storage device. That device might be a locally- "
+"A space models a specific storage device. That device might be a locally-"
 "accessible disk, a network share, or a remote system accessible via a "
 "protocol like FEDORA, SWIFT, DuraCloud, or LOCKSS. The space provides the "
 "Storage Service with configuration to read and/or write data stored within "
 "itself."
 msgstr ""
-"スペースは特定のストレージデバイスをモデル化します。そのデバイスは、ローカルにアクセス可能なディスク、ネットワーク共有、またはFEDORA、SWIFT、DuraCloud、LOCKSSなどのプロトコルを介してアクセス可能なリモートシステムであるかもしれません。スペースは、自身内に格納されたデータを読み取りおよび/または書き込むための設定をストレージサービスに提供します。"
+"スペースは特定のストレージデバイスをモデル化します。このデバイスは、ローカルにアクセス可能なディスク、ネットワーク共有、またはFEDORA、SWIFT、DuraCloud、LOCKSSのようなプロトコルを介してアクセス可能なリモートシステムのいずれかです。スペースはストレージサービスに、自己内部に保存されたデータを読み書きするための設定を提供します。"
 
 #: ../../administrators.rst:47
 msgid ""
 "Packages are not stored directly inside a space; instead, packages are "
 "stored within locations, which are organized subdivisions of a space."
-msgstr "パッケージは直接スペース内に保存されるわけではなく、パッケージはロケーションと呼ばれるスペースの組織的な分割部分内に保存されます。"
+msgstr "パッケージはスペース内に直接保存されるのではなく、スペースの組織化された区分であるロケーション内に保存されます。"
 
 #: ../../administrators.rst:51 ../../administrators.rst:864
 msgid "Locations"
@@ -120,7 +125,7 @@ msgid ""
 "backlog, in order to provide an organized way to structure content within a "
 "space."
 msgstr ""
-"ロケーションはスペースの一部を構成します。各ロケーションは特定の目的、例えばAIPストレージ、DIPストレージ、転送元、または転送バックログなどが割り当てられ、スペース内のコンテンツを整理するための方法を提供します。"
+"ロケーションはスペースの区分です。それぞれのロケーションには、AIPストレージ、DIPストレージ、転送元または転送バックログなどの特定の目的が割り当てられており、スペース内のコンテンツを組織的に構造化するための手段を提供します。"
 
 #: ../../administrators.rst:58 ../../administrators.rst:1102
 msgid "Packages"
@@ -133,7 +138,7 @@ msgid ""
 "example, a package may be an AIP, a backlogged transfer, or a DIP. Each "
 "package is stored in a location."
 msgstr ""
-"ストレージサービスはパッケージの保存に向けられています。\"パッケージ\"とは、外部サービスから転送された1つ以上のファイルの束のことで、例えば、パッケージはAIP、バックログされた転送、またはDIPである可能性があります。各パッケージはロケーションに保存されます。"
+"ストレージサービスはパッケージを保存することに特化しています。パッケージとは、外部サービスから転送された一つ以上のファイルの束です。例えば、パッケージはAIP、バックログされた転送、またはDIPかもしれません。各パッケージはロケーションに保存されます。"
 
 #: ../../administrators.rst:68
 msgid "Archivematica configuration"
@@ -143,17 +148,13 @@ msgstr "Archivematicaの設定"
 msgid ""
 "When installing Archivematica, options to configure it with the Storage "
 "Service will be presented."
-msgstr "Archivematicaをインストールする際に、ストレージサービスとの設定オプションが提示されます。"
-
-#: ../../administrators.rst:-1
-msgid "Configuring the Storage Service during Archivematica installation."
-msgstr "Archivematicaのインストール中にストレージサービスを設定する。"
+msgstr "Archivematicaのインストール中に、ストレージサービスを設定するためのオプションが提示されます。"
 
 #: ../../administrators.rst:78
 msgid ""
 "If you have installed the Storage Service at a different URL, you should "
 "change that here."
-msgstr "もしストレージサービスを異なるURLでインストールしている場合、ここで変更する必要があります。"
+msgstr "もし異なるURLでストレージサービスをインストールしている場合は、ここで変更してください。"
 
 #: ../../administrators.rst:81
 msgid ""
@@ -163,7 +164,8 @@ msgid ""
 " available. Use this option if you want the Storage Service to automatically"
 " set up the configured default values."
 msgstr ""
-"**デフォルトの転送ソース＆AIPストレージ場所を使用**は、Archivematicaのデフォルトの場所を自動的に設定し、新しいパイプラインを登録し、ストレージサービスが利用できない場合にはエラーを生成するように試みます。このオプションは、ストレージサービスに設定されたデフォルト値を自動的に設定する場合に使用します。"
+"**デフォルトの転送元 & AIPストレージ場所を使用** "
+"オプションは、Archivematica用のデフォルトの場所を自動的に設定し、新しいパイプラインを登録し、ストレージサービスが利用できない場合にエラーを生成しようとします。ストレージサービスによって設定されたデフォルト値を自動的にセットアップしたい場合は、このオプションを使用してください。"
 
 #: ../../administrators.rst:87
 msgid ""
@@ -176,7 +178,8 @@ msgid ""
 "be configured manually before any Transfers can be processed, or AIPs "
 "stored."
 msgstr ""
-"**このパイプラインを登録し、転送元とAIPストレージの場所を設定**オプションは、ストレージサービスに新しいパイプラインを登録しようとするだけで、ストレージサービスが見つからない場合でもエラーにはなりません。また、手動で位置情報を設定できるように、提供されたストレージサービスURLへのリンクを開きます。デフォルトの値が望ましくない場合、またはストレージサービスがまだ稼働していない場合には、このオプションを使用してください。位置情報は、転送を処理するか、AIPを保存する前に手動で設定する必要があります。"
+"**このパイプラインを登録＆転送元とAIPストレージの場所を設定** "
+"オプションは、新しいパイプラインをストレージサービスに登録しようとするだけで、ストレージサービスが見つからなくてもエラーは発生しません。また、提供されたストレージサービスのURLへのリンクを開き、場所を手動で設定できるようにします。デフォルトの値が望ましくない場合や、ストレージサービスがまだ稼働していない場合は、このオプションを使用してください。転送が処理される前や、AIPが保存される前に、場所を手動で設定する必要があります。"
 
 #: ../../administrators.rst:95
 msgid ""
@@ -186,12 +189,12 @@ msgid ""
 "Archivematica instance can be manually created and configured. The dashboard"
 " UUID is also available in Archivematica under Administration -> General."
 msgstr ""
-"ストレージサービスが実行中の場合、そのURLを提供すれば、Archivematicaは新しいパイプラインとしてダッシュボードUUIDを登録しようとします。そうでない場合、ダッシュボードUUIDが表示され、Archivematicaインスタンスのパイプラインは手動で作成および設定することができます。ダッシュボードUUIDは、Archivematicaの"
-" [管理] -> [一般] の下で利用可能です。"
+"ストレージサービスが稼働している場合は、そのURLを提供し、ArchivematicaはダッシュボードのUUIDを新しいパイプラインとして登録しようとします。そうでない場合は、ダッシュボードのUUIDが表示され、Archivematicaインスタンス用のパイプラインを手動で作成し設定することができます。ダッシュボードのUUIDは、Archivematicaの「管理"
+" -> 一般」の下でも利用可能です。"
 
 #: ../../administrators.rst:102
 msgid "Change the port in the web server configuration"
-msgstr "ウェブサーバー設定でポートを変更してください。"
+msgstr "ウェブサーバーの設定でポートを変更する"
 
 #: ../../administrators.rst:104
 msgid ""
@@ -199,9 +202,8 @@ msgid ""
 "file ``/etc/nginx/sites-enabled/storage`` and change the line that says "
 "``listen 8000;``, replacing 8000 with whatever port you use."
 msgstr ""
-"ストレージサービスはデフォルトでnginxを使用します。ポートを変更するには、ファイル``/etc/nginx/sites-"
-"enabled/storage``を編集し、``listen "
-"8000;``と記載されている行を変更します。8000の部分を使用するポート番号に置き換えてください。"
+"ストレージサービスはデフォルトでnginxを使用します。ポートを変更するには、ファイル ``/etc/nginx/sites-"
+"enabled/storage`` を編集し、``listen 8000;`` と記述された行を変更して、8000を使用するポートに置き換えてください。"
 
 #: ../../administrators.rst:108
 msgid ""
@@ -210,13 +212,13 @@ msgid ""
 "port 80 on the same machine. If you install the Storage Service on its own "
 "server, you can set it to use port 80."
 msgstr ""
-"Archivematicaのデフォルトのインストールでは、ダッシュボードがポート80のApacheで動作していることを覚えておいてください。同じマシンでnginxをポート80で動作させることはできません。ストレージサービスを独自のサーバーにインストールする場合、ポート80を使用するように設定することができます。"
+"デフォルトのArchivematicaインストールでは、ダッシュボードはポート80でApache上で実行されていることに注意してください。同じマシン上でnginxをポート80で実行することはできません。もしストレージサービスを独自のサーバーにインストールする場合は、ポート80を使用するよう設定できます。"
 
 #: ../../administrators.rst:113
 msgid ""
 "Make sure to adjust the dashboard UUID in the Archivematica dashboard under "
 "Administration -> General."
-msgstr "管理 -> 一般のArchivematicaダッシュボードで、必ずダッシュボードのUUIDを調整してください。"
+msgstr "管理 -> 一般の下にあるArchivematicaダッシュボードでダッシュボードUUIDを調整してください。"
 
 #: ../../administrators.rst:121
 msgid ""
@@ -228,12 +230,13 @@ msgid ""
 "automatically with the Storage Service with the description ``Archivematica "
 "on <hostname>``."
 msgstr ""
-"Archivematicaのパイプラインは、Archivematicaダッシュボードです。すべてのパイプラインは、パイプライン独自のユニバーサルユニーク識別子（UUID）を用いてストレージサービスに登録する必要があります。UUIDは、Archivematicaダッシュボードの「管理"
-" -> 一般設定」の下にあります。Archivematicaを初めてインストールすると、「Archivematica on "
-"<hostname>」という説明文とともに、パイプラインのUUIDをストレージサービスに自動的に登録しようとします。"
+"ArchivematicaのパイプラインとはArchivematicaダッシュボードのことです。全てのパイプラインは、その固有のユニバーサル識別子（UUID）を使ってストレージサービスに登録する必要があります。UUIDは、管理"
+" -> "
+"一般設定の下にあるArchivematicaダッシュボードで見つけることができます。Archivematicaを初めてインストールすると、``Archivematica"
+" on <hostname>`` の説明と共にパイプラインのUUIDをストレージサービスに自動的に登録しようとします。"
 
 #: ../../administrators.rst:-1
-msgid "Storage Service pipelines screen."
+msgid "ストレージサービスパイプライン画面。"
 msgstr "ストレージサービスパイプライン画面。"
 
 #: ../../administrators.rst:133
@@ -242,7 +245,7 @@ msgid ""
 "pipeline to an existing Storage Service, click on **Create new pipeline** on"
 " the Pipelines tab of the Storage Service."
 msgstr ""
-"単一のストレージサービスは、多数のパイプラインに接続することができます。既存のストレージサービスにパイプラインを接続するには、ストレージサービスのパイプラインタブで**新しいパイプラインを作成**をクリックしてください。"
+"1つのストレージサービスは複数のパイプラインに接続することができます。既存のストレージサービスにパイプラインを接続するには、ストレージサービスのパイプラインタブで**新しいパイプラインを作成する**をクリックしてください。"
 
 #: ../../administrators.rst:137 ../../administrators.rst:209
 #: ../../administrators.rst:232 ../../administrators.rst:297
@@ -255,7 +258,7 @@ msgstr ""
 #: ../../administrators.rst:882 ../../administrators.rst:1178
 #: ../../administrators.rst:1248
 msgid "Fields:"
-msgstr "フィールド:"
+msgstr "フィールド："
 
 #: ../../administrators.rst:139
 msgid "**UUID**: The unique identifier of the Archivematica pipeline."
@@ -265,22 +268,22 @@ msgstr "**UUID**: Archivematicaパイプラインの一意の識別子。"
 msgid ""
 "**Description**: A description of the pipeline that will be displayed to the"
 " user. e.g. ``Development site``."
-msgstr "**説明**: ユーザーに表示されるパイプラインの説明です。例えば、``Development site``など。"
+msgstr "**説明**: ユーザーに表示されるパイプラインの説明。例： ``開発サイト`` 。"
 
 #: ../../administrators.rst:142
 msgid ""
 "**Remote name**: the base URL of the pipeline server. This is used for "
 "making API calls."
-msgstr "**リモート名**：パイプラインサーバーの基本URL。これはAPI呼び出しを行うために使用されます。"
+msgstr "**リモート名**: パイプラインサーバーのベースURL。APIコールを行う際に利用されます。"
 
 #: ../../administrators.rst:144
 msgid ""
 "**API username**: The username to use when making API calls to the pipeline."
-msgstr "**APIユーザー名**：パイプラインへのAPI呼び出しを行う際に使用するユーザー名。"
+msgstr "**APIユーザー名**: パイプラインへのAPIコールを行う際に使用するユーザー名。"
 
 #: ../../administrators.rst:145
 msgid "**API key**: The API key to use when making API calls to the pipeline."
-msgstr "**APIキー**：パイプラインへのAPI呼び出しを行う際に使用するAPIキー。"
+msgstr "**APIキー**: パイプラインへのAPIコールを行う際に使用するAPIキー。"
 
 #: ../../administrators.rst:146
 msgid ""
@@ -288,8 +291,8 @@ msgid ""
 "it. If unchecked, all locations associated with this pipeline will be "
 "disabled."
 msgstr ""
-"**有効化：** "
-"チェックを入れると、このパイプラインはそれに関連する場所にアクセスできます。チェックを入れていない場合、このパイプラインに関連するすべての場所は無効になります。"
+"**有効**: "
+"チェックが入っている場合、このパイプラインは関連するロケーションにアクセスできます。チェックが入っていない場合、このパイプラインに関連するすべてのロケーションは無効になります。"
 
 #: ../../administrators.rst:148
 msgid ""
@@ -297,7 +300,8 @@ msgid ""
 "selected in Administration -> Configuration will be created for or "
 "associated with the new pipeline."
 msgstr ""
-"**デフォルトの場所**：チェックを入れると、管理 -> 設定で選択されたデフォルトの場所が新しいパイプラインに対して作成または関連付けられます。"
+"**デフォルトロケーション**: "
+"チェックが入っている場合、管理->設定で選択されたデフォルトロケーションは、新しいパイプラインに対して作成されるか、関連付けられます。"
 
 #: ../../administrators.rst:157
 msgid ""
@@ -306,11 +310,11 @@ msgid ""
 "NFS export path and hostname, or the username of a system accessible only "
 "via SSH, is stored."
 msgstr ""
-"スペースには、Archivematicaをストレージ場所に接続するために必要なすべての情報が含まれています。スペースは、NFSエクスポートパスとホスト名のようなプロトコル固有の情報、またはSSH経由でのみアクセス可能なシステムのユーザー名が保存される場所です。"
+"スペースは、Archivematicaをストレージロケーションに接続するために必要なすべての情報を含んでいます。スペースは、NFSエクスポートパスやホスト名、またはSSH経由でのみアクセス可能なシステムのユーザー名など、プロトコル固有の情報が保存される場所です。"
 
 #: ../../administrators.rst:-1
-msgid "Storage Service spaces screen."
-msgstr "ストレージサービススペース画面。"
+msgid "ストレージサービススペース画面。"
+msgstr "ストレージサービスのスペース画面。"
 
 #: ../../administrators.rst:167
 msgid ""
@@ -318,8 +322,8 @@ msgid ""
 "protocol that is selected. See :ref:`Access protocols <access-protocols>` "
 "below for more information."
 msgstr ""
-"選択したアクセスプロトコルにより、各スペースには特定の設定フィールドが存在します。詳細については、以下の「アクセスプロトコル<access-"
-"protocols>」をご覧ください。"
+"各スペースには、選択されたアクセスプロトコルに応じた特定の設定フィールドがあります。詳細については、以下の :ref:`アクセスプロトコル "
+"<access-protocols>` を参照してください。"
 
 #: ../../administrators.rst:173
 msgid ""
@@ -329,8 +333,9 @@ msgid ""
 "``/home/artefactual/maildir_transfers``, the space's path would be "
 "``/home/artefactual/``."
 msgstr ""
-"スペースは通常、ロケーションフォルダーの直接の親です。たとえば、``/home/artefactual/archivematica-"
-"sampledata``と``/home/artefactual/maildir_transfers``にある二つの転送元ロケーションを定義したい場合、スペースのパスは``/home/artefactual/``になります。"
+"スペースは通常、ロケーションフォルダの直接の親です。例えば、 ``/home/artefactual/archivematica-"
+"sampledata`` と ``/home/artefactual/maildir_transfers`` "
+"にある二つの転送元ロケーションを定義したい場合、スペースのパスは ``/home/artefactual/`` になります。"
 
 #: ../../administrators.rst:182
 msgid "Access protocols"
@@ -338,7 +343,7 @@ msgstr "アクセスプロトコル"
 
 #: ../../administrators.rst:187
 msgid "Arkivum"
-msgstr "Arkivum"
+msgstr "アーカイバム"
 
 #: ../../administrators.rst:189
 msgid ""
@@ -347,35 +352,33 @@ msgid ""
 "the Storage Service can copy files to an A-Stor datapool for AIP storage, "
 "for example."
 msgstr ""
-"Archivematicaはバージョン0.7以降でArkivumのA-"
-"Storをアクセスプロトコルとして使用することができます。A-StorはストレージサービスにCIFS共有を公開し、例えばAIPストレージのためにストレージサービスがA-"
-"Storのデータプールにファイルをコピーできるようにすることができます。"
+"Archivematicaはバージョン0.7以降でアーカイバムのA-"
+"Storをアクセスプロトコルとして使用できます。A-StorはCIFS共有をストレージサービスに露出させ、たとえば、ストレージサービスがファイルをA-"
+"StorデータプールにコピーしてAIPストレージとして利用できるようにします。"
 
 #: ../../administrators.rst:194
 msgid ""
 "Add an entry to ``/etc/fstab`` on the Storage Service, then mount the A-Stor"
 " CIFS share."
-msgstr "ストレージサービスの``/etc/fstab``にエントリを追加し、その後A-Stor CIFSシェアをマウントしてください。"
+msgstr "ストレージサービスの ``/etc/fstab`` にエントリを追加し、その後A-StorのCIFS共有をマウントします。"
 
 #: ../../administrators.rst:197
 msgid "Example::"
-msgstr ""
-"\"Archivematica is an open-source software platform designed for the long-term preservation of digital archives. It uses a micro-services design pattern to provide a flexible suite of software tools that allows users to process digital objects from ingest to access in compliance with the ISO-OAIS functional model. Archivematica uses METS, PREMIS, Dublin Core, and other metadata standards to ensure that digital materials remain accessible into the future.\"\n"
-"\n"
-"「Archivematicaはデジタルアーカイブの長期保存を目的としたオープンソースのソフトウェアプラットフォームです。マイクロサービスの設計パターンを使用して、ISO-OAIS機能モデルに準拠した形でデジタルオブジェクトを摂取からアクセスまで処理するための柔軟なソフトウェアツールスイートを提供します。Archivematicaは、METS、PREMIS、Dublin Core、その他のメタデータ標準を使用し、デジタル資料が将来にわたってアクセス可能であることを確保します。」"
+msgstr "例::"
 
 #: ../../administrators.rst:203
 msgid ""
 "In this example, ARK00092 is the name of the appliance and should be "
 "resolvable through DNS or be set as an entry in ``/etc/hosts``."
 msgstr ""
-"この例では、ARK00092はアプライアンスの名前であり、DNSを通じて解決可能であるか、``/etc/hosts``のエントリとして設定されるべきです。"
+"この例では、ARK00092はアプライアンスの名前であり、DNSを通じて解決可能であるか、または ``/etc/hosts`` "
+"にエントリとして設定する必要があります。"
 
 #: ../../administrators.rst:206
 msgid ""
 "Then, choosing Arkivum as the access protocol, create a new space in the "
 "Storage Service."
-msgstr "次に、アクセスプロトコルとしてArkivumを選択し、ストレージサービスに新しいスペースを作成します。"
+msgstr "次に、アクセスプロトコルとしてアーカイバムを選択し、ストレージサービスに新しいスペースを作成します。"
 
 #: ../../administrators.rst:211 ../../administrators.rst:234
 #: ../../administrators.rst:353 ../../administrators.rst:438
@@ -387,13 +390,13 @@ msgstr "次に、アクセスプロトコルとしてArkivumを選択し、ス�
 msgid ""
 "**Size**: the maximum size allowed for this space. Set to 0 or leave blank "
 "for unlimited. This field is optional."
-msgstr "**サイズ**：このスペースに許される最大のサイズ。無制限にする場合は0を設定するか、空欄にしてください。このフィールドはオプションです。"
+msgstr "**サイズ**: このスペースに許される最大サイズ。0に設定するか、無制限の場合は空白のままにします。このフィールドはオプショナルです。"
 
 #: ../../administrators.rst:213
 msgid ""
 "**Path**: the local path on the Storage Service machine to the CIFS share, "
 "e.g. ``/mnt/astor``"
-msgstr "**パス**：Storage Serviceマシン上のCIFS共有へのローカルパス（たとえば``/mnt/astor``）。"
+msgstr "**パス**: ストレージサービスマシン上のCIFS共有のローカルパスです。例えば ``/mnt/astor``"
 
 #: ../../administrators.rst:215
 msgid ""
@@ -401,39 +404,41 @@ msgid ""
 "filesystem compatible, preferably on the same filesystem as the path, e.g. "
 "``/mnt/astor/archivematica1/tmp``"
 msgstr ""
-"**ステージングパス**：ステージングエリアへの絶対パス。UNIXファイルシステムと互換性がなければならず、できれば同じファイルシステム上のパスであることが望ましい。例えば、``/mnt/astor/archivematica1/tmp``など。"
+"**ステージングパス**: "
+"ステージングエリアへの絶対パス。UNIXファイルシステムに互換性が必要で、可能であればパスと同じファイルシステム上にあるのが望ましいです。例えば "
+"``/mnt/astor/archivematica1/tmp``"
 
 #: ../../administrators.rst:218
 msgid ""
 "**Host**: the hostname of the Arkivum web instance or IP address with port, "
 "e.g. ``arkivum.example.com:8443``"
 msgstr ""
-"**ホスト**: "
-"Arkivumのウェブインスタンスのホスト名またはポート番号付きのIPアドレス（例：``arkivum.example.com:8443``）。"
+"**ホスト**: Arkivumウェブインスタンスのホスト名、またはポートを含むIPアドレス、例えば "
+"``arkivum.example.com:8443``"
 
 #: ../../administrators.rst:220
 msgid ""
 "**Remote user**: the username on the remote machine accessible via "
 "passwordless ssh. This field is optional."
-msgstr "**リモートユーザー**：パスワードレスSSH経由でアクセス可能なリモートマシン上のユーザー名。このフィールドは任意です。"
+msgstr "**リモートユーザー**: パスワードなしSSHでアクセス可能なリモートマシン上のユーザー名。このフィールドはオプショナルです。"
 
 #: ../../administrators.rst:222
 msgid ""
 "**Remote name**: the name or IP of the remote machine. This field is "
 "optional."
-msgstr "**リモート名**：リモートマシンの名前またはIP。このフィールドはオプションです。"
+msgstr "**リモート名**: リモートマシンの名前またはIP。このフィールドはオプショナルです。"
 
 #: ../../administrators.rst:227
 msgid "Dataverse"
-msgstr "データバース"
+msgstr "Dataverse"
 
 #: ../../administrators.rst:229
 msgid ""
 "Dataverse Integration is supported with Archivematica v1.8 (and higher) and "
 "Storage Service v0.13 (and higher)."
 msgstr ""
-"Dataverse Integrationは、Archivematica v1.8（およびそれ以降）およびStorage Service "
-"v0.13（およびそれ以降）で対応しています。"
+"Dataverseの統合は、Archivematica "
+"v1.8（およびそれ以上）およびストレージサービスv0.13（およびそれ以上）でサポートされています。"
 
 #: ../../administrators.rst:236 ../../administrators.rst:355
 #: ../../administrators.rst:440 ../../administrators.rst:473
@@ -441,7 +446,7 @@ msgstr ""
 #: ../../administrators.rst:560 ../../administrators.rst:679
 #: ../../administrators.rst:844
 msgid "**Path**: the absolute path to the Space on the local filesystem."
-msgstr "**パス**：ローカルファイルシステム上のスペースへの絶対パス。"
+msgstr "**パス**: ローカルファイルシステム上のスペースへの絶対パス。"
 
 #: ../../administrators.rst:237 ../../administrators.rst:356
 #: ../../administrators.rst:441 ../../administrators.rst:474
@@ -454,18 +459,19 @@ msgid ""
 "filesystem compatible and preferably will be located on the same filesystem "
 "as the path."
 msgstr ""
-"**ステージングパス**：ステージングエリアへの絶対パス。UNIXファイルシステムと互換性があることが必要で、できれば同一のファイルシステム内に位置していることが望まれます。"
+"**ステージングパス**: "
+"ステージングエリアへの絶対パスです。UNIXファイルシステムと互換性がある必要があり、できればパスと同じファイルシステム上に位置していることが望ましいです。"
 
 #: ../../administrators.rst:239
 msgid ""
 "**Host**: Hostname or IP address of the Dataverse instance, e.g. "
 "``test.dataverse.org``"
-msgstr "**ホスト**：Dataverseインスタンスのホスト名またはIPアドレス。例：``test.dataverse.org``"
+msgstr "**ホスト**: Dataverseインスタンスのホスト名またはIPアドレスです。例: ``test.dataverse.org``"
 
 #: ../../administrators.rst:241
 msgid ""
 "**API key**: the key generated by Dataverse for a specific user account"
-msgstr "**APIキー**：特定のユーザーアカウント向けにDataverseによって生成されたキー"
+msgstr "**APIキー**: Dataverseによって特定のユーザーアカウント向けに生成されるキーです。"
 
 #: ../../administrators.rst:242
 msgid ""
@@ -473,24 +479,26 @@ msgid ""
 "identify this Dataverse instance as a PREMIS agent, e.g. ``My Institution's "
 "Dataverse Instance``."
 msgstr ""
-"**エージェント名**： このDataverseインスタンスをPREMISエージェントとしてArchivematica "
-"METSファイルに識別するために使用される文字列、例えば``My Institution's Dataverse Instance``など。"
+"**エージェント名**: "
+"ArchivematicaのMETSファイルにおいて、このDataverseインスタンスをPREMISエージェントとして特定するために使用される文字列です。例:"
+" ``My Institution's Dataverse Instance``。"
 
 #: ../../administrators.rst:245
 msgid ""
 "**Agent type**: a string that will be used in Archivematica METS file to "
 "identify the type of PREMIS agent named above, e.g. ``organization``."
 msgstr ""
-"**エージェントタイプ**： 上記のPREMISエージェントの種類を特定するためにArchivematica "
-"METSファイルで使用される文字列、例えば``組織``。"
+"**エージェントタイプ**: "
+"ArchivematicaのMETSファイルで上記のPREMISエージェントのタイプを特定するために使用される文字列です。例: "
+"``organization`` 。"
 
 #: ../../administrators.rst:247
 msgid ""
 "**Agent identifier**: a string that will be used as an identifier in the "
 "Archivematica METS file to uniquely identify the PREMIS agent named above."
 msgstr ""
-"**エージェント識別子**：上記のPREMISエージェントを一意に識別するために、Archivematica "
-"METSファイルで識別子として使用される文字列です。"
+"**エージェント識別子**: "
+"ArchivematicaのMETSファイルにおいて、上記のPREMISエージェントを一意に識別するために使用される文字列です。"
 
 #: ../../administrators.rst:250
 msgid ""
@@ -498,7 +506,7 @@ msgid ""
 "purposes are not currently supported). At least one location should be "
 "created as a Transfer Source."
 msgstr ""
-"Dataverseスペースは、転送元の場所（現在は他の目的の場所はサポートされていません）をサポートしています。少なくとも1つの場所は転送元として作成する必要があります。"
+"Dataverseのスペースは、「トランスファーソースロケーション」を支援しています（その他の目的のロケーションは現在サポートされていません）。トランスファーソースとして少なくとも1つのロケーションが作成されている必要があります。"
 
 #: ../../administrators.rst:254
 msgid ""
@@ -508,8 +516,8 @@ msgid ""
 " to indicate a sub-dataverse. For example, the following entry in 'Relative "
 "Path'::"
 msgstr ""
-"このロケーション内で、相対パスはDataverse検索APIで利用可能な2つのパラメータを設定するために使用できます。q（または\"Query\"）パラメータは一般的な検索パラメータです。'subtree'パラメータは、サブ-"
-"dataverseを指定するために使用できます。例えば、'Relative Path'に以下のエントリーがあります："
+"このロケーション内の相対パスは、Dataverse検索APIで利用可能なパラメータの2つを設定するために使用することができます。q（または「クエリ」）パラメータは一般的な検索パラメータです。「subtree」パラメータはサブデータバースを示すために使うことができます。例えば、'Relative"
+" Path'に以下のエントリを追加すると::"
 
 #: ../../administrators.rst:262
 msgid ""
@@ -517,7 +525,7 @@ msgid ""
 "parameters are set using the fields described above for the space, or are "
 "set with fixed values. The parameters used are::"
 msgstr ""
-"Archivematicaデータベース内のすべてのデータセットを返します。他のAPIパラメータは、上記で説明したスペースのフィールドを使用して設定されるか、固定値で設定されます。使用されるパラメータは以下の通りです。"
+"Archivematicaデータバース内の全てのデータセットを返します。他のAPIパラメータは、スペースに対して上述のフィールドを使用して設定されるか、固定値で設定されます。使用されるパラメータは以下です::"
 
 #: ../../administrators.rst:280
 msgid ""
@@ -526,8 +534,8 @@ msgid ""
 "specific search criteria. For further details of the API parameters, see the"
 " `Dataverse api guide`_."
 msgstr ""
-"検索結果は現在、50のデータセットに制限されています。50以上のデータセットを持つリポジトリについては、より具体的な検索条件を持つ複数のロケーションを作成することを推奨します。APIパラメータの詳細については、`Dataverse"
-" api guide`_をご参照ください。"
+"検索結果は現在50データセットに限定されています。50を超えるデータセットがあるリポジトリには、より具体的な検索基準で複数のロケーションを作成することをお勧めします。APIパラメータの詳細については、"
+" `Dataverse api guide`_ を参照してください。"
 
 #: ../../administrators.rst:288
 msgid "DuraCloud"
@@ -539,15 +547,15 @@ msgid ""
 "Service in version 0.5 and higher. A Storage Service space has a one-to-one "
 "relationship to a space within DuraCloud."
 msgstr ""
-"Archivematicaは、バージョン0.5以降でストレージサービスのアクセスプロトコルとしてDuraCloudを使用することができます。ストレージサービススペースは、DuraCloud内のスペースと一対一の関係を持っています。"
+"Archivematicaはバージョン0.5以降のストレージサービスのアクセスプロトコルとしてDuraCloudを使用することができます。ストレージサービスのスペースは、DuraCloud内のスペースと一対一の関係があります。"
 
 #: ../../administrators.rst:294
 msgid ""
 "To set up your Archivematica instance with DuraCloud, please see :ref:`Using"
 " DuraCloud with Archivematica <archivematica:duracloud-setup>`."
 msgstr ""
-"あなたのArchivematicaインスタンスをDuraCloudと共に設定するには、以下をご参照ください： "
-":ref:`DuraCloudとArchivematicaの使用 <archivematica:duracloud-setup>`。"
+"ArchivematicaインスタンスをDuraCloudで設定するには、 :ref:`ArchivematicaでDuraCloudを使用する "
+"<archivematica:duracloud-setup>` を参照してください。"
 
 #: ../../administrators.rst:299
 msgid "**Access protocol**: DuraCloud"
@@ -567,37 +575,37 @@ msgid ""
 "place files for staging purposes, for example "
 "``var/archivematica/storage_service/duracloud_staging``"
 msgstr ""
-"**ステージングパス**： "
-"Archivematicaがステージング目的でファイルを置くことができる、あなたのローカルディスク上の場所。例えば、「var/archivematica/storage_service/duracloud_staging」など。"
+"**ステージングパス**: Archivematicaがステージング用にファイルを配置するための、ローカルディスク上の場所です。例えば "
+"``var/archivematica/storage_service/duracloud_staging`` がこれに該当します。"
 
 #: ../../administrators.rst:305
 msgid ""
 "**Host**: Hostname of the DuraCloud instance, e.g. ``site.duracloud.org``"
-msgstr "**Host**: DuraCloudインスタンスのホスト名、例えば``site.duracloud.org``"
+msgstr "**ホスト**: DuraCloudインスタンスのホスト名。例: ``site.duracloud.org``"
 
 #: ../../administrators.rst:306
 msgid ""
 "**Username**: The username for the Archivematica user that you created in "
 "DuraCloud."
-msgstr "**ユーザ名**: DuraCloudで作成したArchivematicaユーザーのユーザ名。"
+msgstr "**ユーザー名**: DuraCloudで作成したArchivematicaユーザーのユーザー名。"
 
 #: ../../administrators.rst:308
 msgid ""
 "**Password**: The password for the Archivematica user that you created in "
 "DuraCloud."
-msgstr "**パスワード**：あなたがDuraCloudで作成したArchivematicaユーザーのパスワード。"
+msgstr "**パスワード**: DuraCloudで作成したArchivematicaユーザーのパスワード。"
 
 #: ../../administrators.rst:310
 msgid ""
 "**Duraspace**: The name of the space in DuraCloud you are creating this "
 "Storage Service space for (e.g. transfer-source, aip-store, etc)."
 msgstr ""
-"**Duraspace**: これがストレージサービススペースを作成するDuraCloud内のスペース名です（例：transfer-"
-"source、aip-storeなど）。"
+"**Duraspace**: このストレージサービスのスペースを作成するためにDuraCloudで指定するスペースの名前です（例: transfer-"
+"source, aip-store など）。"
 
 #: ../../administrators.rst:316
 msgid "DSpace via REST API"
-msgstr "REST APIを介したDSpace"
+msgstr "REST APIを経由するDSpace"
 
 #: ../../administrators.rst:318
 msgid ""
@@ -609,8 +617,8 @@ msgid ""
 "normalized objects as well as the metadata pertaining to them. The DIP will "
 "be deposited as uncompressed files with the folder structure flattened."
 msgstr ""
-"DSpace via REST "
-"APIの場所は、AIPおよびDIPストレージの両方の場所でサポートされています。DSpaceは通常、パブリックフェーシングなシステムとして使用されるため、AIPストレージ用の他のアクセスプロトコルを使用するときとは動作が異なります。DSpaceに預けられたAIPは、すべてのオリジナルおよび正規化オブジェクトならびにそれらに関連するメタデータを含む単一の圧縮オブジェクトファイル（ビットストリーム）として預けられます。DIPは、フォルダ構造がフラット化された非圧縮ファイルとして預けられます。"
+"REST "
+"APIを経由するDSpaceは、AIPおよびDIPのストレージ場所の両方をサポートしています。通常DSpaceは公開向けシステムとして使用されるため、AIP用の他のアクセスプロトコルを使用する場合とは挙動が異なります。DSpaceに預ける際には、AIPはオリジナルと正規化されたオブジェクトおよびそれらに関連するメタデータを含む単一の圧縮オブジェクトファイル（ビットストリーム）として預けられます。DIPは圧縮されていないファイルとして、フォルダ構造をフラットにして預けられます。"
 
 #: ../../administrators.rst:326
 msgid ""
@@ -618,8 +626,7 @@ msgid ""
 "downloading/reconstituting the AIP - this must be done manually from the "
 "DSpace interface."
 msgstr ""
-"現在、ストレージサービスとダッシュボードは、AIPをダウンロード/再構成する能力を持っていません - "
-"これはDSpaceインターフェースから手動で行う必要があります。"
+"現在のところ、ストレージサービスおよびダッシュボードはAIPのダウンロードや再構築を行う機能を持っていません。これらの操作はDSpaceのインターフェースから手動で行う必要があります。"
 
 #: ../../administrators.rst:330
 msgid ""
@@ -631,24 +638,26 @@ msgid ""
 "corresponding DSpace record created for the AIP/DIP. In addition there are "
 "three optional custom properties which can be defined:"
 msgstr ""
-"DSpace via REST "
-"APIスペースは、自動化を増加させるための新しい方法を提供します。CSVまたはJSONファイルとして、転送とともに:ref:`metadata<archivematica:import-"
-"metadata>`を供給することが可能です。「objects」のルートフォルダのエントリでは、任意の数のダブリンコアメタデータエレメントセットプロパティを定義することが可能で、これらはAIP/DIPに作成される対応するDSpaceレコードにマッピングされます。さらに、定義可能な3つのオプションのカスタムプロパティもあります。"
+"DSpace 経由の REST API スペースは、自動化の度合いを高めるための新しい方法を提供します。CSV または JSON ファイルとして "
+":ref:`転送時のメタデータ <archivematica:import-metadata>` を供給することが可能です。ルートフォルダ "
+"``objects`` のエントリで、任意の数の Dublin Core メタデータ要素セットのプロパティを定義でき、これらは AIP/DIP "
+"に対して作成される対応する DSpace レコードにマッピングされます。さらに、定義可能な3つのオプションのカスタムプロパティがあります:"
 
 #: ../../administrators.rst:338
 msgid ""
 "``dspace_dip_collection``: the UUID of the DSpace collection into which the "
 "DIP will be deposited. E.g. ``a12d749c-7727-4121-b6be-478cacde658f``"
 msgstr ""
-"``dspace_dip_collection``：DIPが預けられるDSpaceコレクションのUUID。例えば、``a12d749c-7727-4121-b6be-478cacde658f``"
+"``dspace_dip_collection`` : DIP が預けられる DSpace コレクションの UUID です。例: "
+"``a12d749c-7727-4121-b6be-478cacde658f``"
 
 #: ../../administrators.rst:340
 msgid ""
 "``dspace_aip_collection``: the UUID of the DSpace collection into which the "
 "AIP will be deposited. E.g. ``80c3519d-7a07-4830-beae-a868c149ecbe``"
 msgstr ""
-"``dspace_aip_collection``: "
-"AIPが預けられるDSpaceコレクションのUUID。例えば、``80c3519d-7a07-4830-beae-a868c149ecbe``"
+"``dspace_aip_collection`` : AIP が預けられる DSpace コレクションの UUID です。例: "
+"``80c3519d-7a07-4830-beae-a868c149ecbe``"
 
 #: ../../administrators.rst:342
 msgid ""
@@ -656,16 +665,16 @@ msgid ""
 "which a child digital object will be created which will link to the DSpace "
 "DIP record. E.g. ``135569``"
 msgstr ""
-"``archivesspace_dip_collection``: DSpace "
-"DIPレコードにリンクする子デジタルオブジェクトが作成されるアーカイブオブジェクトの識別子です。例えば、``135569``となります。"
+"``archivesspace_dip_collection`` : 子デジタルオブジェクトが作成され、DSpace DIP "
+"レコードにリンクされるアーカイブオブジェクトの識別子です。例: ``135569``"
 
 #: ../../administrators.rst:348
 msgid ""
 "Note that the DSpace via REST API space only supports DSpace 6.x and not "
 "other versions of DSpace."
 msgstr ""
-"DSpace via REST "
-"APIスペースはDSpaceのバージョン6.xのみをサポートし、DSpaceの他のバージョンはサポートしていないことに注意してください。"
+"DSpace 経由の REST API スペースは DSpace 6.x のみをサポートし、他のバージョンの DSpace "
+"はサポートしていないことに注意してください。"
 
 #: ../../administrators.rst:358 ../../administrators.rst:448
 msgid ""
@@ -673,19 +682,18 @@ msgid ""
 "``http://localhost:8080/rest/``; for production systems, this address will "
 "be slightly different, such as: ``https://demo.dspace.org/rest/``."
 msgstr ""
-"**REST URL**: \"REST\" ウェブアプリへのURLです。 例: ``http://localhost:8080/rest/``; "
-"実稼働システムでは、このアドレスは少し異なる場合があります。例えば: "
-"``https://demo.dspace.org/rest/``のような形となります。"
+"**REST URL**: 「REST」ウェブアプリへの URL。例: ``http://localhost:8080/rest/`` ; "
+"本番システムでは、このアドレスは例えば ``https://demo.dspace.org/rest/`` のようにわずかに異なります。"
 
 #: ../../administrators.rst:361 ../../administrators.rst:446
 msgid ""
 "**User**: a username for the DSpace instance with sufficient permissions to "
 "permit authentication."
-msgstr "**ユーザー**：認証を許可するための十分な権限を持つDSpaceインスタンスのユーザー名。"
+msgstr "**User**: 認証を許可するのに十分な権限を持つ DSpace インスタンスのユーザー名。"
 
 #: ../../administrators.rst:363 ../../administrators.rst:451
 msgid "**Password**: the password for the username above."
-msgstr "**パスワード**: 上記のユーザー名のパスワード。"
+msgstr "**パスワード**: 上記のユーザー名用のパスワード。"
 
 #: ../../administrators.rst:364
 msgid ""
@@ -693,7 +701,7 @@ msgid ""
 "the DIP will be deposited barring it being designated in a transfer metadata"
 " file."
 msgstr ""
-"**デフォルトのDSpace DIPコレクションID**：転送メタデータファイルに指定がない場合、DIPが預けられるコレクションのUUIDです。"
+"**デフォルトDSpace DIPコレクションID**: 転送メタデータファイルで指定されていない場合にDIPが預けられるコレクションのUUID。"
 
 #: ../../administrators.rst:367
 msgid ""
@@ -701,14 +709,13 @@ msgid ""
 "the AIP will be deposited barring it being designated in a transfer metadata"
 " file."
 msgstr ""
-"**デフォルトのDSpace "
-"AIPコレクションid**：AIPが転送メタデータファイルで指定されていない限り、AIPが預けられるコレクションのUUIDです。"
+"**デフォルトDSpace AIPコレクションID**: 転送メタデータファイルで指定されていない場合にAIPが預けられるコレクションのUUID。"
 
 #: ../../administrators.rst:373
 msgid ""
 "The following seven fields are optional and can safely be ignored should you"
 " only require a connection to DSpace."
-msgstr "以下の7つのフィールドはオプショナルであり、DSpaceへの接続のみが必要である場合、無視しても安全です。"
+msgstr "次の7つのフィールドはオプションであり、DSpaceへの接続のみが必要な場合は安全に無視してもかまいません。"
 
 #: ../../administrators.rst:376
 msgid ""
@@ -717,32 +724,31 @@ msgid ""
 "ArchivesSpace, the DSpace via REST space gives you the option to configure "
 "different ArchiveSpaces instances per space."
 msgstr ""
-"DSpace via SWORD2スペースとは異なり、シングルのArchivesSpaceを設定するために:ref:`ダッシュボード管理タブ "
-"<archivematica:dashboard-admin>`を使用するのに対して、DSpace via "
-"RESTスペースはスペースごとに異なるArchiveSpacesインスタンスを設定するオプションを提供します。"
+"SWORD2を介したDSpaceスペースは :ref:`ダッシュボード管理タブ<archivematica:dashboard-admin>` "
+"を使用して単一のArchivesSpaceを設定するのに対して、RESTを介したDSpaceスペースでは、スペースごとに異なるArchiveSpacesのインスタンスを設定する選択肢があります。"
 
 #: ../../administrators.rst:381
 msgid ""
 "**ArchivesSpace URL**: URL to the ArchiveSpace server. E.g.: "
 "``http://sandbox.archivesspace.org/``."
 msgstr ""
-"**ArchivesSpace URL**: ArchivesSpaceサーバーへのURL。 例: "
-"``http://sandbox.archivesspace.org/``。"
+"**ArchivesSpace URL**: ArchiveSpaceサーバーのURL。例: "
+"``http://sandbox.archivesspace.org/`` 。"
 
 #: ../../administrators.rst:383
 msgid "**ArchivesSpace user**: ArchivesSpace username to authenticate as"
-msgstr "**ArchivesSpaceユーザー**: 認証するためのArchivesSpaceユーザー名"
+msgstr "**ArchivesSpaceユーザー**: 認証に使用するArchivesSpaceのユーザー名"
 
 #: ../../administrators.rst:384
 msgid ""
 "**ArchivesSpace password**: ArchivesSpace password to authenticate with"
-msgstr "**ArchivesSpaceのパスワード**: ArchivesSpaceに認証するためのパスワード"
+msgstr "**ArchivesSpaceパスワード**: 認証に使用するArchivesSpaceのパスワード"
 
 #: ../../administrators.rst:385
 msgid ""
 "**Default ArchivesSpace repository**: Identifier of the default "
 "ArchivesSpace repository"
-msgstr "**デフォルトのArchivesSpaceリポジトリ**：デフォルトのArchivesSpaceリポジトリの識別子"
+msgstr "**デフォルトArchivesSpaceリポジトリ**: デフォルトのArchivesSpaceリポジトリの識別子"
 
 #: ../../administrators.rst:387
 msgid ""
@@ -750,8 +756,8 @@ msgid ""
 "ArchivesSpace archival object barring it being designated in a transfer "
 "metadata file"
 msgstr ""
-"**デフォルトのArchivesSpaceアーカイブオブジェクト**: "
-"転送メタデータファイルで指定されていない場合の、デフォルトのArchivesSpaceアーカイブオブジェクトの識別子"
+"**デフォルトArchivesSpaceアーカイブオブジェクト**: "
+"転送メタデータファイルで指定されていない場合に使用される、デフォルトのArchivesSpaceアーカイブオブジェクトの識別子"
 
 #: ../../administrators.rst:390
 msgid ""
@@ -760,8 +766,8 @@ msgid ""
 " space. Essentially it executes a bash command using a binary called "
 "``dsmc``."
 msgstr ""
-"**AIPをTivoli Storage "
-"Managerに送信する**：これは、このスペースの開発をスポンサードしたエジンバラ大学の要求に特化した機能です。基本的には、「dsmc」と呼ばれるバイナリを使用したbashコマンドを実行します。"
+"**Tivoli Storage ManagerへのAIP送信**: これはエジンバラ大学の要望に基づいて開発された機能で、 ``dsmc`` "
+"というバイナリを使用してbashコマンドを実行します。"
 
 #: ../../administrators.rst:393
 msgid ""
@@ -769,11 +775,12 @@ msgid ""
 "requests, just like a web browser. By default, SSL verification is enabled, "
 "and Requests will throw a SSLError if it’s unable to verify the certificate:"
 msgstr ""
-"**SSL証明書の確認**：Requestsは、ウェブブラウザと同様に、HTTPSリクエストに対するSSL証明書を検証します。デフォルトでは、SSL認証が有効になっており、証明書を確認することができない場合、RequestsはSSLErrorをスローします。"
+"**SSL証明書の検証**: "
+"Requestsはウェブブラウザと同様にHTTPSリクエストのSSL証明書を検証します。デフォルトではSSL検証が有効になっており、証明書を検証できない場合はSSLErrorが発生します。"
 
 #: ../../administrators.rst:400
 msgid "DSpace via SWORD2 API"
-msgstr "DSpaceを通じたSWORD2 API"
+msgstr "DSpaceを経由するSWORD2 API"
 
 #: ../../administrators.rst:402
 msgid ""
@@ -782,19 +789,19 @@ msgid ""
 "behaviour is different than when using other access protocols for AIP "
 "Storage: upon deposit in DSpace, the AIP will be split into two parts:"
 msgstr ""
-"DSpace経由のSWORD2ロケーションは、現在AIPストレージロケーションのみでサポートされています。DSpaceは一般に公開用のシステムとして使用されるため、AIPストレージの他のアクセスプロトコルを使用する場合とは動作が異なります：DSpaceへの預け入れ時に、AIPは二つのパートに分割されます："
+"DSpaceを経由するSWORD2の場所は現在、AIPストレージの場所に対してのみサポートされています。DSpaceは通常、パブリックフェイシングシステムとして使用されるため、AIPストレージのための他のアクセスプロトコルを使用する場合とは動作が異なります。DSpaceに預けると、AIPは2つの部分に分割されます："
 
 #: ../../administrators.rst:407
 msgid ""
 "a compressed objects file (bitstream), which contains all original and "
 "normalized objects"
-msgstr "圧縮されたオブジェクトファイル（ビットストリーム）は、すべてのオリジナルと正規化されたオブジェクトを含んでいます。"
+msgstr "すべてのオリジナルおよび標準化されたオブジェクトを含む、圧縮されたオブジェクトファイル（ビットストリーム）"
 
 #: ../../administrators.rst:409
 msgid ""
 "as well as a metadata file (bitstream), which contains all of the bag "
 "artifacts, metadata and logs"
-msgstr "それはメタデータファイル（ビットストリーム）も含むもので、全てのバッグアーティファクト、メタデータ、ログが含まれています。"
+msgstr "すべてのバッグアーティファクト、メタデータ、およびログを含む、メタデータファイル（ビットストリーム）"
 
 #: ../../administrators.rst:412
 msgid ""
@@ -803,8 +810,8 @@ msgid ""
 "capable of downloading/reconstituting the AIP - this must be done manually "
 "from the DSpace interface."
 msgstr ""
-"メタデータビットストリームはオプションで制限することができます。詳細は、以下の`restrictedmetadata`を参照してください。現在、ストレージサービスとダッシュボードはAIPのダウンロード/再構成を行うことができません"
-" - これはDSpaceインターフェースから手動で行う必要があります。"
+"メタデータビットストリームはオプションで制限することができます。 :ref:`以下を参照してください <restrictedmetadata>` "
+"。現在、ストレージサービスおよびダッシュボードはAIPのダウンロード/再構成ができません。これはDSpaceインターフェースから手動で行う必要があります。"
 
 #: ../../administrators.rst:417
 msgid ""
@@ -814,9 +821,11 @@ msgid ""
 "record upon AIP storage. The ArchivesSpace configuration is set up in the "
 ":ref:`Dashboard administration tab <archivematica:dashboard-admin>`."
 msgstr ""
-":ref:`評価タブ "
-"<archivematica:appraisal>`内のArchivesSpaceワークフローと連携してDSpaceをAIPの保存場所として使用する場合、AIPストアの後に起動するフックがDSpaceハンドルをArchivesSpaceデジタルオブジェクトレコードに送信します。ArchivesSpaceの設定は、:ref:`ダッシュボード管理タブ"
-" <archivematica:dashboard-admin>`で設定します。"
+"ArchivesSpaceのワークフローにおいてDSpaceをAIPの保管場所として使用する場合、 :ref:`鑑定タブ "
+"<archivematica:appraisal>` "
+"にて、AIPを保管した後に、DspaceのハンドルをArchivesSpaceのデジタルオブジェクトレコードに送信する「Store "
+"AIP」後処理フックがあります。ArchivesSpaceの設定は、 :ref:`ダッシュボード管理タブ "
+"<archivematica:dashboard-admin>` で設定されます。"
 
 #: ../../administrators.rst:425
 msgid ""
@@ -825,9 +834,8 @@ msgid ""
 "make sure that the REST API is configured, see the `DSpace 5 REST API "
 "documentation`_."
 msgstr ""
-"DSpace via SWORD2 APIスペースは、メタデータファイルの権限を変更するためにDSpace REST "
-"APIを使用します。これは、REST APIが設定されていることを確認する必要があることを意味します。詳細については、`DSpace 5 REST "
-"API documentation`_をご覧ください。"
+"DSpace via SWORD2 APIスペースはDSpace REST APIを使用してメタデータファイルの権限を変更します。これは、REST "
+"APIが適切に設定されていることを確認する必要があることを意味します。詳細は `DSpace 5 REST APIドキュメント`_ を参照してください。"
 
 #: ../../administrators.rst:430
 msgid ""
@@ -835,8 +843,9 @@ msgid ""
 " other versions. See changes in authentication in the DSpace REST API "
 "between versions 5 and 6 in the `DSpace 6 REST API documentation`_."
 msgstr ""
-"DSpace via SWORD2 APIのスペース機能は、DSpace 5のみをサポートし、他のバージョンはサポートしていません。DSpace "
-"REST APIのバージョン5と6の間での認証の変更については、`DSpace 6 REST APIのドキュメンテーション`_ をご覧ください。"
+"DSpace via SWORD2 APIスペース機能はDSpace "
+"5のみをサポートし、他のバージョンはサポートしていません。バージョン5とバージョン6の間でのDSpace REST APIの認証の変更については、 "
+"`DSpace 6 REST APIドキュメント`_ をご覧ください。"
 
 #: ../../administrators.rst:443
 msgid ""
@@ -844,8 +853,9 @@ msgid ""
 "``http://demo.dspace.org/swordv2/servicedocument``, where servicedocument is"
 " the handle to the community or collection being used for deposit."
 msgstr ""
-"**サービスドキュメントIRI**： "
-"サービスドキュメントのURL。例えば、「http://demo.dspace.org/swordv2/servicedocument」など、servicedocumentはデポジットに使用されるコミュニティまたはコレクションのハンドルです。"
+"**サービスドキュメントIRI**: サービスドキュメントのURLです。例: "
+"``http://demo.dspace.org/swordv2/servicedocument`` "
+"ここでのservicedocumentは、デポジットに使用されるコミュニティまたはコレクションのハンドルです。"
 
 #: ../../administrators.rst:452
 msgid ""
@@ -855,11 +865,13 @@ msgid ""
 "This will override existing policies."
 msgstr ""
 "**制限されたメタデータポリシー**: "
-"メタデータビットストリームへのアクセスを制限するために使用します。JSONのオブジェクトのリストとして指定する必要があります。例えば、``[{\"action\":\"READ\",\"groupId\":\"5\",\"rpType\":\"TYPE_CUSTOM\"}]``のようにします。これは既存のポリシーを上書きします。"
+"メタデータビットストリームへのアクセスを制限するために使用します。JSONでオブジェクトのリストとして指定する必要があります。例えば、 "
+"``[{\"action\":\"READ\",\"groupId\":\"5\",\"rpType\":\"TYPE_CUSTOM\"}]`` "
+"などです。これにより、既存のポリシーが上書きされます。"
 
 #: ../../administrators.rst:460
 msgid "Fedora via SWORD2"
-msgstr "Fedora経由のSWORD2"
+msgstr "Fedora via SWORD2"
 
 #: ../../administrators.rst:462
 msgid ""
@@ -869,17 +881,19 @@ msgid ""
 "ingest of material from Islandora to Archivematica. This workflow is in beta"
 " testing as of Storage Service 0.9/Archivematica 1.5/Islandora 7.x-1.6."
 msgstr ""
-"現在、FedoraはSWORD2を経由してStorage Serviceでアクセスプロトコルとしてサポートされており、`Archidoraプラグイン "
-"<https://wiki.duraspace.org/display/ISLANDORA/Archidora>`_の利用を容易にしています。これによりIslandoraからArchivematicaへの素材の取り込みが可能になります。このワークフローは、Storage"
-" Service 0.9/Archivematica 1.5/Islandora 7.x-1.6のベータテスト段階にあります。"
+"SWORD2経由のFedoraは、現在、アクセスプロトコルとしてStorage "
+"Serviceでサポートされており、IslandoraからArchivematicaへの素材の取り込みを可能にする `Archidoraプラグイン "
+"<https://wiki.duraspace.org/display/ISLANDORA/Archidora>`_ "
+"の使用を容易にしています。このワークフローは、Storage Service 0.9/Archivematica 1.5/Islandora "
+"7.x-1.6 の時点でベータテスト中です。"
 
 #: ../../administrators.rst:476
 msgid "**Fedora user**: Fedora user name (for SWORD functionality)."
-msgstr "**Fedoraユーザー**: Fedoraユーザー名（SWORD機能用）です。"
+msgstr "**Fedoraユーザー**: Fedoraユーザー名（SWORD機能用）。"
 
 #: ../../administrators.rst:477
 msgid "**Fedora password**: Fedora password (for SWORD functionality)."
-msgstr "**Fedoraパスワード**：SWORD機能用のFedoraパスワード。"
+msgstr "**Fedoraパスワード**: Fedoraパスワード（SWORD機能用）。"
 
 #: ../../administrators.rst:478
 msgid "**Fedora name**: Name or IP of the remote Fedora machine."
@@ -889,7 +903,7 @@ msgstr "**Fedora名**: リモートFedoraマシンの名前またはIP。"
 msgid ""
 "A Location (see below) must also be created, with the purpose of FEDORA "
 "Deposits."
-msgstr "以下に示す場所も作成する必要があります。その目的は、FEDORAのデポジットです。"
+msgstr "また、FEDORAデポジットの目的で、ロケーション（以下参照）を作成する必要があります。"
 
 #: ../../administrators.rst:485
 msgid ""
@@ -897,8 +911,8 @@ msgid ""
 "added to the IP whitelist for the REST API, so that transfers will be "
 "approved automatically."
 msgstr ""
-"Archivematicaのダッシュボードでは、ストレージサービスのIPがREST "
-"APIのIPホワイトリストに追加する必要があります。これにより、転送が自動的に承認されます。"
+"Archivematicaダッシュボードで、トランスファーが自動的に承認されるように、Storage ServiceのIP をREST "
+"APIのIPホワイトリストに追加する必要があります。"
 
 #: ../../administrators.rst:489
 msgid ""
@@ -906,8 +920,8 @@ msgid ""
 " that can be deleted once they have been stored by Archivematica. See the "
 ":ref:`Administration <administration>` section."
 msgstr ""
-"保存後のコールバックを設定すると、IslandoraはArchivematicaによって保存された後に削除できるオブジェクトをリストアップできます。詳しくは、「管理"
-" <administration>」セクションをご覧ください。"
+"IslandoraがArchivematicaに保存された後に削除可能なオブジェクトをリストすることができるように、ポストストアコールバックを設定できます。"
+" :ref:`管理 <administration>` セクションを参照してください。"
 
 #: ../../administrators.rst:497
 msgid "GPG encryption on local file system"
@@ -919,31 +933,32 @@ msgid ""
 "and transfers. Only AIP storage, Transfer backlog and Replicator locations "
 "can be created in a GPG encryption space."
 msgstr ""
-"GPG暗号化スペースを作成することにより、ユーザーは暗号化されたAIPと転送を作成することが可能になります。GPG暗号化スペースでは、AIPストレージ、転送バックログ、およびレプリケータの場所のみが作成できます。"
+"GPG暗号化空間を作成することにより、ユーザーは暗号化されたAIPおよびトランスファーを作成することができます。GPG暗号化空間では、AIPストレージ、トランスファーバックログ、レプリケーターロケーションのみを作成できます。"
 
 #: ../../administrators.rst:503
 msgid ""
 "Encrypted AIPs and transfers can be downloaded unencrypted via the Storage "
 "Service and Archivematica dashboard."
 msgstr ""
-"暗号化されたAIPsと転送は、ストレージサービスとArchivematicaダッシュボードを介して暗号化解除された状態でダウンロードできます。"
+"暗号化されたAIPと転送は、ストレージサービスとArchivematicaダッシュボードを介して、暗号化されていない状態でダウンロードすることが可能です。"
 
 #: ../../administrators.rst:506
 msgid ""
 "Before creating a GPG encryption space ensure that you have created or "
 "imported a GPG key on the :ref:`Administration page <administration>`."
 msgstr ""
-"GPG暗号化スペースを作成する前に、:ref:`管理ページ<administration>`でGPGキーを作成またはインポートしたことを確認してください。"
+"GPG暗号化スペースを作成する前に、 :ref:`管理ページ <administration>` "
+"でGPGキーを作成またはインポートしていることを確認してください。"
 
 #: ../../administrators.rst:516
 msgid "**Key**: the encryption key to be used for the space."
-msgstr "**キー**: このスペースで使用する暗号化キー。"
+msgstr "**キー**: スペースに対して使用される暗号キー。"
 
 #: ../../administrators.rst:520
 msgid ""
 "It is possible to encrypt uncompressed AIPs, which will be stored as tar "
 "files."
-msgstr "未圧縮のAIPを暗号化することが可能で、これらはtarファイルとして保存されます。"
+msgstr "未圧縮のAIPを暗号化し、tarファイルとして保存することができます。"
 
 #: ../../administrators.rst:523
 msgid ""
@@ -951,7 +966,7 @@ msgid ""
 "changed and the original key is deleted/unknown, Archivematica will have no "
 "record of the key for decryption."
 msgstr ""
-"圧縮されていないAIPにはポインターファイルが存在しないため、スペースのキーが変更され、元のキーが削除/不明になった場合、Archivematicaは復号化のためのキーの記録を持っていません。"
+"未圧縮のAIPはポインターファイルを持っていないため、スペースのキーが変更され元のキーが削除/不明な場合、Archivematicaは復号化用のキーの記録を持っていません。"
 
 #: ../../administrators.rst:530
 msgid "Local Filesystem"
@@ -966,7 +981,7 @@ msgid ""
 "locally mounted, we recommend using a more specific Space if one is "
 "available."
 msgstr ""
-"ローカルファイルシステムスペースは、ストレージサービスが実行されているマシン上で利用可能なストレージを管理します。通常、これはマシンに接続されたハードドライブ、SSD、またはレイドアレイを指しますが、既にマウントされたリモートストレージも含むことができます。ローカルにマウントされたリモートストレージについては、利用可能な場合はより具体的なスペースを使用することをお勧めします。"
+"ローカルファイルシステムスペースは、ストレージサービスを実行しているマシン上のローカルに使用可能なストレージを扱います。通常はマシンに添付されたハードドライブ、SSD、またはRAIDアレイですが、すでにマウントされたリモートストレージも含むことがあります。ローカルにマウントされたリモートストレージに関しては、利用可能な場合はより具体的なスペースを使用することを推奨します。"
 
 #: ../../administrators.rst:550
 msgid "LOCKSS"
@@ -978,23 +993,22 @@ msgid ""
 "which uses SWORD to communicate between the Storage Service and a Private "
 "LOCKSS Network (PLN)."
 msgstr ""
-"Archivematicaは、LOCKSS-O-Maticを経由して`LOCKSS`_ネットワークにAIPsを保存することができます。LOCKSS-O-"
-"Maticは、ストレージサービスとプライベートLOCKSSネットワーク（PLN）の間で通信するためにSWORDを使用します。"
+"Archivematicaは、LOCKSS-O-Maticを使用してAIPを `LOCKSS`_ "
+"ネットワークに保存できます。これは、ストレージサービスとプライベートLOCKSSネットワーク（PLN）間の通信にSWORDを使用します。"
 
 #: ../../administrators.rst:563
 msgid ""
 "**Service document IRI**: the URL of the LOCKSS-o-matic service document "
 "IRI, e.g. ``http://lockssomatic.example.org/api/sword/2.0/sd-iri``."
 msgstr ""
-"**サービスドキュメントIRI**：LOCKSS-o-"
-"maticのサービスドキュメントIRIのURL。例えば、「http://lockssomatic.example.org/api/sword/2.0/sd-"
-"iri」など。"
+"**サービスドキュメントIRI**: LOCKSS-o-maticサービスドキュメントIRIのURL。例: "
+"``http://lockssomatic.example.org/api/sword/2.0/sd-iri`` 。"
 
 #: ../../administrators.rst:565
 msgid ""
 "**Content Provider ID**: the On-Behalf-Of value when communicating with "
 "LOCKSS-o-matic."
-msgstr "**コンテンツプロバイダID**：LOCKSS-o-maticと通信する際のOn-Behalf-Ofの値。"
+msgstr "**コンテンツプロバイダーID**: LOCKSS-o-maticと通信する際のOn-Behalf-Of値。"
 
 #: ../../administrators.rst:567
 msgid ""
@@ -1002,21 +1016,20 @@ msgid ""
 "will be able to access. Generally this is the URL for the home page of the "
 "Storage Service."
 msgstr ""
-"**外部利用可能なドメイン**：LOCKSSがアクセス可能な、このサーバーのベースURLです。一般的にはストレージサービスのホームページのURLです。"
+"**外部公開ドメイン**: LOCKSSがアクセス可能なこのサーバーのベースURL。一般的にはストレージサービスのホームページのURLです。"
 
 #: ../../administrators.rst:570
 msgid ""
 "**Keep local copy?**: check this box if you wish to store a local copy of "
 "the AIPs even after they are stored in LOCKSS."
 msgstr ""
-"**ローカルコピーを保持しますか？**: "
-"AIPsがLOCKSSに保存された後も、それらのローカルコピーを保存したい場合は、このボックスにチェックを入れてください。"
+"**ローカルコピーを保持しますか?**: LOCKSSに保存された後でもAIPのローカルコピーを保存する場合、このボックスにチェックを入れてください。"
 
 #: ../../administrators.rst:575
 msgid ""
 "When creating a Location for a LOCKSS space (see below), the Purpose of the "
 "Location must be AIP Storage."
-msgstr "LOCKSSスペース（下記参照）のロケーションを作成する際、ロケーションの目的はAIPストレージでなければなりません。"
+msgstr "LOCKSSスペース用のロケーションを作成する際（下記参照）、そのロケーションの目的はAIPストレージでなければなりません。"
 
 #: ../../administrators.rst:581
 msgid "NFS"
@@ -1026,39 +1039,39 @@ msgstr "NFS"
 msgid ""
 "NFS spaces are for NFS exports mounted on the Storage Service server and the"
 " Archivematica pipeline."
-msgstr "NFSスペースは、ストレージサービスサーバーとArchivematicaパイプラインにマウントされたNFSエクスポートのためのものです。"
+msgstr "NFSスペースは、ストレージサービスサーバーとArchivematicaパイプラインにマウントされたNFSエクスポート用です。"
 
 #: ../../administrators.rst:590 ../../administrators.rst:627
 msgid ""
 "**Path**: the absolute path to where the space is mounted on the filesystem "
 "local to the Storage Service."
-msgstr "**パス**：ストレージサービスのローカルにあるファイルシステムで、スペースがマウントされている場所への絶対パス。"
+msgstr "**パス**: ストレージサービスにローカルなファイルシステム上でスペースがマウントされている絶対パス。"
 
 #: ../../administrators.rst:594
 msgid ""
 "**Remote name**: the hostname or IP address of the remote computer exporting"
 " the NFS mount."
-msgstr "**リモート名**： NFSマウントをエクスポートするリモートコンピュータのホスト名またはIPアドレス。"
+msgstr "**リモート名**: NFSマウントをエクスポートしているリモートコンピュータのホスト名またはIPアドレス。"
 
 #: ../../administrators.rst:596
 msgid "**Remote path**: the export path on the NFS server"
-msgstr "**リモートパス**：NFSサーバー上のエクスポートパス"
+msgstr "**リモートパス**: NFSサーバー上のエクスポートパス"
 
 #: ../../administrators.rst:597
 msgid ""
 "**Version**:  the version of the filesystem, e.g. ``nfs`` or ``nfs4``,as "
 "would be passed to the mount command."
-msgstr "**バージョン**: ファイルシステムのバージョンです。例えば``nfs``や``nfs4``など、マウントコマンドに渡される形式です。"
+msgstr "**バージョン**: ファイルシステムのバージョン。例: ``nfs`` や ``nfs4`` のように、マウントコマンドに渡す形式。"
 
 #: ../../administrators.rst:599
 msgid ""
 "**Manually mounted**: This is a placeholder for a feature that is not yet "
 "available."
-msgstr "**手動でマウント**: これはまだ利用可能ではない機能のためのプレースホルダーです。"
+msgstr "**手動マウント**：これはまだ利用できない機能のためのプレースホルダーです。"
 
 #: ../../administrators.rst:605
 msgid "Pipeline Local Filesystem"
-msgstr "パイプライン ローカル ファイルシステム"
+msgstr "パイプラインローカルファイルシステム"
 
 #: ../../administrators.rst:607
 msgid ""
@@ -1067,7 +1080,7 @@ msgid ""
 " work properly, passwordless SSH must be set up between the Storage Service "
 "host and the Archivematica host."
 msgstr ""
-"パイプラインローカルファイルシステムは、Archivematicaパイプラインにローカルで、しかしストレージサービスにはリモートのストレージを指します。このスペースが適切に機能するためには、ストレージサービスのホストとArchivematicaのホスト間でパスワードレスSSHが設定されている必要があります。"
+"パイプラインローカルファイルシステムは、Archivematicaのパイプラインにはローカルであるが、ストレージサービスにはリモートであるストレージを指します。このスペースが適切に機能するためには、ストレージサービスのホストとArchivematicaのホスト間でパスワードなしのSSHが設定されている必要があります。"
 
 #: ../../administrators.rst:612
 msgid ""
@@ -1077,13 +1090,14 @@ msgid ""
 "needs access to them. The Space for that transfer source would be a Pipeline"
 " Local Filesystem."
 msgstr ""
-"例えば、ストレージサービスはstorage_service_hostでホストされており、Archivematicaはarchivematica1で稼働しています。Archivematicaの転送ソースはarchivematica1上のローカルに保存されていますが、ストレージサービスはそれらにアクセスする必要があります。その転送ソースのスペースは、パイプラインのローカルファイルシステムとなります。"
+"例えば、ストレージサービスがstorage_service_hostでホストされていて、Archivematicaがarchivematica1で実行されているとします。Archivematicaの転送ソースはarchivematica1にローカルに格納されていますが、ストレージサービスがそれらにアクセスする必要があります。その転送ソースのスペースはパイプラインローカルファイルシステムになります。"
 
 #: ../../administrators.rst:620
 msgid ""
 "Passwordless SSH must be set up between the Storage Service host and the "
 "computer Archivematica is running on."
-msgstr "ストレージサービスのホストとArchivematicaが稼働するコンピュータ間で、パスワードレスSSHが設定する必要があります。"
+msgstr ""
+"ストレージサービスのホストとArchivematicaが実行されているコンピュータ間には、パスワードなしのSSHが設定されている必要があります。"
 
 #: ../../administrators.rst:631
 msgid "**Remote user**: the username on the remote host."
@@ -1095,8 +1109,7 @@ msgid ""
 "Archivematica. This should be SSH accessible from the Storage Service "
 "computer."
 msgstr ""
-"**リモート名**: "
-"Archivematicaを実行しているコンピュータのホスト名またはIPアドレスです。これは、ストレージサービスコンピュータからSSH経由でアクセス可能である必要があります。"
+"**リモート名**：Archivematicaを実行しているコンピュータのホスト名またはIPアドレス。これはストレージサービスのコンピュータからSSHでアクセス可能であるべきです。"
 
 #: ../../administrators.rst:635
 msgid ""
@@ -1104,12 +1117,11 @@ msgid ""
 "Storage Service will use rsync daemon-style commands instead of the default "
 "rsync with remote shell."
 msgstr ""
-"**rsyncデーモンでファイルを提供するリモートホストと仮定**: "
-"これがチェックされている場合、ストレージサービスは、デフォルトのrsyncとリモートシェルを用いるのではなく、rsyncデーモン形式のコマンドを使用します。"
+"**rsyncデーモンによるファイルサービングを行うリモートホストを想定**：チェックされている場合、ストレージサービスはデフォルトのリモートシェルを使ったrsyncではなく、rsyncデーモンスタイルのコマンドを使用します。"
 
 #: ../../administrators.rst:638
 msgid "**Rsync password**: the password for the rsync daemon"
-msgstr "**Rsync パスワード**：rsyncデーモンのパスワード"
+msgstr "**Rsyncパスワード**：rsyncデーモンのパスワード"
 
 #: ../../administrators.rst:643
 msgid "RClone"
@@ -1120,7 +1132,8 @@ msgid ""
 "`rclone`_ is a command-line program to manage files in cloud storage, and is"
 " available as an access protocol in Storage Service 0.20 and higher."
 msgstr ""
-"`rclone`_はクラウドストレージ内のファイルを管理するためのコマンドラインプログラムであり、ストレージサービス0.20以上でアクセスプロトコルとして利用可能です。"
+"`rclone`_ はクラウドストレージのファイルを管理するためのコマンドラインプログラムであり、Storage Service "
+"0.20以降のアクセスプロトコルとして利用可能です。"
 
 #: ../../administrators.rst:648
 msgid ""
@@ -1130,11 +1143,12 @@ msgid ""
 "configuration file or via environment variables (the recommended method). "
 "See the `rclone documentation on configuration via environment variables`_."
 msgstr ""
-"RCloneスペースを使用することで、Archivematicaとしての転送元、AIPストア、DIPストア、複製場所として40以上のクラウドプロバイダーを利用することができます。アクセスキーなどの詳細設定は、設定ファイルまたは環境変数（推奨される方法）を介して行うことができます。環境変数を通じた設定については、`rcloneのドキュメンテーションをご覧ください`_。"
+"RCloneスペースは、アーカイブソース、AIPストア、DIPストアおよびレプリケータの場所として、40を超えるクラウドプロバイダーをArchivematicaと共に使用することを可能にします。アクセスキーなどの詳細構成は、構成ファイルまたは環境変数を介して行うことができます（推奨される方法）。詳細は"
+" `rcloneドキュメントの環境変数を通じた構成`_ を参照してください。"
 
 #: ../../administrators.rst:656
 msgid "**Access protocol**: RClone"
-msgstr "**アクセスプロトコル**：RClone"
+msgstr "**アクセスプロトコル**: RClone"
 
 #: ../../administrators.rst:659
 msgid ""
@@ -1142,66 +1156,65 @@ msgid ""
 "place files for staging purposes, for example "
 "``var/archivematica/storage_service/rclone_staging``."
 msgstr ""
-"**ステージングパス**： "
-"Archivematicaがステージング目的のためにファイルを配置できる、あなたのローカルディスク上の場所。例えば、``var/archivematica/storage_service/rclone_staging``といった場所です。"
+"**ステージングパス**: Archivematicaがステージング目的でファイルを配置できるローカルディスク上の場所, 例: "
+"``var/archivematica/storage_service/rclone_staging`` 。"
 
 #: ../../administrators.rst:662
 msgid ""
 "**Remote name**: Remote name for the rclone configuration to use with this "
 "Space. Must match value in environment variables, case-insensitive."
-msgstr ""
-"**リモート名**: このスペースで使用するrclone設定のリモート名。環境変数の値と一致している必要があり、大文字と小文字は区別されません。"
+msgstr "**リモート名**: このスペースで使用するrclone構成のリモート名。環境変数の値と一致する必要があり、大文字小文字を区別しません。"
 
 #: ../../administrators.rst:664
 msgid ""
 "**Container/Bucket name**: Container or bucket name to use in configured "
 "remote (optional, depending on service being used via rclone)."
 msgstr ""
-"**コンテナ/バケット名**：設定されたリモートで使用するコンテナまたはバケットの名前（rclone経由で使用されるサービスによっては任意）。"
+"**コンテナ/バケット名**: 構成されたリモートで使用するコンテナまたはバケット名（rclone経由で使用されるサービスに応じてオプション）。"
 
 #: ../../administrators.rst:670
 msgid "Swift"
-msgstr "スウィフト"
+msgstr "Swift"
 
 #: ../../administrators.rst:672
 msgid ""
 "OpenStack's Swift is available as an access protocol in Storage Service 0.7 "
 "and higher."
-msgstr "OpenStackのSwiftは、ストレージサービス0.7以降のアクセスプロトコルとして利用可能です。"
+msgstr "OpenStackのSwiftは、Storage Service 0.7以降のアクセスプロトコルとして利用可能です。"
 
 #: ../../administrators.rst:682
 msgid "**Auth URL**: the URL to authenticate against."
-msgstr "**認証URL**: 認証を行うためのURL。"
+msgstr "**認証URL**: 認証に対するURL。"
 
 #: ../../administrators.rst:683
 msgid "**Auth version**: the OpenStack authentication version."
-msgstr "**Authバージョン**：OpenStackの認証バージョン。"
+msgstr "**認証バージョン**: OpenStackの認証バージョン。"
 
 #: ../../administrators.rst:684
 msgid "**Username**: the Swift username that will be used for authentication."
-msgstr "**ユーザーネーム**: 認証に使用されるSwiftのユーザーネーム。"
+msgstr "**ユーザー名**: 認証に使用されるSwiftのユーザー名。"
 
 #: ../../administrators.rst:685
 msgid "**Password**: the password for the above username."
-msgstr "**パスワード**：上記のユーザー名のパスワード。"
+msgstr "**パスワード**: 上記のユーザー名のパスワードです。"
 
 #: ../../administrators.rst:686
 msgid ""
 "**Container**: the name of the Swift container. To list available containers"
 " in your Swift installation, run ``swift list`` from the command line."
 msgstr ""
-"**コンテナ**：Swiftコンテナの名前。利用可能なコンテナをSwiftインストールでリスト表示するには、コマンドラインから``swift "
-"list``を実行します。"
+"**コンテナ**: Swiftコンテナの名前です。あなたのSwiftインストールで使用可能なコンテナをリストするには、コマンドラインから ``swift"
+" list`` を実行してください。"
 
 #: ../../administrators.rst:688
 msgid ""
 "**Tenant**: the tenant/account name, required when connecting to an auth 2.0"
 " system."
-msgstr "**テナント**：auth 2.0システムに接続する際に必要なテナント/アカウント名。"
+msgstr "**テナント**: テナント/アカウント名で、auth 2.0システムに接続する際に必要です。"
 
 #: ../../administrators.rst:690
 msgid "**Region**: the region in Swift. This field is optional."
-msgstr "**リージョン**：Swift内のリージョン。このフィールドは任意です。"
+msgstr "**リージョン**: Swift内のリージョンです。このフィールドはオプションです。"
 
 #: ../../administrators.rst:694
 msgid ""
@@ -1209,7 +1222,7 @@ msgid ""
 "uncompressed packages) or that are 5GB in total (for compressed packages). "
 "This applies to the Transfer Source, Backlog, AIP and DIP Locations."
 msgstr ""
-"Swiftは、非圧縮パッケージの場合には5GB以上のオブジェクトを含む転送、または圧縮パッケージの場合には合計5GBの転送には使用できません。これは、転送元、バックログ、AIPおよびDIPの場所に適用されます。"
+"5GBを超えるオブジェクト（圧縮されていないパッケージの場合）または合計5GBのオブジェクト（圧縮されたパッケージの場合）を含む転送にはSwiftは使用できません。これは、転送元、バックログ、AIP、およびDIPのロケーションに適用されます。"
 
 #: ../../administrators.rst:698
 msgid ""
@@ -1217,7 +1230,8 @@ msgid ""
 " with Swift, a function which is not currently available for the Swift "
 "space. See the `Swift documentation for large objects`_."
 msgstr ""
-"5GBを超える任意のオブジェクト/パッケージは、Swiftと対話するアプリケーションによって分割する必要があります。これは現在のところ、Swiftスペースで使用できる機能ではありません。詳しくは、`大容量オブジェクトについてのSwiftのドキュメンテーション`_をご覧ください。"
+"5GBを超えるオブジェクト/パッケージはアプリケーションによって分割されなければならず、現在Swiftスペースでは利用できない機能です。大きなオブジェクトについてのSwiftドキュメントを参照してください"
+" `Swift documentation for large objects`_ 。"
 
 #: ../../administrators.rst:705
 msgid "S3 (Amazon)"
@@ -1229,53 +1243,51 @@ msgid ""
 "0.12. Locations within S3 can be used as AIP Storage, DIP Storage, "
 "Replicator and Transfer Source :ref:`locations <location-purposes>`."
 msgstr ""
-"Storage Serviceバージョン0.12から、Amazon "
-"S3はアクセスプロトコルとして利用可能になりました。S3内のロケーションは、AIPストレージ、DIPストレージ、レプリケータ、および転送ソースとして使用することができます"
-" :ref:`locations <location-purposes>`。"
+"アマゾンS3は、ストレージサービスのバージョン0.12からアクセスプロトコルとして利用できます。S3内のロケーションは、AIPストレージ、DIPストレージ、レプリケータ、そして転送元として使用できます"
+" :ref:`locations <location-purposes>` 。"
 
 #: ../../administrators.rst:715
 msgid "**Path**: *Not required: see below*."
-msgstr "**パス**：*必要なし：詳細は以下を参照*。"
+msgstr "**パス**: *必須ではありません：下記を参照*。"
 
 #: ../../administrators.rst:716
 msgid ""
 "**Staging path**: the absolute path to a staging area on the same server as "
 "the Storage Service."
-msgstr "**ステージングパス**：ストレージサービスと同じサーバー上のステージングエリアへの絶対パス。"
+msgstr "**ステージングパス**: ストレージサービスと同じサーバー上のステージングエリアへの絶対パスです。"
 
 #: ../../administrators.rst:718
 msgid ""
 "**S3 Endpoint URL**: the URL of the S3 endpoint, e.g. "
 "``https://s3.amazonaws.com``."
-msgstr ""
-"**S3エンドポイントURL**：S3エンドポイントのURLです。例えば、``https://s3.amazonaws.com``のようなものです。"
+msgstr "**S3エンドポイントURL**: S3エンドポイントのURLです、例えば ``https://s3.amazonaws.com`` 。"
 
 #: ../../administrators.rst:720
 msgid ""
 "**Access Key ID to authenticate**: the public key generated by S3. *Not "
 "required: see below*"
-msgstr "**認証に必要なアクセスキーID**: S3によって生成された公開鍵。*必須ではありません：詳細は以下を参照*"
+msgstr "**認証するためのアクセスキーID**: S3によって生成された公開キー。*必須ではありません：下記を参照*"
 
 #: ../../administrators.rst:722
 msgid ""
 "**Secret Access Key to authenticate with**: the secret key generated by S3. "
 "*Not required: see below*"
-msgstr "**認証に使用するシークレットアクセスキー**: S3によって生成されたシークレットキー。*要求されません：詳しくは以下を参照*"
+msgstr "**認証に使用する秘密アクセスキー**: S3によって生成された秘密キー。*必須ではありません：下記を参照*"
 
 #: ../../administrators.rst:724
 msgid "**Region**: the region that the S3 instance uses, e.g. ``us-east-2``."
-msgstr "**リージョン**：S3インスタンスが使用する地域、例えば ``us-east-2``。"
+msgstr "**リージョン**: S3インスタンスが使用するリージョン。例： ``us-east-2`` 。"
 
 #: ../../administrators.rst:725
 msgid ""
 "**S3 Bucket**: the name of the designated S3 Bucket. This field is optional."
-msgstr "**S3バケット**：指定されたS3バケットの名前。このフィールドはオプションです。"
+msgstr "**S3バケット**: 指定されたS3バケットの名称。このフィールドは任意です。"
 
 #: ../../administrators.rst:729
 msgid ""
 "Not all fields are required when configuring S3 storage. They can however "
 "still be used."
-msgstr "S3ストレージの設定時に全てのフィールドを使用する必要はありません。しかし、それでもまだ使用することができます。"
+msgstr "S3ストレージを設定する際に、すべてのフィールドが必要なわけではありません。しかし、それらは依然として使用できます。"
 
 #: ../../administrators.rst:732
 msgid ""
@@ -1284,7 +1296,8 @@ msgid ""
 "to appear as follows to the user (each newline indicates a nested "
 "directory):"
 msgstr ""
-"S3のパスとロケーションの相対パス（`locations`_を参照）が設定されている場合、ストレージサービスは次のように表示されるS3バケットを作成しようとします（各改行はネストされたディレクトリを示します）："
+"S3のパスとロケーションの相対パス（ `locations`_ "
+"を参照）が構成された場合、ストレージサービスは次のようにユーザーに表示されるS3バケットを作成しようとします（各改行はネストされたディレクトリを示しています）："
 
 #: ../../administrators.rst:737
 msgid "In this example:"
@@ -1294,38 +1307,38 @@ msgstr "この例では："
 msgid ""
 "``d6d618dd-2b7f-4177-8b59-10e242066cb7`` is the UUID of the S3 storage space"
 " that has been configured."
-msgstr "``d6d618dd-2b7f-4177-8b59-10e242066cb7``は、設定されたS3ストレージスペースのUUIDです。"
+msgstr "``d6d618dd-2b7f-4177-8b59-10e242066cb7`` は設定されたS3ストレージスペースのUUIDです。"
 
 #: ../../administrators.rst:741
 msgid ""
 "``cd20f886-0c40-4202-af80-399b6ca9f1f1`` is the UUID of the AIP that we want"
 " to store."
-msgstr "``cd20f886-0c40-4202-af80-399b6ca9f1f1``は、私たちが保存したいAIPのUUIDです。"
+msgstr "``cd20f886-0c40-4202-af80-399b6ca9f1f1`` は保存したいAIPのUUIDです。"
 
 #: ../../administrators.rst:743
 msgid ""
 "``storage-space-path`` is configured for the Storage Space Path *(no leading"
 " slash)*."
-msgstr "``storage-space-path``はストレージスペースパスの設定に用いられます（先頭にスラッシュは不要）。"
+msgstr "``storage-space-path`` はストレージスペースパスに構成されています *(先頭スラッシュなし)*。"
 
 #: ../../administrators.rst:745
 msgid ""
 "``storage-location-relative-path`` is configured as Location (Relative-path)"
 " *(no leading-slash)*."
 msgstr ""
-"``storage-location-relative-path``は、ロケーション（相対パス）*（先頭にスラッシュなし）*として設定されています。"
+"``storage-location-relative-path`` はロケーション(相対パス)として構成されています *(先頭スラッシュなし)*。"
 
 #: ../../administrators.rst:748
 msgid ""
 "The values for the storage space ``Path``. And Location ``Relative Path`` "
 "will appear as configured::"
-msgstr "ストレージスペースの「Path」およびロケーション「Relative Path」の値は、設定した通りに表示されます::"
+msgstr "ストレージスペースの ``Path`` 、およびロケーションの``Relative Path``の値は、構成された通りに表示されます::"
 
 #: ../../administrators.rst:764
 msgid ""
 "When Access Key ID and Secret Access Key are configured, the Storage Service"
 " will attempt to authenticate with those details."
-msgstr "アクセスキーIDおよびシークレットアクセスキーが設定されると、ストレージサービスはその詳細で認証を試みます。"
+msgstr "Access Key IDおよびSecret Access Keyが設定されている場合、ストレージサービスはそれらの詳細で認証を試みます。"
 
 #: ../../administrators.rst:767
 msgid ""
@@ -1333,7 +1346,8 @@ msgid ""
 "use authentication details provided by the ``AWS_ACCESS_KEY_ID`` and "
 "``AWS_SECRET_ACCESS_KEY`` environment variables."
 msgstr ""
-"これらの値が設定されていない場合、ストレージサービスは``AWS_ACCESS_KEY_ID``および``AWS_SECRET_ACCESS_KEY``環境変数によって提供された認証詳細を使用しようとします。"
+"これらの値が設定されていない場合、ストレージサービスは ``AWS_ACCESS_KEY_ID`` および "
+"``AWS_SECRET_ACCESS_KEY`` 環境変数によって提供される認証詳細を使用しようとします。"
 
 #: ../../administrators.rst:771
 msgid ""
@@ -1342,7 +1356,7 @@ msgid ""
 "automatically created if necessary, and if the AWS user has permissions to "
 "do so."
 msgstr ""
-"バケット名が設定されている場合、そのバケットが使用されます。それ以外の場合は、スペースのIDが代わりに使用されます。いずれの場合でも、必要に応じてバケットは自動的に作成され、AWSユーザーがその権限を持っている場合に限ります。"
+"バケット名が設定されている場合、そのバケットが使用されます。そうでない場合はスペースのIDが代わりに使用されます。いずれの場合も、バケットは必要に応じて自動的に作成されますが、AWSユーザーにその権限がある場合のみです。"
 
 #: ../../administrators.rst:778
 msgid ""
@@ -1352,9 +1366,9 @@ msgid ""
 "service. This is an impact of the third-party library used to make S3 API "
 "calls."
 msgstr ""
-"ストレージスペースで設定された`Path`とロケーションで設定された`Relative "
-"Path`は、S3サービス上の保存パッケージを削除する機能に影響を与える可能性があるため、先頭スラッシュ(`/`)なしで設定することが最適です。これは、S3"
-" API呼び出しを行うために使用される第三者ライブラリの影響です。"
+"ストレージスペースで設定された `Path` およびロケーションで設定された`Relative Path `は、先頭にスラッシュ(` "
+"/`)がないように設定するのが最善です。これはS3サービスで保存されたパッケージを削除する機能に影響を与える可能性があるためです。これはS3 "
+"APIコールを行うために使用されるサードパーティ製ライブラリの影響です。"
 
 #: ../../administrators.rst:784
 msgid ""
@@ -1363,19 +1377,19 @@ msgid ""
 "the slash. Do so with caution and be prepared to put the leading-slash back "
 "if there is any impact on storing AIPs as a result."
 msgstr ""
-"もしユーザーが先頭にスラッシュを含むパス上にパッケージを保存しており、S3からパッケージが削除されていない場合は、スラッシュを削除するように設定を修正することを検討してみてください。ただし、これは慎重に行い、結果としてAIPの保存に影響がある場合は、先頭のスラッシュを戻す準備をしておいてください。"
+"ユーザーが先頭にスラッシュがあるパスにパッケージを保存しており、それらがS3から削除されない場合は、スラッシュを削除するように構成を変更することを検討してください。その際には慎重に行い、結果としてAIPの保存に何らかの影響があった場合は先頭にスラッシュを戻す準備をしておいてください。"
 
 #: ../../administrators.rst:790
 msgid "Debugging S3"
 msgstr "S3のデバッグ"
 
+# 開始 ###
 #: ../../administrators.rst:792
 msgid ""
 "There are times when the S3 storage adapter may need to be debugged. For "
 "example, if a transfer isn't able to complete because it cannot reach your "
 "S3 implementation."
-msgstr ""
-"S3ストレージアダプタをデバッグする必要がある場合があります。例えば、あなたのS3実装にアクセスできないために転送が完了できない場合などです。"
+msgstr "S3ストレージアダプターをデバッグする必要があることがあります。例えば、S3の実装に接続できないために転送が完了できない場合などです。"
 
 #: ../../administrators.rst:796
 msgid ""
@@ -1384,8 +1398,8 @@ msgid ""
 "and the GitHub issues for Boto3 are a good place to start when trying to "
 "understand potential upstream issues."
 msgstr ""
-"ストレージサービスのために書かれたS3アダプターは、`Boto3`_ S3 "
-"SDK（ソフトウェア開発キット）に大きく依存しています。このライブラリはGitHubでホストされており、Boto3のGitHub問題は、潜在的なアップストリームの問題を理解しようとする際の良いスタート地点です。"
+"ストレージサービス用に書かれたS3アダプターは、 `Boto3`_ S3 "
+"SDK（ソフトウェア開発キット）に大きく依存しています。このライブラリはGitHubでホストされており、Boto3のGitHubの問題点は、潜在的なアップストリームの問題を理解しようとする際の良い出発点になります。"
 
 #: ../../administrators.rst:801
 msgid ""
@@ -1393,14 +1407,14 @@ msgid ""
 "adapter. There is more information about overriding the Storage Service "
 "defaults in the `installation README.md`_."
 msgstr ""
-"ストレージサービスでは、Boto3アダプターのデバッグロギングを増やすことが可能です。`installation README.md` "
-"_には、ストレージサービスのデフォルトを上書きする方法についての詳しい情報があります。"
+"ストレージサービスでは、Boto3アダプターのデバッグログを増やすことができます。ストレージサービスのデフォルトを上書きする方法についての詳細は "
+"`インストールのREADME.md`_ にあります。"
 
 #: ../../administrators.rst:805
 msgid ""
 "In the `logging configuration`_, administrators should be able to find "
 "entries for the two primary Boto3 components::"
-msgstr "`ログ設定`_では、管理者は二つの主要なBoto3コンポーネントのエントリを見つけることができるはずです::"
+msgstr "`ログ設定`_ で、管理者は主要な2つのBoto3コンポーネントのエントリを見つけることができるはずです::"
 
 #: ../../administrators.rst:811
 msgid ""
@@ -1409,14 +1423,14 @@ msgid ""
 "through the lens of the Boto3 SDK. The standard Boto3 logging will provide "
 "high-level information, and botocore will be much more detailed."
 msgstr ""
-"これらのエントリーのログレベルをINFOからDEBUGに変更すると、Boto3 "
-"SDKのレンズを通じて、ストレージサービスとあなたのS3実装間の全てのワイヤートレースが出力されます。標準のBoto3ロギングは高レベルな情報を提供し、botocoreはさらに詳細な情報を提供します。"
+"これらのエントリのログレベルをINFOからDEBUGに変更すると、Boto3 "
+"SDKを通して、ストレージサービスとS3実装との間の完全なワイヤートレースが出力されます。標準のBoto3ログは高レベルの情報を提供し、botocoreはさらに詳細な情報を提供します。"
 
 #: ../../administrators.rst:816
 msgid ""
 "From the documentation, the `Boto3 developers`_ are careful to note as "
 "follows:"
-msgstr "ドキュメンテーションから、`Boto3 developers`_は以下のように注意深く言及しています："
+msgstr ""
 
 #: ../../administrators.rst:820
 msgid ""
@@ -1424,7 +1438,7 @@ msgid ""
 " appear in your logs. If your payloads contain sensitive data this should "
 "not be used in production."
 msgstr ""
-"'botocore'から何かをログに記録すると、完全なワイヤートレースがログに表示されます。ペイロードが機密データを含む場合、これは本番環境で使用すべきではありません。"
+"'botocore'から何かをログに記録すると、完全なワイヤトレースがログに表示されることに注意してください。ペイロードに機密データが含まれている場合、これは本番環境では使用しないでください。"
 
 #: ../../administrators.rst:826
 msgid ""
@@ -1432,11 +1446,11 @@ msgid ""
 "then they can be added manually. If adding these manually then keep in mind "
 "that the change must not compromise the integrity of the JSON."
 msgstr ""
-"デバッグ設定を更新する際、Boto3のエントリが存在しない場合、それらは手動で追加することが可能です。これらを手動で追加する場合は、JSONの整合性を損なわないように変更を行う必要があります。"
+"デバッグ設定を更新する際に、Boto3のエントリーが存在しない場合は手動で追加することができます。これらを手動で追加する場合は、JSONの整合性を損なわないように変更する必要があることに注意してください。"
 
 #: ../../administrators.rst:834
 msgid "Write-Only Replica Staging on local filesystem"
-msgstr "ローカルファイルシステム上の書き込み専用レプリカステージング"
+msgstr "ローカルファイルシステム上のライトオンリー・レプリカステージング"
 
 #: ../../administrators.rst:836
 msgid ""
@@ -1445,7 +1459,7 @@ msgid ""
 "robots. Only Replicator locations can be created in a Write-Only Replica "
 "Staging space."
 msgstr ""
-"書き込み専用レプリカステージングスペースでは、ユーザーはAIPレプリカをローカルファイルシステム上にステージングして、テープロボットなどのオフラインストレージシステムに配信することができます。書き込み専用レプリカステージングスペースにはレプリケーターの場所のみが作成できます。"
+"ライトオンリーレプリカステージングスペースは、ユーザーがAIPレプリカをローカルファイルシステム上にステージングし、テープロボットなどのオフラインストレージシステムに配信することを可能にします。ライトオンリーレプリカステージングスペースにはレプリケータのロケーションのみを作成できます。"
 
 #: ../../administrators.rst:850
 msgid ""
@@ -1453,7 +1467,7 @@ msgid ""
 "Replicator location in a Write-Only Replica Staging space cannot downloaded,"
 " deleted, or fixity checked after storage."
 msgstr ""
-"書き込み専用レプリカステージングは一度だけ書き込み可能なスペースです。書き込み専用レプリカステージングスペース内のレプリケーターのロケーションに格納されたレプリカは、保存後にダウンロード、削除、またはフィクジティチェックを行うことはできません。"
+"ライトオンリーレプリカステージングは、書き込みが一度だけ可能なスペースです。ライトオンリーレプリカステージングスペース内のレプリケータロケーションに保存されたレプリカは、保存後にダウンロードや削除、整合性チェックを行うことができません。"
 
 #: ../../administrators.rst:856
 msgid ""
@@ -1462,7 +1476,7 @@ msgid ""
 "typical UUID quad directories. This enables efficient retrieval of packages "
 "stored in the space by offline storage systems."
 msgstr ""
-"書き込み専用レプリカステージングスペース内に書き込まれたレプリカは、通常のUUIDクアッドディレクトリ内ではなく、レプリケータロケーションのパス内に直接保存されます。これにより、オフラインストレージシステムによるスペース内のパッケージの効率的な取得が可能になります。"
+"ライトオンリーレプリカステージングスペース内に書き込まれたレプリカは、通常のUUID四つ組のディレクトリ内ではなく、直接レプリケータのロケーションのパス内に保存されます。これにより、オフラインストレージシステムによるスペース内に保存されたパッケージの効率的な取り出しが可能になります。"
 
 #: ../../administrators.rst:866
 msgid ""
@@ -1473,10 +1487,11 @@ msgid ""
 "of Backlog and Currently Processing locations, for which there must be "
 "exactly one per pipeline."
 msgstr ""
-"ロケーションはスペース内に存在し、Archivematicaシステム内で明確な目的を持っています。各ロケーションは少なくとも一つのパイプラインと関連付けられています。パイプラインは任意のロケーションを複数持つことができますし、一つのロケーションは任意の数のパイプラインと関連付けることができますが、バックログと現在処理中のロケーションについては、それぞれパイプラインごとに一つだけでなければなりません。"
+"ロケーションはスペース内に格納され、Archivematica "
+"システムで定義された目的を持ちます。各ロケーションは少なくとも一つのパイプラインに関連付けられています。パイプラインは任意のロケーションを複数持つことができ、また、ロケーションは任意の数のパイプラインに関連付けることができますが、バックログおよび現在の処理中のロケーションについては、パイプラインごとに1つだけである必要があります。"
 
 #: ../../administrators.rst:-1
-msgid "Storage Service locations screen."
+msgid "ストレージサービスのロケーション画面。"
 msgstr "ストレージサービスのロケーション画面。"
 
 #: ../../administrators.rst:878
@@ -1485,7 +1500,7 @@ msgid ""
 "Currently Processing, DIP Storage, FEDORA Deposit, Storage Service Internal "
 "Processing, Transfer Backlog, Transfer Source, or Replicator."
 msgstr ""
-"ロケーションは、以下の9つの目的のいずれかを持つことができます：AIPリカバリー、AIPストレージ、現在のプロセス、DIPストレージ、FEDORAデポジット、ストレージサービス内部処理、転送バックログ、転送ソース、またはレプリケータ。"
+"ロケーションは9つの目的のうちの1つを持つことができます：AIPリカバリー、AIPストレージ、現在の処理、DIPストレージ、FEDORAデポジット、ストレージサービス内部処理、転送バックログ、転送ソース、またはレプリケーター。"
 
 #: ../../administrators.rst:884
 msgid ""
@@ -1493,32 +1508,31 @@ msgid ""
 "storage``. See :ref:`location purposes <location-purposes>` for more "
 "information."
 msgstr ""
-"**目的**: この場所が果たす機能、例えば``AIPストレージ``など。詳細は :ref:`場所の目的 <location-"
-"purposes>`をご参照ください。"
+"**目的**: このロケーションが果たす機能です、例えば ``AIP storage``。詳細は :ref:`ロケーションの目的 <location-"
+"purposes>` を参照してください。"
 
 #: ../../administrators.rst:887
 msgid ""
 "**Pipelines**: the Archivematica instance(s) that will be able to use this "
 "location."
-msgstr "**パイプライン**：この場所を使用できるArchivematicaインスタンス。"
+msgstr "**パイプライン**: このロケーションを使用できるArchivematicaのインスタンスです。"
 
 #: ../../administrators.rst:889
 msgid ""
 "**Relative Path**: the path to this location, relative to the space that "
 "contains it."
-msgstr "**相対パス**： これが含まれるスペースに対する相対的な場所へのパス。"
+msgstr "**相対パス**: これに含まれるスペースに対するこのロケーションへのパス。"
 
 #: ../../administrators.rst:891
 msgid ""
 "**Description**: a description of the location to be displayed to the user."
-msgstr "**説明**: ユーザーに表示される場所についての説明。"
+msgstr "**説明**: ユーザーに表示されるロケーションの説明です。"
 
 #: ../../administrators.rst:892
 msgid ""
 "**Quota**: the maximum size allowed for this space. Set to 0 or leave blank "
 "for unlimited. This field is optional."
-msgstr ""
-"**クォータ**：このスペースに許可される最大サイズ。無制限にする場合は0を設定するか、空白のままにしてください。このフィールドはオプションです。"
+msgstr "**クオータ**: このスペースの許容最大サイズ。0に設定するか、無制限のために空白のままにします。このフィールドはオプションです。"
 
 #: ../../administrators.rst:894
 msgid ""
@@ -1526,15 +1540,26 @@ msgid ""
 "associated with it. If unchecked, it will not be available to any pipeline."
 msgstr ""
 "**有効**: "
-"チェックを入れると、このロケーションはそれに関連するパイプラインからアクセス可能になります。チェックを入れない場合、どのパイプラインからも利用できません。"
+"選択されている場合、このロケーションは関連付けられたパイプラインからアクセス可能になります。選択されていない場合、いかなるパイプラインからも利用できません。"
 
+# いくつかの説明的なタイトル。
+# Copyright (C) 2023, Artefactual Systems Inc.
+# このファイルはArchivematicaパッケージと同じライセンスの配布です。
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+
+# 開始 ###
 #: ../../administrators.rst:896
 msgid ""
 "**Set as global default location for its purpose**: if checked, this "
 "location will be the default location for its purpose unless the user "
 "specifically tells Archivematica otherwise during processing."
 msgstr ""
-"**これをその目的のための全体的なデフォルトの場所に設定する**：このオプションが選択されている場合、ユーザーがArchivematicaでの処理中に特定の指示を出さない限り、この場所がその目的のためのデフォルトの場所となります。"
+"**目的のためにグローバルデフォルトの位置を設定する**: "
+"このオプションをチェックすると、ユーザーが処理中にArchivematicaに特別な指示をしない限り、この場所がその目的のデフォルトの場所となります。"
 
 #: ../../administrators.rst:902
 msgid ""
@@ -1542,17 +1567,16 @@ msgid ""
 "path needs to be the URL of the destination collection for the transfers. "
 "E.g.: ``https://demo.dspace.org/10673/60/``."
 msgstr ""
-":ref:`DSpace via SWORD2 location "
-"<dspace>`を設定する際、相対パスは転送先のコレクションのURLである必要があります。例: "
-"``https://demo.dspace.org/10673/60/``."
+":ref:`DSpace経由のSWORD2の場所<dspace>` を設定する際には、転送の目的地コレクションのURLである相対パスが必要です。例: "
+"``https://demo.dspace.org/10673/60/`` 。"
 
 #: ../../administrators.rst:909
 msgid "Location purposes"
-msgstr "ロケーション目的"
+msgstr "場所の目的"
 
 #: ../../administrators.rst:912
 msgid "AIP Recovery"
-msgstr "AIPリカバリー"
+msgstr "AIP復旧"
 
 #: ../../administrators.rst:914
 msgid ""
@@ -1562,11 +1586,13 @@ msgid ""
 "``/var/archivematica/storage_service/recover`` in a Local Filesystem. This "
 "is only required if AIP recovery is used."
 msgstr ""
-"AIPリカバリロケーションは、:ref:`AIPリカバリ<recovery>`機能がAIPの復元を行う場所です。特定のパイプラインには、1つ以上のAIPリカバリロケーションを関連付けるべきではありません。デフォルト値はローカルファイルシステム内の``/var/archivematica/storage_service/recover``です。これはAIPリカバリが使用される場合のみ必要です。"
+"AIP復旧場所は、 :ref:`AIP復旧<recovery>` "
+"機能がAIPを復旧するために探す場所です。一つのパイプラインには一つ以上のAIP復旧場所を関連付けるべきではありません。デフォルト値はローカルファイルシステムの"
+" ``/var/archivematica/storage_service/recover`` です。これはAIP復旧が使用される場合にのみ必要です。"
 
 #: ../../administrators.rst:921
 msgid "AIP Storage"
-msgstr "AIPストレージ"
+msgstr "AIP保管"
 
 #: ../../administrators.rst:923
 msgid ""
@@ -1575,11 +1601,13 @@ msgid ""
 "```/var/archivematica/sharedDirectory/www/AIPsStore`` in a Local Filesystem."
 " An AIP storage location is required to store and retrieve AIPs."
 msgstr ""
-"AIPストレージロケーションは、完了したAIPが長期保存のために配置される場所です。デフォルトのロケーションを使用するパイプラインの場合、デフォルトのパスはローカルファイルシステム内の```/var/archivematica/sharedDirectory/www/AIPsStore```です。AIPストレージロケーションは、AIPの保存と取得のために必要です。"
+"AIP保管場所は、完成したAIPが長期保管のために置かれる場所です。デフォルトの場所を使用するパイプラインの場合、デフォルトパスはローカルファイルシステムの"
+" ```/var/archivematica/sharedDirectory/www/AIPsStore`` "
+"`です。AIPを保管および取得するためにはAIP保管場所が必要です。"
 
 #: ../../administrators.rst:929
 msgid "Currently Processing"
-msgstr "現在処理中"
+msgstr "現在の処理"
 
 #: ../../administrators.rst:931
 msgid ""
@@ -1590,7 +1618,8 @@ msgid ""
 "``/var/archivematica/sharedDirectory`` in a Local Filesystem. A currently "
 "processing location is required for Archivematica to run."
 msgstr ""
-"Archivematicaは、アクティブな処理中に資料を保存するために、そのパイプラインに関連付けられた現在処理中の場所を使用します。特定のパイプラインには現在処理中の場所が1つだけ関連付けられるべきです。デフォルトの場所を使用するパイプラインでは、デフォルトのパスはローカルファイルシステム内の``/var/archivematica/sharedDirectory``です。Archivematicaを動作させるためには、現在処理中の場所が必要です。"
+"Archivematicaでは、現在処理中の場所がそのパイプラインに関連付けられており、アクティブな処理中に素材を格納するために使用されています。正確に1つの現在処理中の場所が特定のパイプラインに関連付けられるべきです。デフォルトの場所を使用しているパイプラインには、ローカルファイルシステム内のデフォルトパスは"
+" ``/var/archivematica/sharedDirectory`` です。現在処理中の場所はArchivematicaの実行に必要です。"
 
 #: ../../administrators.rst:939
 msgid "DIP Storage"
@@ -1605,7 +1634,9 @@ msgid ""
 "A DIP storage location is required to store and retrieve DIPs, but it is not"
 " required to upload DIPs to access systems."
 msgstr ""
-"DIPストレージロケーションは、DIPがアクセスシステムにアップロードされるまでの間、DIPを保管するために使用されます。デフォルトのロケーションを使用するパイプラインの場合、デフォルトのパスはローカルファイルシステム内の``/var/archivematica/sharedDirectory/www/DIPsStore``です。DIPを保管し、取り出すためにはDIPストレージロケーションが必要ですが、DIPをアクセスシステムにアップロードするためには必要ありません。"
+"DIPストレージ場所は、アクセスシステムにアップロードできるまでDIPを保存するために使用されます。デフォルトの場所を使用しているパイプラインの場合、デフォルトパスはローカルファイルシステム内の"
+" ``/var/archivematica/sharedDirectory/www/DIPsStore`` "
+"です。DIPストレージ場所はDIPを保存および取得するために必要ですが、DIPをアクセスシステムにアップロードするためには必要ありません。"
 
 #: ../../administrators.rst:948
 msgid "FEDORA Deposit"
@@ -1617,11 +1648,11 @@ msgid ""
 "material from Islandora. This is only available to the FEDORA Space, and is "
 "only required for that space."
 msgstr ""
-"FEDORAの預け場所は、Islandoraからの資料を取り込むためにArchidoraプラグインで使用されます。これはFEDORAスペースでのみ利用可能であり、そのスペースでのみ必要です。"
+"FEDORAデポジット場所はArchidoraプラグインと共に使用し、Islandoraから素材を取り込むために使われます。これはFEDORAスペースでのみ利用可能で、そのスペースにのみ必要です。"
 
 #: ../../administrators.rst:955
 msgid "Storage Service Internal Processing"
-msgstr "ストレージサービスの内部処理"
+msgstr "ストレージサービス内部処理"
 
 #: ../../administrators.rst:957
 msgid ""
@@ -1632,7 +1663,9 @@ msgid ""
 "locally available to the Storage Service. It should not be associated with "
 "any pipelines."
 msgstr ""
-"ストレージサービスのインストールには、ストレージサービス内部処理ロケーションが1つだけ存在すべきです。デフォルトのロケーションを使用するパイプラインの場合、デフォルトのパスはローカルファイルシステムで``/var/archivematica/storage_service``となります。これはストレージサービスの実行に必要で、ストレージサービスからローカルで利用可能でなければなりません。また、これはどのパイプラインとも関連付けられるべきではありません。"
+"一つのストレージサービスインストールに対して、ストレージサービス内部処理の場所は一箇所のみであるべきです。デフォルトの場所を使用するパイプラインの場合、デフォルトパスはローカルファイルシステム内の"
+" ``/var/archivematica/storage_service`` "
+"です。これはストレージサービスを実行するために必要であり、ストレージサービスにローカルで利用可能でなければなりません。この場所はいかなるパイプラインとも関連付けられるべきではありません。"
 
 #: ../../administrators.rst:965
 msgid "Transfer Backlog"
@@ -1646,11 +1679,13 @@ msgid ""
 "a Local Filesystem. This is required to store and retrieve transfers in "
 "backlog."
 msgstr ""
-"トランスファーバックログロケーションは、ユーザーが処理を再開するまでトランスファーを保存します。デフォルトの場所を使用するパイプラインの場合、デフォルトのパスはローカルファイルシステム内の「/var/archivematica/sharedDirectory/www/AIPsStore/transferBacklog」です。これはバックログ内のトランスファーを保存し、取り出すために必要です。"
+"転送バックログの場所は、ユーザーがそれらの処理を続けるまで転送を保管します。デフォルトの場所を使用するパイプラインの場合、デフォルトパスはローカルファイルシステム内の"
+" ``/var/archivematica/sharedDirectory/www/AIPsStore/transferBacklog`` "
+"です。これはバックログ内の転送を保存し取り出すために必要です。"
 
 #: ../../administrators.rst:973
 msgid "Transfer Source"
-msgstr "転送元"
+msgstr "転送ソース"
 
 #: ../../administrators.rst:975
 msgid ""
@@ -1659,11 +1694,13 @@ msgid ""
 "<archivematica:transfer>`. Any folder in a transfer source can be selected "
 "to become a transfer. The default value is ``/home`` in a local filesystem."
 msgstr ""
-"Archivematicaパイプラインの:ref:`転送タブ<archivematica:transfer>`には転送元の場所のリストがドロップダウンで表示されます。転送元の任意のフォルダを選択して転送にすることができます。デフォルト値はローカルファイルシステムの``/home``です。"
+"転送ソースの場所のリストは、Archivematicaパイプラインの :ref:`転送タブ<archivematica:transfer>` "
+"上の転送ソースドロップダウンに表示されます。転送ソース内の任意のフォルダを選択して転送にすることができます。デフォルト値はローカルファイルシステム内の "
+"``/home`` です。"
 
 #: ../../administrators.rst:981
 msgid "Replicator"
-msgstr "レプリケータ"
+msgstr "レプリケーター"
 
 #: ../../administrators.rst:983
 msgid ""
@@ -1671,20 +1708,20 @@ msgid ""
 "AIP storage locations. Replicators can be configured for each of the "
 "following protocols supported by the Storage Service:"
 msgstr ""
-"レプリケータの場所は、一つまたは複数のAIPストレージ場所でAIPを複製するように設定することができます。レプリケータは、ストレージサービスでサポートされている以下のプロトコルそれぞれに対して設定することができます。"
+"レプリケーターの場所は、一つまたは複数のAIP保管場所にあるAIPを複製するように設定することができます。レプリケーターは、ストレージサービスがサポートする以下のプロトコルそれぞれについて設定することができます："
 
 #: ../../administrators.rst:987
 msgid "Duracloud."
-msgstr "Duracloud."
+msgstr "Duracloud。"
 
 #: ../../administrators.rst:988
 msgid ""
 "Local filesystem, including GPG encrypted and write-only replica staging."
-msgstr "ローカルファイルシステム、GPG暗号化および書き込み専用のレプリカステージングを含む。"
+msgstr "ローカルファイルシステム（GPGで暗号化されたもの、書き込み専用のレプリカステージングを含む）。"
 
 #: ../../administrators.rst:989
 msgid "S3."
-msgstr "S3.\n"
+msgstr "S3。"
 
 #: ../../administrators.rst:991
 msgid ""
@@ -1695,34 +1732,34 @@ msgid ""
 " If you would like your replicated AIPs to be encrypted, create the location"
 " in an :ref:`encrypted space <gpg>`."
 msgstr ""
-"レプリケータは、ストレージ場所の設定ページを通じてAIPストレージ場所と関連付けられます。したがって、レプリケータはそれがAIPストアと共に使用できるように選択される前に設定する必要があります。"
+"レプリケータは、ストレージロケーションの設定ページを通じてAIPストレージロケーションと関連付けられています。したがって、レプリケータはAIPストアと併用するために選択される前に設定されなければなりません。これに関する追加情報は"
 " :ref:`configure location <configure_location>` "
-"にはこのことに関する追加情報があります。レプリケートされたAIPを暗号化したい場合は、:ref:`encrypted space <gpg>` "
-"で場所を作成してください。"
+"で参照できます。レプリケートされたAIPを暗号化したい場合は、 :ref:`encrypted space <gpg>` "
+"でロケーションを作成してください。"
 
 #: ../../administrators.rst:1000
 msgid ""
 "If you want the same space to have multiple purposes, multiple locations "
 "with different purposes can be created."
-msgstr "同じ空間に複数の目的を持たせたい場合、異なる目的を持つ複数の場所を作成することができます。"
+msgstr "同じスペースに複数の目的を持たせたい場合は、異なる目的の複数のロケーションを作成することができます。"
 
 #: ../../administrators.rst:1004
 msgid "Outcomes of a Replicator"
-msgstr "レプリケーターの結果"
+msgstr "レプリケータの結果"
 
 #: ../../administrators.rst:1006
 msgid "**One AIP to many Replicators:**"
-msgstr "**1つのAIPから多くのレプリケータへ:**"
+msgstr "**1つのAIPを多くのレプリケータへ:**"
 
 #: ../../administrators.rst:1008
 msgid ""
 "An AIP will be replicated *n-* times where there are *n-* configured "
 "Replicators for an AIP storage location."
-msgstr "AIPはAIPストレージ場所に設定されたReplicatorの数*n*回複製されます。"
+msgstr "AIPストレージロケーションに設定された*ｎ-* 個のレプリケータがある場合、AIPは *n-* 回複製されます。"
 
 #: ../../administrators.rst:1011
 msgid "**On reingest, replicas are replaced and given new identifiers:**"
-msgstr "**再取り込み時には、レプリカは新たな識別子を与えられて置き換えられます：**"
+msgstr "**再取り込み時に、レプリカは置き換えられ新しい識別子が与えられます:**"
 
 #: ../../administrators.rst:1013
 msgid ""
@@ -1732,11 +1769,11 @@ msgid ""
 "files will be updated with accurate references between the source and the "
 "replica and vice versa."
 msgstr ""
-"再取り込みの際には、以前のレプリカは削除され、ストレージサービスパッケージタブ内で削除済み(DELETED)とマークされます。新たなレプリカが作成され、アップロード済み(UPLOADED)とマークされます。新たなレプリカは新しいUUIDが割り当てられます。ポインターファイルはソースとレプリカ間（およびその逆）の正確な参照で更新されます。"
+"再取り込みの間、以前のレプリカは削除され、「ストレージサービスパッケージ」タブで削除済みとしてマークされます。新しいレプリカが作成され、アップロード済みとしてマークされます。新しいレプリカには新しいUUIDが割り当てられます。ポインタファイルは、ソースとレプリカ間、逆にレプリカとソース間の正確な参照で更新されます。"
 
 #: ../../administrators.rst:1019
 msgid "**Reingest can be used to update or delete replicas:**"
-msgstr "**再取り込みは、レプリカの更新または削除に使用できます：**"
+msgstr "**再取り込みはレプリカの更新または削除に利用できます:**"
 
 #: ../../administrators.rst:1021
 msgid ""
@@ -1744,11 +1781,11 @@ msgid ""
 "replicas from that replica location. If a new Replicator is enabled, "
 "reingest can be used to replicate an existing AIP in that replica location."
 msgstr ""
-"リプリケータが無効化されている場合、再取り込みを使用してそのレプリカの場所からレプリカを選択的に削除することができます。新しいリプリケータが有効化されている場合、再取り込みを使用してそのレプリカの場所で既存のAIPを複製することができます。"
+"レプリケータが無効になっている場合、再取り込みにより、特定のレプリカをそのレプリカの場所から選択的に削除することができます。新しいレプリケータが有効になった場合には、再取り込みを使って、そのレプリカの場所に既存のAIPをレプリケートすることができます。"
 
 #: ../../administrators.rst:1025
 msgid "**Creating and updating replicas without reingest:**"
-msgstr "**再取り込みなしでレプリカを作成および更新する方法：**"
+msgstr "**再取り込みなしにレプリカを作成・更新する：**"
 
 #: ../../administrators.rst:1027
 msgid ""
@@ -1756,12 +1793,12 @@ msgid ""
 "reingest using the :ref:`create AIP replicas <creating-aip-replicas>` "
 ":ref:`management command <management>`."
 msgstr ""
-"再取り込みの必要なしに、大量のレプリカを作成および更新することも可能です。これは、:ref:`AIPレプリカの作成 <creating-aip-"
-"replicas>` :ref:`マネージメントコマンド <management>`を使用して行います。"
+"レプリカは再取り込みを必要とせずに、 :ref:`AIPレプリカの作成<creating-aip-replicas>` "
+":ref:`管理コマンド<management>` を使用して一括で作成・更新することもできます。"
 
 #: ../../administrators.rst:1031
 msgid "**Deletion of the source AIP will delete the replicas:**"
-msgstr "**ソースAIPの削除はレプリカも削除します：**"
+msgstr "**ソースAIPの削除はレプリカも削除されます：**"
 
 #: ../../administrators.rst:1033
 msgid ""
@@ -1769,15 +1806,15 @@ msgid ""
 " replicas will also be deleted. Conversely, when a replica is deleted, only "
 "the replica within the given location is affected."
 msgstr ""
-"Archivematicaまたはストレージサービスを通じてソースAIPが削除されると、レプリカも同時に削除されます。逆に、レプリカが削除された場合、指定された場所のレプリカのみが影響を受けます。"
+"ソースAIPがArchivematicaまたはストレージサービス経由で削除されると、レプリカも削除されます。逆に、レプリカが削除された場合、指定された場所にあるレプリカのみが影響を受けます。"
 
 #: ../../administrators.rst:1038
 msgid "Limitations of a Replicator"
-msgstr "レプリケーターの制限"
+msgstr "レプリケータの制限"
 
 #: ../../administrators.rst:1040
 msgid "**Tight-coupling with AIP storage in a Pipeline:**"
-msgstr "**パイプライン内のAIPストレージとの緊密な連携：**"
+msgstr "**パイプライン内のAIPストレージとの強い結合：**"
 
 #: ../../administrators.rst:1042
 msgid ""
@@ -1788,11 +1825,11 @@ msgid ""
 "replica packages in staging in the Storage Service. The Storage Service "
 "user-interface will clearly mark the replica packages' status as STAGING."
 msgstr ""
-"レプリケーションはAIPストレージと結びついています。そのため、レプリカの保存時に障害が発生した場合、元のAIPが成功していても、Archivematicaパイプラインは処理中に失敗します。これは、Archivematica内のアーカイブストレージタブでのAIPのインデックス作成に影響を与えます。また、これにより、レプリカパッケージがストレージサービスのステージングに残ります。ストレージサービスのユーザーインターフェースは、レプリカパッケージのステータスを明確に「STAGING」と表示します。"
+"レプリケーションはAIPストレージと密接に関連しています。そのため、ソースAIPが成功してもレプリカの保存に失敗した場合、Archivematicaのパイプラインは処理中に失敗します。これは、Archivematica内のアーカイバルストレージタブでのAIPのインデクシングに影響を与え、ストレージサービス内のステージングにレプリカパッケージを残します。ストレージサービスのユーザーインターフェースでは、レプリカパッケージのステータスを明確にSTAGINGとしてマークします。"
 
 #: ../../administrators.rst:1049
 msgid "**New UUIDs during reingest:**"
-msgstr "**再取り込み中の新しいUUID:**"
+msgstr "**再取り込み中の新しいUUID：**"
 
 #: ../../administrators.rst:1051
 msgid ""
@@ -1800,25 +1837,25 @@ msgid ""
 "tracking the packages in the Storage Service, especially replicas, will need"
 " to synchronize their own record accordingly."
 msgstr ""
-"AIPは再取り込み中に新しいUUIDが付与されるため、ストレージサービス内のパッケージを追跡している外部サービス、特にレプリカは、それぞれのレコードを適切に同期する必要があります。"
+"再収集すると新しいUUIDがAIPに与えられるので、ストレージサービス内のパッケージを追跡している外部サービス、特にレプリカは、それぞれの記録を同期する必要があります。"
 
 #: ../../administrators.rst:1058
 msgid "How to configure a location"
-msgstr "場所の設定方法"
+msgstr ""
 
 #: ../../administrators.rst:1060
 msgid "To create and configure a new Location:"
-msgstr "新しいロケーションの作成と設定方法:"
+msgstr "新しい「ロケーション」を作成および構成するには："
 
 #: ../../administrators.rst:1062
 msgid "In the Storage Service, navigate to the Spaces tab."
-msgstr "ストレージサービスでは、スペースタブに移動します。"
+msgstr "ストレージサービスで「スペース」タブに移動します。"
 
 #: ../../administrators.rst:1063
 msgid ""
 "Under the space that you want to add the location to, click on **Create "
 "Location here**."
-msgstr "位置を追加したいスペースの下で、**ここに位置を作成**をクリックします。"
+msgstr "ロケーションを追加したいスペースの下で、「**ここにロケーションを作成**」をクリックします。"
 
 #: ../../administrators.rst:1065
 msgid ""
@@ -1829,16 +1866,17 @@ msgid ""
 "your Location path would be relative to that (in the example here, the "
 "complete path would end up being ``/var/mylocation``)."
 msgstr ""
-"目的（例：AIPストレージ）とパイプラインを選択し、\"Relative "
-"Path\"（例：``var/mylocation``）と人間が読み取れる説明を入力します。Relative "
-"Pathは、Locationを追加しているSpaceで定義されたPathに対する相対的なものです。例えばデフォルトのSpaceでは、Pathは``/``なので、あなたのLocationのパスはそれに対する相対的なものとなります（ここでの例では、完成したパスは``/var/mylocation``となります）。"
+"目的（例：AIPストレージ）とパイプラインを選択し、「相対パス」（例： ``var/mylocation`` "
+"）とわかりやすい説明を入力します。相対パスは、ロケーションを追加しているスペースで定義されているパスに関連しています。たとえば、デフォルトのスペースではパスは"
+" ``/`` なので、ロケーションのパスはそれに対して相対的になり（ここで例として挙げた場合、完全なパスは ``/var/mylocation`` "
+"になります）。"
 
 #: ../../administrators.rst:1074
 msgid ""
 "If the path you are defining in your Location doesn't exist, you must create"
 " it manually and make sure it is writable by the Archivematica user."
 msgstr ""
-"あなたがロケーションで定義しているパスが存在しない場合、手動で作成し、Archivematicaユーザーによって書き込み可能な状態にしていることを確認する必要があります。"
+"ロケーションで定義しているパスが存在しない場合は、手動で作成し、Archivematicaユーザーが書き込み可能であることを確認する必要があります。"
 
 #: ../../administrators.rst:1078
 msgid ""
@@ -1846,8 +1884,7 @@ msgid ""
 "select more than one, hold down ctrl- while clicking the UUID of the "
 "replica."
 msgstr ""
-"AIPストレージ場所については、必要に応じてレプリケータの場所を選択します。複数選択するには、レプリカのUUIDをクリックする際にctrl-"
-"を押し続けてください。"
+"AIPストレージロケーションに対して、必要に応じてレプリケーター・ロケーションを選択します。複数を選択する場合は、レプリカのUUIDをクリックしながらctrlキーを押し続けます。"
 
 #: ../../administrators.rst:1084
 msgid ""
@@ -1855,7 +1892,7 @@ msgid ""
 "selected. If a Replicator location is configured afterwards then it can be "
 "added via this page."
 msgstr ""
-"一つ以上のレプリケーターの場所が既に設定されている必要があります。その後にレプリケーターの場所が設定されると、このページから追加することができます。"
+"選択するためには、1つ以上のレプリケーター位置があらかじめ設定されていなければなりません。レプリケーター位置が後で設定された場合、このページから追加することができます。"
 
 #: ../../administrators.rst:1088
 msgid ""
@@ -1863,12 +1900,12 @@ msgid ""
 "a Replicator, but can also be created retroactively via the :ref:`create AIP"
 " replicas <creating-aip-replicas>` :ref:`management command <management>`."
 msgstr ""
-"レプリカAIPは、レプリケーターに場所が関連付けられた後にのみ作成されますが、 :ref:`AIPレプリカの作成 <creating-aip-"
-"replicas>` :ref:`管理コマンド <management>`を介して事後的にも作成することができます。"
+"レプリカAIPは、位置がレプリケーターに関連付けられた後にのみ作成されますが、 :ref:`create AIP replicas <creating-"
+"aip-replicas>` :ref:`マネジメントコマンド <management>` を介して遡って作成することもできます。"
 
 #: ../../administrators.rst:1093
 msgid "Save the Location settings."
-msgstr "ロケーション設定を保存します。"
+msgstr "位置設定を保存します。"
 
 #: ../../administrators.rst:1094
 msgid ""
@@ -1877,12 +1914,11 @@ msgid ""
 "enabled under the Dashboard \"Administration\" tab) or as a destination for "
 "AIP storage."
 msgstr ""
-"新しいロケーションは、ダッシュボードの適切なオプションの下で使用できるようになります。 "
-"例えば、転送ロケーション（ダッシュボードの「管理」タブで有効にする必要があります）やAIPストレージのデスティネーションとしてです。"
+"新しい位置は、ダッシュボード上の適切なオプションの下で選択可能になります。例えば、転送位置（ダッシュボードの「管理」タブで有効にする必要があります）やAIPストレージの目的地として使用できます。"
 
 #: ../../administrators.rst:-1
-msgid "Storage Service packages screen."
-msgstr "ストレージサービスパッケージ画面。"
+msgid "ストレージサービスパッケージ画面。"
+msgstr "ストレージサービスのパッケージ画面。"
 
 #: ../../administrators.rst:1109
 msgid ""
@@ -1891,7 +1927,7 @@ msgid ""
 "Packages (DIPs) which have been stored and transfers which have been sent to"
 " backlog will also be listed in the Packages tab."
 msgstr ""
-"パッケージは、Archivematicaがストレージサービスに保存したファイルで、通常はアーカイブ情報パッケージ(AIP)です。保存されたディスセミネーション情報パッケージ(DIP)やバックログに送信された転送もパッケージタブに表示されます。"
+"パッケージは、Archivematicaがストレージサービスに保存したファイルで、一般的にはアーカイブ情報パッケージ（AIP）です。保存された普及情報パッケージ（DIP）やバックログに送信された転送も、パッケージタブにリストされます。"
 
 #: ../../administrators.rst:1114
 msgid ""
@@ -1901,26 +1937,25 @@ msgid ""
 "about deleting an AIP, see :ref:`Deleting an AIP <archivematica:delete-"
 "aip>`."
 msgstr ""
-"ストレージサービスのインターフェイスを通じてAIPを作成または削除することはできませんが、Archivematicaを通じて削除リクエストを提出し、それはストレージサービスの管理者によって承認または却下されなければなりません。AIPの削除について詳しくは、:ref:`AIPの削除"
-" <archivematica:delete-aip>`をご覧ください。"
+"AIPは、ストレージサービスインターフェイスを介して作成または削除することはできませんが、ストレージサービスの管理者が承認または拒否する必要がある削除リクエストをArchivematicaを通じて送信することができます。AIPの削除についての詳細は、"
+" :ref:`Deleting an AIP <archivematica:delete-aip>` を参照してください。"
 
 #: ../../administrators.rst:1119
 msgid ""
 "Stored DIPs can be deleted through the Storage Service interface by choosing"
 " the \"Delete\" option in the \"Actions\" column."
-msgstr ""
-"保存されたDIPは、\"Actions\"カラムの\"Delete\"オプションを選択することで、ストレージサービスのインターフェースから削除することができます。"
+msgstr "保存されたDIPは、ストレージサービスインターフェースから「アクション」列の「削除」オプションを選択することで削除できます。"
 
 #: ../../administrators.rst:1121
 msgid ""
 "Deletion requests for transfers are automatically generated when all of the "
 "objects from the transfer have successfully been stored in AIPs."
-msgstr "転送からすべてのオブジェクトが成功裏にAIPsに保存されたとき、転送の削除リクエストは自動的に生成されます。"
+msgstr "転送のオブジェクト全てがAIPに正常に保存されると、転送の削除リクエストが自動的に生成されます。"
 
 #: ../../administrators.rst:1124
 msgid ""
 "For more information about Fixity Status, see :ref:`Fixity <fixity-docs>`."
-msgstr "詳細な情報については、「Fixity Status」を参照してください: ref:`Fixity <fixity-docs>`."
+msgstr "フィクシティ状態についての詳細情報は、 :ref:`フィクシティ <fixity-docs>` を参照してください。"
 
 #: ../../administrators.rst:1129
 msgid "Administration"
@@ -1930,10 +1965,10 @@ msgstr "管理"
 msgid ""
 "The Administration section manages the users and settings for the Storage "
 "Service."
-msgstr "管理セクションは、ストレージサービスのユーザーと設定を管理します。"
+msgstr "管理セクションでは、ストレージサービスのユーザーと設定を管理します。"
 
 #: ../../administrators.rst:-1
-msgid "Storage Service Administration screen."
+msgid "ストレージサービス管理画面。"
 msgstr "ストレージサービス管理画面。"
 
 #: ../../administrators.rst:1140
@@ -1944,7 +1979,7 @@ msgstr "設定"
 msgid ""
 "The configuration page allows you to control the behaviour of the Storage "
 "Service."
-msgstr "設定ページでは、ストレージサービスの動作を制御することができます。"
+msgstr "設定ページを使用すると、ストレージサービスの動作を制御できます。"
 
 #: ../../administrators.rst:1145
 msgid ""
@@ -1956,7 +1991,9 @@ msgid ""
 "instances. This can also be configured individually when creating a pipeline"
 " manually through the Storage Service website."
 msgstr ""
-"「パイプラインは作成時に無効化されますか？」は、新規に作成されたArchivematicaの:ref:`パイプライン<pipeline>`がそれに割り当てられた:ref:`ロケーション<locations>`にアクセスできるかどうかを決定するための設定です。新規作成したパイプラインを無効化することで、割り当てられたロケーションのファイルが不必要に閲覧されたり、認証されていないArchivematicaインスタンスによって使用されるのを防ぐセキュリティ対策が提供できます。これは、ストレージサービスのウェブサイトから手動でパイプラインを作成する際に、個別に設定することもできます。"
+"**作成時にパイプラインを無効にする**では、新しく作成されたArchivematica :ref:`パイプライン <pipeline>` "
+"が割り当てられた :ref:`ロケーション <locations>` "
+"にアクセスできるかどうかを決定できます。新しく作成されたパイプラインを無効にすることで、割り当てられた場所のファイルへの不要な閲覧や、許可されていないArchivematicaインスタンスによる使用に対するいくつかのセキュリティを提供できます。これは、ストレージサービスのウェブサイトを通じて手動でパイプラインを作成する際にも個別に設定することができます。"
 
 #: ../../administrators.rst:1153
 msgid ""
@@ -1965,57 +2002,54 @@ msgid ""
 " space containing the transfer source location. Having object counting "
 "enabled can cause delays and timeouts in the dashboard."
 msgstr ""
-"**スペース内のオブジェクト数の計算を無効にしますか？** "
-"これにより、転送元の場所を含むスペースなど、ユーザーにカウント情報を表示するスペースの自動オブジェクト数を無効にすることができます。オブジェクト数の計算を有効にすると、ダッシュボードで遅延やタイムアウトが発生することがあります。"
+"**スペース内のオブジェクトカウントを無効にする**では、転送ソースのロケーションを含むスペースなど、カウント情報をユーザーに表示するスペースの自動オブジェクトカウントを無効にすることができます。オブジェクトカウントを有効にしていると、ダッシュボードで遅延やタイムアウトが発生する可能性があります。"
 
 #: ../../administrators.rst:1163
 msgid ""
-"A list of directory names with object counts beside them - for example, "
-"``archivematica-sampledata (3810 objects)``."
-msgstr ""
 "オブジェクト数が横に記されたディレクトリ名のリスト - たとえば、「archivematica-sampledata (3810 objects)」。"
+msgstr ""
+"オブジェクト数が横に記されたディレクトリ名のリストです − 例えば、「archivematica-sampledata（3810オブジェクト）」。"
 
 #: ../../administrators.rst:1163
 msgid "The transfer browser with object counting enabled."
-msgstr "オブジェクトカウントが有効化された転送ブラウザ。"
+msgstr "オブジェクトカウント有効時の転送ブラウザです。"
 
 #: ../../administrators.rst:1170
-msgid ""
-"A list of directory names with no object counts beside them - for example, "
-"``archivematica-sampledata``."
-msgstr "オブジェクトカウントが隣にないディレクトリ名の一覧 - 例えば、``archivematica-sampledata``。"
+msgid "オブジェクトカウントが隣にないディレクトリ名の一覧 - 例えば、``archivematica-sampledata``。"
+msgstr ""
+"オブジェクトカウントが表示されていないディレクトリ名のリストです − 例えば、 ``archivematica-sampledata`` 。"
 
 #: ../../administrators.rst:1170
 msgid "The transfer browser with object counting disabled."
-msgstr "オブジェクトのカウントを無効化した転送ブラウザ。"
+msgstr "オブジェクトカウント無効時の転送ブラウザです。"
 
 #: ../../administrators.rst:1173
 msgid "Recovery request"
-msgstr "リカバリーリクエスト"
+msgstr "復旧リクエスト"
 
 #: ../../administrators.rst:1175
 msgid ""
 "These fields allow you to set up notifications for events related to the AIP"
 " deletion workflow - for example, deletion approvals or rejections."
-msgstr "これらのフィールドでは、AIP削除ワークフローに関連するイベント、例えば削除の承認や拒否についての通知を設定することができます。"
+msgstr "これらのフィールドを使用して、AIP削除ワークフローに関連するイベント、例えば削除の承認や拒否の通知を設定することができます。"
 
 #: ../../administrators.rst:1180
 msgid ""
 "**Recovery request: URL to notify:** the server that should receive the "
 "JSON-encoded event message from the Storage Service."
-msgstr "**リカバリーリクエスト：通知先URL：** ストレージサービスからのJSON形式のイベントメッセージを受け取るべきサーバー。"
+msgstr "**復旧リクエスト：通知するURL：** ストレージサービスからJSONエンコーディングされたイベントメッセージを受け取るサーバー。"
 
 #: ../../administrators.rst:1182
 msgid ""
 "**Recovery request notification: Username (optional):** A username for basic"
 " access authentication."
-msgstr "**復旧リクエスト通知：ユーザー名（オプション）：** 基本アクセス認証のためのユーザー名。"
+msgstr "**復旧リクエスト通知：ユーザー名（任意）：** 基本アクセス認証用のユーザー名。"
 
 #: ../../administrators.rst:1184
 msgid ""
 "**Recovery request notification: Password (optional)** A password for basic "
 "access authentication."
-msgstr "**復旧リクエスト通知：パスワード（オプション）** 基本的なアクセス認証のためのパスワード。"
+msgstr "**復旧リクエスト通知：パスワード（任意）：** 基本アクセス認証用のパスワード。"
 
 #: ../../administrators.rst:1188
 msgid "Default locations"
@@ -2027,7 +2061,7 @@ msgid ""
 "new pipeline that is registered with the Storage Service. You can define "
 "default locations for the following:"
 msgstr ""
-"デフォルトのロケーション設定を使用すると、ストレージサービスに新たに登録されるどんなパイプラインでもデフォルトの位置を定義することができます。以下のような場所でデフォルトの位置を定義することが可能です："
+"デフォルトの場所の設定により、ストレージサービスに登録された新しいパイプラインのデフォルトの場所を定義することができます。次のデフォルトの場所を定義できます："
 
 #: ../../administrators.rst:1194
 msgid "Transfer source"
@@ -2043,23 +2077,23 @@ msgstr "DIPストレージ"
 
 #: ../../administrators.rst:1197
 msgid "Transfer backlog"
-msgstr "転送の滞納"
+msgstr "転送バックログ"
 
 #: ../../administrators.rst:1198
 msgid "AIP recovery"
-msgstr "AIP リカバリー"
+msgstr "AIP復旧"
 
 #: ../../administrators.rst:1200
 msgid ""
 "Multiple transfer source or AIP storage locations can be configured by "
 "holding down ``Ctrl`` when selecting them."
-msgstr "複数の転送元またはAIP保管場所は、それらを選択する際に``Ctrl``キーを押し続けることで設定することができます。"
+msgstr "複数の転送元またはAIPストレージ場所は、選択時に ``Ctrl`` キーを押し続けることで設定することができます。"
 
 #: ../../administrators.rst:1203
 msgid ""
 "A Currently Processing location is also created for every new pipeline, "
 "since one is required."
-msgstr "新たなパイプラインが作成されるたびに、必要とされる現在処理中のロケーションも作成されます。"
+msgstr "現在処理中の場所も、新しいパイプラインごとに作成されます。必要なので。"
 
 #: ../../administrators.rst:1207
 msgid "Users"
@@ -2069,13 +2103,12 @@ msgstr "ユーザー"
 msgid ""
 "The Users section allows you to manage users for the Storage Service. Only "
 "registered users can log into the Storage Service."
-msgstr ""
-"「ユーザー」セクションでは、ストレージサービスのユーザーを管理することができます。登録されたユーザーのみがストレージサービスにログインすることができます。"
+msgstr "ユーザーセクションでは、ストレージサービスのユーザーを管理できます。登録されたユーザーのみがストレージサービスにログインできます。"
 
 #: ../../administrators.rst:1212
 msgid ""
 "There are four user roles: administrator, manager, reviewer, and reader."
-msgstr "ユーザーの役割は四つあります：管理者、マネージャー、レビュアー、およびリーダー。"
+msgstr "ユーザーロールは4種類あります：管理者、マネージャー、レビュアー、リーダー。"
 
 #: ../../administrators.rst:1214
 msgid ""
@@ -2085,13 +2118,13 @@ msgid ""
 "user profiles. Readers can also change the language of the Storage Service "
 "interface for themselves."
 msgstr ""
-"**リーダー**はすべての情報パイプライン、スペース、位置情報、パッケージタブを見ることができますが、これらのタブで編集や削除リクエストの管理、その他のアクションを実行することはできません。管理タブでは、リーダー自身のユーザープロファイルを編集することができます。また、リーダーはストレージサービスインターフェースの言語を自分自身のために変更することもできます。"
+"**リーダー**は、すべての情報パイプライン、スペース、場所、パッケージタブを閲覧できますが、それらのタブで編集や削除要求の管理、その他のアクションを行うことはできません。管理タブでは、リーダーは自分のユーザープロファイルを編集できます。リーダーは、ストレージサービスインタフェースの言語を自分自身で変更することもできます。"
 
 #: ../../administrators.rst:1220
 msgid ""
 "**Reviewers** have all the permissions listed above, and can additionally "
 "review, approve, and reject package recovery and deletion requests."
-msgstr "**レビュアー**は上記のすべての権限を持ち、さらにパッケージの回復や削除のリクエストをレビューし、承認または拒否することもできます。"
+msgstr "**レビュアー**は上記のすべての権限を持ち、さらにパッケージの回復と削除の要求をレビュー、承認、または拒否することができます。"
 
 #: ../../administrators.rst:1223
 msgid ""
@@ -2100,7 +2133,7 @@ msgid ""
 " can also configure the Storage Service, create callbacks, and create and "
 "delete keys."
 msgstr ""
-"**マネージャー**は上記のすべての権限を持ち、さらにパイプライン、スペース、そしてロケーションの作成、編集、無効化、削除が可能です。また、マネージャーはストレージサービスの設定、コールバックの作成、そしてキーの作成および削除も行うことができます。"
+"**マネージャー**は上記のすべての権限を持ち、さらにパイプライン、スペース、場所の作成、編集、無効化、削除を行うことができます。マネージャーはストレージサービスを構成したり、コールバックを作成したり、キーの作成および削除も行うことができます。"
 
 #: ../../administrators.rst:1227
 msgid ""
@@ -2108,7 +2141,7 @@ msgid ""
 "additionally create and manage other Storage Service users. Administrators "
 "will also receive email notifications when special events occur."
 msgstr ""
-"**管理者**は上記のすべての権限を持ち、さらに他のストレージサービスユーザーを作成・管理することもできます。また、特別なイベントが発生したときには、管理者にメール通知が送信されます。"
+"**管理者**は上記のすべての権限を持ち、さらに他のストレージサービスユーザーを作成および管理することができます。管理者は特別なイベントが発生したときにもメール通知を受け取ります。"
 
 #: ../../administrators.rst:1232
 msgid "Version"
@@ -2118,7 +2151,7 @@ msgstr "バージョン"
 msgid ""
 "The version page will display the current version and specific git commit of"
 " your installation of the Storage Service."
-msgstr "バージョンページは、ストレージサービスのインストールにおける現在のバージョンと特定のgitコミットを表示します。"
+msgstr "バージョンページには、ストレージサービスのインストールにおける現在のバージョンと具体的 なgitコミットが表示されます。"
 
 #: ../../administrators.rst:1238
 msgid "Service callbacks"
@@ -2131,20 +2164,20 @@ msgid ""
 "when internal actions have taken place. You can create callbacks to alert "
 "external services when an AIP, DIP, or AIC has been stored."
 msgstr ""
-"コールバックは、Archivematicaストレージサービスが特定の種類のアクションを実行した後にREST呼び出しを行うことを可能にします。これにより、内部でアクションが行われた場合に外部サービスに通知することができます。AIP、DIP、またはAICが保存されたときに外部サービスにアラートを送るためのコールバックを作成することができます。"
+"コールバックを使うことで、アーカイブマティカストレージサービスは特定のアクションを実行した後にREST呼び出しを行い、内部アクションが発生したときに外部サービスに通知できます。AIP、DIP、またはAICが保存された場合に外部サービスを警告するためのコールバックを作成することができます。"
 
 #: ../../administrators.rst:1245
 msgid ""
 "To create a new callback, click on **Create new callback**. This will bring "
 "you to a form where you can enter the callback information."
 msgstr ""
-"新しいコールバックを作成するには、**新しいコールバックの作成**をクリックしてください。これにより、コールバック情報を入力できるフォームが表示されます。"
+"新しいコールバックを作成するには、**新しいコールバックの作成** をクリックします。これにより、コールバック情報を入力できるフォームが表示されます。"
 
 #: ../../administrators.rst:1250
 msgid ""
 "**Event**: Type of event when this callback should be executed (i.e. post-"
 "store AIP, post-store DIP)"
-msgstr "**イベント**: このコールバックが実行されるべきイベントのタイプ（例：AIPの保存後、DIPの保存後）"
+msgstr "**イベント**: このコールバックが実行されるべきイベントのタイプ（例： AIPストア後、DIPストア後）"
 
 #: ../../administrators.rst:1252
 msgid "**URI**: URL to contact upon callback execution."
@@ -2154,37 +2187,38 @@ msgstr "**URI**: コールバック実行時に連絡するURL。"
 msgid ""
 "**Method**: HTTP request method to use in connecting to the URL (i.e. GET, "
 "POST)"
-msgstr "**方法**：URLへの接続に使用するHTTPリクエストメソッド（例：GET、POST）"
+msgstr "**メソッド**: URLに接続する際に使用するHTTPリクエストメソッド（例： GET、POST）"
 
 #: ../../administrators.rst:1255
 msgid "**Headers (key/value)**: the header(s) for the request."
-msgstr "**ヘッダー（キー/値）**：リクエストのヘッダー。"
+msgstr "**ヘッダ（キー/値）**: リクエストのヘッダ。"
 
 #: ../../administrators.rst:1256
 msgid ""
 "**Body**: Body content for each request. Set the 'Content-type' header "
 "accordingly."
-msgstr "**本文**: 各リクエストの本文内容。'Content-type'ヘッダーを適切に設定してください。"
+msgstr "**ボディ**: 各リクエストのボディ内容。'Content-type'ヘッダを適切に設定してください。"
 
 #: ../../administrators.rst:1258
 msgid ""
 "**Expected status**: Expected HTTP response from the server, used to "
 "validate the callback response."
-msgstr "**予想されるステータス**: サーバーからの予想されるHTTPレスポンスで、コールバックレスポンスを検証するために使用されます。"
+msgstr "**期待されるステータス**: サーバーからの予期されるHTTP応答で、コールバック応答の妥当性を検証するために使用されます。"
 
 #: ../../administrators.rst:1260
 msgid "**Enabled**: check the box to enable the callback."
-msgstr "**有効化**：コールバックを有効にするには、チェックボックスをクリックします。"
+msgstr "**有効**: コールバックを有効にするためのボックスにチェックを入れてください。"
 
 #: ../../administrators.rst:1262
 msgid "Event types available include:"
-msgstr "利用可能なイベントタイプには："
+msgstr "利用可能なイベントタイプには以下が含まれます："
 
 #: ../../administrators.rst:1264
 msgid ""
 "**Post-store AIP (source files)**: Occurs after an AIP has been stored and "
 "causes the execution of a request for each source file of the AIP."
-msgstr "**AIP保存後（ソースファイル）**: AIPが保存された後に発生し、AIPの各ソースファイルに対するリクエストの実行を引き起こします。"
+msgstr ""
+"**ポスト・ストアAIP（ソースファイル）**: AIPが保存された後に発生し、AIPの各ソースファイルに対してリクエストを実行することになります。"
 
 #: ../../administrators.rst:1266
 msgid ""
@@ -2192,18 +2226,18 @@ msgid ""
 " AIC or DIP has been stored and causes the execution of a single request for"
 " the package."
 msgstr ""
-"**AIPの保管後、AICの保管後、DIPの保管後**: "
-"AIP、AIC、またはDIPが保存された後に発生し、パッケージに対する単一のリクエストの実行を引き起こします。"
+"**ポスト・ストアAIP、ポスト・ストアAIC、ポスト・ストアDIP**: "
+"AIP、AIC、またはDIPが保存された後に発生し、パッケージに対して単一のリクエストを実行することになります。"
 
 #: ../../administrators.rst:1270
 msgid "You can use the following placeholders in the URI and Body fields:"
-msgstr "URIとBodyフィールドに以下のプレースホルダーを使用することができます："
+msgstr "URIとBodyフィールドには以下のプレースホルダーを使用することができます："
 
 #: ../../administrators.rst:1272
 msgid ""
 "**Post-store AIP (source files)**: ``<source_id>`` will be replaced by the "
 "source file UUID."
-msgstr "**AIP保存後のソースファイル**: ``<source_id>``はソースファイルUUIDに置き換えられます。"
+msgstr "**ポスト・ストアAIP（ソースファイル）**: ``<source_id>`` はソースファイルのUUIDに置き換えられます。"
 
 #: ../../administrators.rst:1274
 msgid ""
@@ -2211,7 +2245,9 @@ msgid ""
 "will be replaced by the AIP, AIC or DIP UUID. ``<package_name>`` will be "
 "replaced by the AIP, AIC or DIP name, with the trailing UUID removed."
 msgstr ""
-"**AIPの保存後、AICの保存後、およびDIPの保存後**：``<package_uuid>``はAIP、AICまたはDIPのUUIDに置き換えられます。``<package_name>``はAIP、AICまたはDIPの名前に置き換えられ、末尾のUUIDは削除されます。"
+"**ポスト・ストアAIP、ポスト・ストアAIC、ポスト・ストアDIP**: ``<package_uuid>`` "
+"はAIP、AIC、またはDIPのUUIDに置き換えられます。 ``<package_name>`` "
+"はAIP、AIC、またはDIPの名前に置き換えられ、末尾のUUIDは削除されます。"
 
 #: ../../administrators.rst:1280
 msgid ""
@@ -2219,8 +2255,8 @@ msgid ""
 "``<package_name>`` will be equal to the name of the transfer after "
 "successful completion of the \"Change transfer filenames\" Microservice."
 msgstr ""
-"直接転送から作成されたAIPsについては、「Change transfer "
-"filenames」マイクロサービスの成功完了後、``<package_name>``を置き換える値は転送の名前に等しくなります。"
+"転送から直接作成されたAIPの場合、 ``<package_name>`` に置き換えられる値は、\"Change transfer "
+"filenames\" マイクロサービスの成功裡な完了後の転送の名前と同じになります。"
 
 #: ../../administrators.rst:1284
 msgid ""
@@ -2228,20 +2264,19 @@ msgid ""
 "API endpoint or `stored` endpoints. See the `API documentation`_  for more "
 "information on using these endpoints."
 msgstr ""
-"外部アプリケーションは、`post_store` "
-"APIエンドポイントまたは`stored`エンドポイントを通じてArchivematicaと統合することができます。これらのエンドポイントの使用方法については、`APIドキュメンテーション`_"
-" を参照してください。"
+"外部アプリケーションは、 `post_store` API エンドポイントまたは `stored` エンドポイントを介して Archivematica "
+"と統合することができます。これらのエンドポイントの使用方法については、 `APIドキュメント`_ を参照してください。"
 
 #: ../../administrators.rst:1288
 msgid ""
 "A callback can be configured for the SCOPE integration. See the `SCOPE "
 "documentation`_ for how to set up this callback."
 msgstr ""
-"SCOPE統合にはコールバックを設定することができます。このコールバックの設定方法については、`SCOPEのドキュメンテーション`_を参照してください。"
+"SCOPE統合のためのコールバックを設定することができます。このコールバックの設定方法については、 `SCOPEドキュメント`_ を参照してください。"
 
 #: ../../administrators.rst:1292
 msgid "Encryption keys"
-msgstr "暗号化キー"
+msgstr "暗号キー"
 
 #: ../../administrators.rst:1294
 msgid ""
@@ -2249,7 +2284,7 @@ msgid ""
 " encrypted AIPs, transfers or replicated AIPs/transfers. Keys can either be "
 "created by the Storage Service or imported."
 msgstr ""
-"GPG暗号化キーは、暗号化されたAIPs、転送、または複製されたAIPs/転送を保存するためのスペースで使用するために作成またはインポートできます。キーはストレージサービスによって作成されるか、インポートされます。"
+"GPG暗号化キーは、暗号化されたAIP、転送、または複製されたAIP/転送をスペースに格納するために作成またはインポートできます。キーはストレージサービスによって作成されることも、インポートされることもできます。"
 
 #: ../../administrators.rst:1298
 msgid "To create a new key:"
@@ -2257,23 +2292,23 @@ msgstr "新しいキーを作成するには："
 
 #: ../../administrators.rst:1300
 msgid "Click on **Create New Key**"
-msgstr "**新しいキーを作成**をクリックしてください。"
+msgstr "**新しいキーを作成**をクリックします"
 
 #: ../../administrators.rst:1302
 msgid "Enter the name and email address you want associated with the key."
-msgstr "キーに関連付ける名前とメールアドレスを入力してください。"
+msgstr "キーに関連付けたい名前とメールアドレスを入力します。"
 
 #: ../../administrators.rst:1304
 msgid "To import a key:"
-msgstr "キーをインポートするには:"
+msgstr "キーをインポートするには："
 
 #: ../../administrators.rst:1306
 msgid "Click on **Import Existing Key**"
-msgstr "**既存のキーをインポート**をクリックしてください。"
+msgstr "**既存のキーをインポート**をクリックします"
 
 #: ../../administrators.rst:1308
 msgid "Paste in your key in ASCII-armored format."
-msgstr "ASCIIアーマー形式であなたのキーを貼り付けてください。"
+msgstr "キーをASCIIアーマード形式で貼り付けます。"
 
 #: ../../administrators.rst:1311
 msgid "Language"
@@ -2284,9 +2319,8 @@ msgid ""
 "Configure language settings for the Storage Service in this area of the "
 "Administration tab. Strings are available for translation on the "
 "localization platform (Transifex)."
-msgstr ""
-"この管理タブの領域でストレージサービスの言語設定を構成します。文字列は翻訳のためのローカリゼーションプラットフォーム(Transifex)で利用可能です。"
+msgstr "管理タブのこのエリアでストレージサービスの言語設定を行います。文字列は翻訳プラットフォーム（Transifex）で翻訳が可能です。"
 
 #: ../../administrators.rst:1317
 msgid ":ref:`Back to the top <administrators>`"
-msgstr ":ref:`トップに戻る <administrators>`"
+msgstr ":ref:`トップへ戻る <administrators>`"

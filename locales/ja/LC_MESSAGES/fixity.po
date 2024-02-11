@@ -1,7 +1,7 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2023, Artefactual Systems Inc.
 # This file is distributed under the same license as the Archivematica
-# Storage Service package.
+# package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
 #
 #, fuzzy
@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Archivematica Storage Service 0.21\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-09 18:55+0900\n"
+"POT-Creation-Date: 2024-02-11 22:18+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: ja <LL@li.org>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: Babel 2.14.0\n"
 
 #: ../../fixity.rst:5
@@ -32,7 +32,9 @@ msgid ""
 "storage. Users can access the API endpoint directly or by using the Fixity "
 "application developed by Artefactual."
 msgstr ""
-"フィクシティのチェックは、デジタルファイルが時間の経過とともに予期せずに変更されていないことを保証するプロセスです。Archivematicaストレージサービスは、ユーザーがストレージ内の個々のAIPのフィクシティをチェックできるAPIエンドポイントを公開しています。ユーザーは、APIエンドポイントに直接アクセスするか、Artefactualが開発したFixityアプリケーションを使用してアクセスできます。"
+"フィクシティのチェックは、デジタルファイルが時間の経過とともに予期せず変更されていないことを確保する過程です。Archivematica Storage"
+" "
+"ServiceはAPIエンドポイントを公開しており、ユーザーは個々のAIPのフィクシティを確認することができます。ユーザーは、APIエンドポイントに直接アクセスするか、Artefactualが開発したFixityアプリケーションを使用してこれにアクセスできます。"
 
 #: ../../fixity.rst:13
 msgid ""
@@ -42,38 +44,39 @@ msgid ""
 " files. This can tell users if files have been modified, deleted, or added "
 "to the AIP."
 msgstr ""
-"Archivematica AIPsは、`BagIt File Packaging Format`_ に従ってパッケージ化されます。fixity "
-"APIエンドポイントは、バッグファイルにリストされているチェックサムとペイロードoxumとを検証することでバッグを検証します。これにより、ファイルが変更されたか、削除されたか、AIPに追加されたかをユーザーに伝えることができます。"
+"ArchivematicaのAIPは `BagIt File Packaging Format`_ "
+"に従ってパッケージされています。フィクシティAPIエンドポイントは、バッグファイルに記載されているチェックサムとpayload "
+"oxumに対してバッグの内容を検証することでバッグを検証します。これにより、ファイルが変更されたか、削除されたか、AIPに追加されたかどうかをユーザーに知らせることができます。"
 
 #: ../../fixity.rst:18
 msgid ""
 "For more information about fixity and checksums, see the Digital "
 "Preservation Coalition's `Digital Preservation Handbook`_."
 msgstr ""
-"fixityとチェックサムに関する詳細は、Digital Preservation Coalitionの`Digital Preservation "
-"Handbook`_を参照してください。"
+"フィクシティとチェックサムについて詳しくは、Digital Preservation Coalitionの `Digital Preservation "
+"Handbook`_ をご覧ください。"
 
 #: ../../fixity.rst:21
 msgid "*On this page:*"
-msgstr "*このページ上の内容:*"
+msgstr "*このページの内容:*"
 
 #: ../../fixity.rst:23
 msgid ":ref:`Checking fixity using the API endpoint <using-fixity-endpoint>`"
-msgstr ":ref:`APIエンドポイントを使用したfixityの確認方法<using-fixity-endpoint>`"
+msgstr ":ref:`APIエンドポイントを使用してフィクシティをチェックする <using-fixity-endpoint>`"
 
 #: ../../fixity.rst:24
 msgid ":ref:`Using the Fixity application <fixity-application>`"
-msgstr ":ref:`Fixityアプリケーションの使用方法<fixity-application>`"
+msgstr ":ref:`Fixityアプリケーションを使用する <fixity-application>`"
 
 #: ../../fixity.rst:25
 msgid ""
 ":ref:`Reviewing fixity results in the Storage Service <reviewing-fixity-"
 "checks>`"
-msgstr ":ref:`Storage Serviceでのfixityチェック結果の確認<reviewing-fixity-checks>`"
+msgstr ":ref:`ストレージサービス内のfixity結果のレビュー<reviewing-fixity-checks>`"
 
 #: ../../fixity.rst:30
 msgid "Checking fixity using the API endpoint"
-msgstr "APIエンドポイントを使用したフィクシティのチェック"
+msgstr "APIエンドポイントを使用してfixityをチェックする"
 
 #: ../../fixity.rst:32
 msgid ""
@@ -82,8 +85,8 @@ msgid ""
 "the endpoint can found found in the `Storage Service API documentation`_."
 msgstr ""
 "fixity "
-"APIエンドポイントを使用して単一のAIPをスキャンすることができます。成功または失敗、エラーメッセージなどが返されます。エンドポイントに関する詳細情報は、`Storage"
-" Service API documentation`_で確認できます。"
+"APIエンドポイントは単一のAIPをスキャンするために使用できます。成功または失敗を返し、任意のエラーメッセージが表示されます。エンドポイントに関する詳細は"
+" `ストレージサービスAPIドキュメント`_ で確認できます。"
 
 #: ../../fixity.rst:39
 msgid "Using the Fixity application"
@@ -96,18 +99,18 @@ msgid ""
 "documented above to perform batch checking across the entirety of the AIP "
 "store."
 msgstr ""
-"`Fixity`_は、Archivematica Storage "
-"Serviceで使用するアプリケーションでもあります。Fixityはコマンドラインから実行され、上記で文書化されたAPIエンドポイントを使用してAIPストア全体でバッチチェックを実行します。"
+"`Fixity`_ "
+"はArchivematicaストレージサービスで使用するアプリケーションです。Fixityはコマンドラインから実行し、上記のAPIエンドポイントを使用してAIPストア全体にわたるバッチチェックを実行します。"
 
 #: ../../fixity.rst:46
 msgid ""
 "See the `Fixity`_ documentation for more information on its installation and"
 " usage."
-msgstr "インストールと使用方法についての詳細は、`Fixity`_のドキュメントを参照してください。"
+msgstr "インストールと使用方法の詳細は `Fixity`_ ドキュメントを参照してください。"
 
 #: ../../fixity.rst:52
 msgid "Reviewing fixity results in the Storage Service"
-msgstr "Storage Serviceでのfixityチェック結果の確認"
+msgstr "ストレージサービスでのfixity結果のレビュー"
 
 #: ../../fixity.rst:54
 msgid ""
@@ -115,11 +118,11 @@ msgid ""
 "shown in the Packages tab of the user interface in the **Fixity Date** and "
 "**Fixity Status** columns."
 msgstr ""
-"fixityチェックの結果はStorage Serviceに書き戻され、ユーザーインターフェースのPackagesタブの**Fixity "
-"Date**と**Fixity Status**の列に表示されます。"
+"fixityチェックの結果はストレージサービスに書き戻され、ユーザインタフェースのパッケージタブにある**Fixity Date**と**Fixity "
+"Status**の列で表示されます。"
 
 #: ../../fixity.rst:-1
-msgid "The Fixity Date and Fixity Status columns are displayed in the"
+msgid "**Fixity Date**と**Fixity Status**の列が表示されます"
 msgstr "**Fixity Date**と**Fixity Status**の列が表示されます"
 
 #: ../../fixity.rst:63
@@ -130,19 +133,17 @@ msgid ""
 " run, as well as any error output resulting from the check. It will also "
 "show a full history of fixity checks run on the AIP."
 msgstr ""
-"fixityステータスは、「Success」または「Failed」のいずれかとして表示されます。チェックの詳細については、AIPのステータスをクリックしてください。fixityチェック情報ページには、fixityチェックが実行された日時、およびチェックからのエラー出力が表示されます。また、AIPで実行されたfixityチェックの完全な履歴も表示されます。"
+"fixityのステータスは、「成功」または「失敗」と表示されます。チェックの詳細については、AIPのステータスをクリックしてください。fixityチェック情報ページには、fixityチェックが実行された日時、チェックの結果生じたエラー出力、およびAIPに対して実行されたfixityチェックの全履歴が表示されます。"
 
 #: ../../fixity.rst:-1
-msgid ""
-"The fixity check information page showing the results of one fixity scan, "
-"which resulted in an error."
+msgid "1回のfixityスキャンの結果を表示するfixityチェック情報ページ"
 msgstr "1回のfixityスキャンの結果を表示するfixityチェック情報ページ"
 
 #: ../../fixity.rst:74
 msgid ""
 "In the example shown in the screenshot above, the fixity scan resulted in an"
 " error."
-msgstr "上記のスクリーンショットに示されている例では、fixityスキャンの結果エラーが発生しました。"
+msgstr "上のスクリーンショットに示された例では、fixityスキャンによりエラーが発生しました。"
 
 #: ../../fixity.rst:82
 msgid ""
@@ -151,9 +152,9 @@ msgid ""
 "step for the user would be to retrieve the AIP and investigate the files to "
 "see what has changed."
 msgstr ""
-"この場合、ファイルの1つに余分なバイトが追加されているため、「bag-"
-"info.txt」ファイルのペイロードのoxumが正しくなくなりました。ユーザーの次のステップは、AIPを取得し、ファイルを調査して変更点を確認することです。"
+"この場合、いずれかのファイルに余分なバイトが追加されたため、 ``bag-info.txt`` "
+"ファイル内のペイロードオクスムが正しくなくなっています。ユーザーが次に行うべき手順は、AIPを取り出してファイルを調査し、何が変更されたのかを確認することです。"
 
 #: ../../fixity.rst:87
 msgid ":ref:`Return to the top <fixity-docs>`"
-msgstr ":ref:`トップに戻る<fixity-docs>`"
+msgstr ":ref:`トップに戻る <fixity-docs>`"
